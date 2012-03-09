@@ -1,0 +1,23 @@
+2012-02-19 21:02:04,985 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.heartbeatCheck: lost heartbeat from 127.0.0.1:50010
+2012-02-19 21:02:07,744 INFO org.apache.hadoop.net.NetworkTopology: Removing a node: /default-rack/127.0.0.1:50010
+2012-02-19 21:02:09,673 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.registerDatanode: node registration from 127.0.0.1:50010 storage DS-745588722-136.187.146.182-50010-1329467940950
+2012-02-19 21:02:09,839 INFO org.apache.hadoop.net.NetworkTopology: Removing a node: /default-rack/127.0.0.1:50010
+2012-02-19 21:02:09,845 INFO org.apache.hadoop.net.NetworkTopology: Adding a new node: /default-rack/127.0.0.1:50010
+2012-02-19 21:02:09,971 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_369069447690550878_1023 size 2352
+2012-02-19 21:02:09,982 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_6613985353335522353_1024 size 2844
+2012-02-19 21:02:09,982 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-3514811545658701346_1015 size 6148
+2012-02-19 21:02:09,983 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-4921023448293296273_1017 size 28455
+2012-02-19 21:02:09,983 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_4816396275365022182_1027 size 93
+2012-02-19 21:02:09,983 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_4146166720313065486_1016 size 6148
+2012-02-19 21:02:09,983 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-4869721779627284445_1025 size 4228
+2012-02-19 21:02:09,983 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_3234809835550541369_1021 size 28455
+2012-02-19 21:02:09,983 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-8936524489709684620_1019 size 2352
+2012-02-19 21:02:09,983 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-7378839991475257330_1018 size 39134
+2012-02-19 21:02:09,983 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1739156834102482304_1014 size 57
+2012-02-19 21:02:09,983 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_6200918000566571997_1022 size 39134
+2012-02-19 21:02:09,984 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-5915687096562306842_1043 size 119
+2012-02-19 21:02:09,984 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_-1348959223275577719_1026 size 6499
+2012-02-19 21:02:09,984 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_727342793510807130_1020 size 2844
+2012-02-19 21:02:09,984 INFO org.apache.hadoop.hdfs.StateChange: BLOCK* NameSystem.addStoredBlock: blockMap updated: 127.0.0.1:50010 is added to blk_1217058690422767009_1001 size 4
+2012-02-19 21:04:08,278 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll Edit Log from 127.0.0.1
+2012-02-19 21:04:08,832 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: Roll FSImage from 127.0.0.1

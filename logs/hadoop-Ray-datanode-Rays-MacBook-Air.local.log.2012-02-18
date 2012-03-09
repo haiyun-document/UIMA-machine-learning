@@ -1,0 +1,18 @@
+2012-02-18 18:34:53,133 INFO org.apache.hadoop.hdfs.server.datanode.DirectoryScanner: Total blocks: 20, missing metadata files:0, missing block files:0, missing blocks in memory:0, mismatched blocks:0
+2012-02-18 18:34:55,756 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeCommand action: DNA_REGISTER
+2012-02-18 18:34:58,122 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 20 blocks got processed in 411 msecs
+2012-02-18 18:39:01,262 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 20 blocks got processed in 1 msecs
+2012-02-18 20:12:31,875 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Scheduling block blk_-5096928670099905769_1050 file /tmp/hadoop-Ray/dfs/data/current/finalized/blk_-5096928670099905769 for deletion
+2012-02-18 20:12:31,877 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Scheduling block blk_-4118736599766691747_1034 file /tmp/hadoop-Ray/dfs/data/current/finalized/blk_-4118736599766691747 for deletion
+2012-02-18 20:12:31,880 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Scheduling block blk_-1306559905550018765_1012 file /tmp/hadoop-Ray/dfs/data/current/finalized/blk_-1306559905550018765 for deletion
+2012-02-18 20:12:31,880 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Scheduling block blk_3399778360106544956_1042 file /tmp/hadoop-Ray/dfs/data/current/finalized/blk_3399778360106544956 for deletion
+2012-02-18 20:12:31,881 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleted block blk_-5096928670099905769_1050 at file /tmp/hadoop-Ray/dfs/data/current/finalized/blk_-5096928670099905769
+2012-02-18 20:12:31,882 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleted block blk_-4118736599766691747_1034 at file /tmp/hadoop-Ray/dfs/data/current/finalized/blk_-4118736599766691747
+2012-02-18 20:12:31,883 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleted block blk_-1306559905550018765_1012 at file /tmp/hadoop-Ray/dfs/data/current/finalized/blk_-1306559905550018765
+2012-02-18 20:12:31,883 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: Deleted block blk_3399778360106544956_1042 at file /tmp/hadoop-Ray/dfs/data/current/finalized/blk_3399778360106544956
+2012-02-18 21:23:38,371 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeCommand action: DNA_REGISTER
+2012-02-18 21:23:38,378 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 16 blocks got processed in 3 msecs
+2012-02-18 22:24:03,192 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeCommand action: DNA_REGISTER
+2012-02-18 22:24:03,198 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 16 blocks got processed in 2 msecs
+2012-02-18 22:55:52,026 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeCommand action: DNA_REGISTER
+2012-02-18 22:55:52,031 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 16 blocks got processed in 2 msecs

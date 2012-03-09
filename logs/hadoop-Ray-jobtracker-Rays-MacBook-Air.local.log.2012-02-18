@@ -1,0 +1,5 @@
+2012-02-18 18:34:51,031 INFO org.apache.hadoop.security.token.delegation.AbstractDelegationTokenSecretManager: Updating the current master key for generating delegation tokens
+2012-02-18 20:12:30,625 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Retiring job status from the store [hdfs://localhost:8000/jobtracker/jobsInfo/job_201202171739_0001.info]
+2012-02-18 20:12:30,636 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Retiring job status from the store [hdfs://localhost:8000/jobtracker/jobsInfo/job_201202171739_0002.info]
+2012-02-18 20:12:30,638 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Retiring job status from the store [hdfs://localhost:8000/jobtracker/jobsInfo/job_201202171739_0004.info]
+2012-02-18 20:12:30,640 INFO org.apache.hadoop.mapred.CompletedJobStatusStore: Retiring job status from the store [hdfs://localhost:8000/jobtracker/jobsInfo/job_201202171739_0005.info]

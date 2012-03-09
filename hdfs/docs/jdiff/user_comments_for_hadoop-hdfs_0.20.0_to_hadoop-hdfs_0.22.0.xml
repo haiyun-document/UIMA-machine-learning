@@ -1,0 +1,3876 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<comments
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+  xsi:noNamespaceSchemaLocation='comments.xsd'
+  name="hadoop-hdfs_0.20.0_to_hadoop-hdfs_0.22.0"
+  jdversion="1.0.9">
+
+<!-- This file contains comments for a JDiff report. -->
+<!-- It is used only in generating the report, and does not need to ship with the final report. -->
+
+<!-- The id attribute in an identifier element identifiers the change as noted in the report. -->
+<!-- An id has the form package[.class[.[ctor|method|field].signature]], where [] indicates optional text. -->
+<!-- A comment element can have multiple identifier elements, which will -->
+<!-- will cause the same text to appear at each place in the report, but -->
+<!-- will be converted to separate comments when the comments file is used. -->
+<!-- HTML tags in the text field will appear in the report. -->
+<comment>
+  <identifier id="org.apache.hadoop.fs"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.BlockMissingException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.BlockReader"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.ChecksumDistributedFileSystem"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.BlockReader"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.DFSDataInputStream"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.SERVER_DEFAULTS_VALIDITY_PERIOD"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.cancelDelegationToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.concat_added(java.lang.String, java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.createSymlink_added(java.lang.String, java.lang.String, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.create_added(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, java.util.EnumSet, boolean, short, long, org.apache.hadoop.util.Progressable, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.create_added(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, java.util.EnumSet, short, long, org.apache.hadoop.util.Progressable, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.create_removed(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, boolean, short, long, org.apache.hadoop.util.Progressable, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.ctor_changed(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.getBlockLocations_changed(java.lang.String, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.getDelegationToken_added(org.apache.hadoop.io.Text)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.getDiskStatus_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.getFileChecksum_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.getFileInfo_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.getFileLinkInfo_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.getHints_removed(java.lang.String, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.getLinkTarget_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.getNamenode_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.getServerDefaults_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.isDirectory_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.listPaths_added(java.lang.String, byte[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.listPaths_added(java.lang.String, byte[], boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.listPaths_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.mkdirs_changed(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.namenode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.open_added(java.lang.String, int, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.open_added(java.lang.String, int, boolean, org.apache.hadoop.fs.FileSystem.Statistics)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.open_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.primitiveCreate_added(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, java.util.EnumSet, boolean, short, long, org.apache.hadoop.util.Progressable, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.primitiveMkdir_added(java.lang.String, org.apache.hadoop.fs.permission.FsPermission)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.rename_added(java.lang.String, java.lang.String, org.apache.hadoop.fs.Options.Rename[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.rename_changed(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.renewDelegationToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.stringifyToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.totalRawCapacity_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSClient.totalRawUsed_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSConfigKeys"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSInputStream"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSUtil"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSUtil.ErrorSimulator"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSUtil.byteArray2String_added(byte[][])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSUtil.bytes2String_added(byte[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSUtil.bytes2byteArray_added(byte[], byte)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSUtil.bytes2byteArray_added(byte[], int, byte)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSUtil.locatedBlocks2Locations_added(org.apache.hadoop.hdfs.protocol.LocatedBlocks)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DFSUtil.string2Bytes_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DeprecatedUTF8"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.DiskStatus"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.DiskStatus.ctor_added(org.apache.hadoop.fs.FsStatus)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.DiskStatus.getCapacity_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.DiskStatus.getRemaining_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.cancelDelegationToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.concat_added(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.Path[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.createNonRecursive_added(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.permission.FsPermission, java.util.EnumSet, int, short, long, org.apache.hadoop.util.Progressable)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.ctor_changed(java.net.InetSocketAddress, org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.delete_removed(org.apache.hadoop.fs.Path)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.getDefaultPort_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.getDelegationToken_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.getDelegationToken_added(org.apache.hadoop.io.Text)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.getDiskStatus_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.getFileBlockLocations_added(org.apache.hadoop.fs.Path, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.getName_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.getRawCapacity_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.getRawUsed_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.getServerDefaults_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.getStatus_added(org.apache.hadoop.fs.Path)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.listLocatedStatus_added(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.PathFilter)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.mkdir_added(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.permission.FsPermission)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.primitiveCreate_added(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.permission.FsPermission, java.util.EnumSet, int, short, long, org.apache.hadoop.util.Progressable, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.primitiveMkdir_added(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.permission.FsPermission)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.recoverLease_added(org.apache.hadoop.fs.Path)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.rename_added(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.Path, org.apache.hadoop.fs.Options.Rename[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.renewDelegationToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.DistributedFileSystem.restoreFailedStorage_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HdfsConfiguration"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.HFTP_DATE_FORMAT"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.HFTP_SERVICE_NAME_KEY"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.HFTP_TIMEZONE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.delete_removed(org.apache.hadoop.fs.Path)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.df"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.getCanonicalServiceName_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.getContentSummary_added(org.apache.hadoop.fs.Path)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.getDateFormat_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.getDefaultPort_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.getDelegationToken_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.pickOneAddress_removed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HftpFileSystem.updateQuery_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.HsftpFileSystem.DummyTrustManager"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.BLOCK_FILE_PREFIX"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.GRANDFATHER_GENERATION_STAMP"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.METADATA_EXTENSION"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.blockFilePattern"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.filename2id_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.getBlockId_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.getGenerationStamp_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.isMetaFilename_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.metaFilePattern"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.readId_added(java.io.DataInput)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.Block.writeId_added(java.io.DataOutput)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.BlockListAsLongs"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.BlockListAsLongs.BlockReportIterator"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.BlockListAsLongs.convertToArrayLongs_removed(org.apache.hadoop.hdfs.protocol.Block[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.BlockListAsLongs.ctor_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.BlockListAsLongs.ctor_added(java.util.List, java.util.List)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.BlockListAsLongs.getBlockListAsLongs_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.BlockListAsLongs.getBlockReportIterator_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.BlockListAsLongs.iterator_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol.getReplicaVisibleLength_added(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol.recoverBlock_removed(org.apache.hadoop.hdfs.protocol.Block, boolean, org.apache.hadoop.hdfs.protocol.DatanodeInfo[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.abandonBlock_changed(org.apache.hadoop.hdfs.protocol.Block, java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.addBlock_changed(java.lang.String, java.lang.String, org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.DatanodeInfo[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.append_changed(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.cancelDelegationToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.complete_changed(java.lang.String, java.lang.String, org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.concat_added(java.lang.String, java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.createSymlink_added(java.lang.String, java.lang.String, org.apache.hadoop.fs.permission.FsPermission, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.create_changed(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, java.lang.String, org.apache.hadoop.io.EnumSetWritable, boolean, short, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.delete_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.delete_changed(java.lang.String, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.fsync_changed(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.getBlockLocations_changed(java.lang.String, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.getContentSummary_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.getDelegationToken_added(org.apache.hadoop.io.Text)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.getFileInfo_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.getFileLinkInfo_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.getLinkTarget_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.getListing_changed(java.lang.String, byte[], boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.getPreferredBlockSize_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.getServerDefaults_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.mkdirs_changed(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.recoverLease_added(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.rename_added(java.lang.String, java.lang.String, org.apache.hadoop.fs.Options.Rename[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.rename_changed(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.renewDelegationToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.renewLease_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.restoreFailedStorage_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.saveNamespace_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.setOwner_changed(java.lang.String, java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.setPermission_changed(java.lang.String, org.apache.hadoop.fs.permission.FsPermission)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.setQuota_changed(java.lang.String, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.setReplication_changed(java.lang.String, short)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.setTimes_changed(java.lang.String, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.updateBlockForPipeline_added(org.apache.hadoop.hdfs.protocol.Block, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.ClientProtocol.updatePipeline_added(java.lang.String, org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.DatanodeID[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DSQuotaExceededException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.BlockConstructionStage"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_BLOCK_CHECKSUM"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_COPY_BLOCK"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_READ_BLOCK"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_READ_METADATA"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_REPLACE_BLOCK"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_STATUS_CHECKSUM_OK"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_STATUS_ERROR"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_STATUS_ERROR_ACCESS_TOKEN"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_STATUS_ERROR_CHECKSUM"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_STATUS_ERROR_EXISTS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_STATUS_ERROR_INVALID"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_STATUS_SUCCESS"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.OP_WRITE_BLOCK"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.Op"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.PacketHeader"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.PipelineAck"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.Receiver"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.Sender"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DataTransferProtocol.Status"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DatanodeInfo"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DatanodeInfo.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DatanodeInfo.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DatanodeInfo.read_added(java.io.DataInput)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.DirectoryListing"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.FSConstants"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.FSConstants.DEFAULT_BYTES_PER_CHECKSUM"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.FSConstants.DEFAULT_FILE_BUFFER_SIZE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.FSConstants.DEFAULT_REPLICATION_FACTOR"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.FSConstants.DEFAULT_WRITE_PACKET_SIZE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.FSConstants.HDFS_URI_SCHEME"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.HdfsFileStatus"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.HdfsLocatedFileStatus"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LayoutVersion"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LayoutVersion.Feature"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlock"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlock.getBlockToken_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlock.read_added(java.io.DataInput)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlock.setBlockToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlock.toString_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlocks"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlocks.ctor_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlocks.ctor_added(long, boolean, java.util.List, org.apache.hadoop.hdfs.protocol.LocatedBlock, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlocks.ctor_removed(long, java.util.List, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlocks.getLastLocatedBlock_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlocks.isLastBlockComplete_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.LocatedBlocks.toString_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.NSQuotaExceededException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.QuotaExceededException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.QuotaExceededException.count"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.QuotaExceededException.ctor_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.QuotaExceededException.ctor_added(long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.QuotaExceededException.ctor_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.QuotaExceededException.ctor_removed(long, long, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.QuotaExceededException.pathName"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.QuotaExceededException.quota"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.QuotaExceededException.serialVersionUID"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.RecoveryInProgressException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.UnregisteredDatanodeException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.UnregisteredNodeException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.protocol.UnresolvedPathException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.security.token.block"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.security.token.delegation"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.GenerationStamp"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.GenerationStamp.GRANDFATHER_GENERATION_STAMP"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.GenerationStamp.WILDCARD_STAMP"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.GenerationStamp.compare_removed(long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.GenerationStamp.equalsWithWildcard_removed(long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.GenerationStamp.readFields_removed(java.io.DataInput)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.GenerationStamp.write_removed(java.io.DataOutput)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.HdfsConstants"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.HdfsConstants.BlockUCState"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.HdfsConstants.DN_KEEPALIVE_TIMEOUT"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.HdfsConstants.NamenodeRole"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.HdfsConstants.READ_TIMEOUT_EXTENSION"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.HdfsConstants.ReplicaState"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.HdfsConstants.StartupOption"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.HdfsConstants.StartupOption.BACKUP"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.HdfsConstants.StartupOption.CHECKPOINT"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.HdfsConstants.StartupOption.toNodeRole_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.JspHelper"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Storage"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Storage.LAYOUT_VERSIONS_203"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Storage.corruptPreUpgradeStorage_removed(java.io.File)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Storage.is203LayoutVersion_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Storage.isConversionNeeded_removed(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Storage.isPreUpgradableLayout_added(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Storage.listStorageDirectories_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Storage.writeCorruptedData_removed(java.io.RandomAccessFile)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.StorageInfo"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.StorageInfo.readFields_added(java.io.DataInput)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.StorageInfo.write_added(java.io.DataOutput)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.UpgradeManager"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Util"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Util.fileAsURI_added(java.io.File)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Util.stringAsURI_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.common.Util.stringCollectionAsURIs_added(java.util.Collection)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.PKT_HEADER_LEN"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.checkDiskError_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.checkDiskError_added(java.lang.Exception)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.checkDiskError_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.checkDiskError_removed(java.io.IOException)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.createDataNode_added(java.lang.String[], org.apache.hadoop.conf.Configuration, org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter.SecureResources)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.createInterDataNodeProtocolProxy_changed(org.apache.hadoop.hdfs.protocol.DatanodeID, org.apache.hadoop.conf.Configuration, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getBlockMetaDataInfo_removed(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getDatanodeRegistration_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getHttpPort_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getInfoAddr_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getInfoPort_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getNameNodeAddrForClient_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getNamenodeAddress_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getNamenode_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getReplicaVisibleLength_added(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getRpcPort_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getStreamingAddr_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getVersion_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.getVolumeInfo_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.initReplicaRecovery_added(org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand.RecoveringBlock)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.instantiateDataNode_added(java.lang.String[], org.apache.hadoop.conf.Configuration, org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter.SecureResources)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.makeInstance_removed(java.lang.String[], org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.recoverBlock_removed(org.apache.hadoop.hdfs.protocol.Block, boolean, org.apache.hadoop.hdfs.protocol.DatanodeInfo[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.recoverBlocks_changed(java.util.Collection)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.secureMain_added(java.lang.String[], org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter.SecureResources)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.updateBlock_removed(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.Block, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNode.updateReplicaUnderRecovery_added(org.apache.hadoop.hdfs.protocol.Block, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataNodeMXBean"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataStorage"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataStorage.corruptPreUpgradeStorage_removed(java.io.File)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataStorage.isConversionNeeded_removed(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DataStorage.isPreUpgradableLayout_added(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DatanodeJspHelper"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.DirectoryScanner"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.adjustCrcChannelPosition_added(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.BlockWriteStreams, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.append_added(org.apache.hadoop.hdfs.protocol.Block, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.checkAndUpdate_added(long, java.io.File, java.io.File, org.apache.hadoop.hdfs.server.datanode.FSDataset.FSVolume)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.createRbw_added(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.createTemporary_added(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.detachBlock_removed(org.apache.hadoop.hdfs.protocol.Block, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.getBlockReport_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.getChannelPosition_removed(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.BlockWriteStreams)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.getNumFailedVolumes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.getReplicaVisibleLength_added(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.getReplica_added(long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.hasEnoughResource_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.initReplicaRecovery_added(org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand.RecoveringBlock)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.recoverAppend_added(org.apache.hadoop.hdfs.protocol.Block, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.recoverClose_added(org.apache.hadoop.hdfs.protocol.Block, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.recoverRbw_added(org.apache.hadoop.hdfs.protocol.Block, long, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.setChannelPosition_removed(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.BlockWriteStreams, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.unlinkBlock_added(org.apache.hadoop.hdfs.protocol.Block, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.updateBlock_removed(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.updateReplicaUnderRecovery_added(org.apache.hadoop.hdfs.protocol.Block, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.validateBlockMetadata_removed(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDataset.writeToBlock_removed(org.apache.hadoop.hdfs.protocol.Block, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.adjustCrcChannelPosition_added(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.BlockWriteStreams, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.append_added(org.apache.hadoop.hdfs.protocol.Block, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.createRbw_added(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.createTemporary_added(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.getBlockReport_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.getChannelPosition_removed(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.BlockWriteStreams)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.getReplicaVisibleLength_added(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.getReplica_added(long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.hasEnoughResource_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.initReplicaRecovery_added(org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand.RecoveringBlock)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.recoverAppend_added(org.apache.hadoop.hdfs.protocol.Block, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.recoverClose_added(org.apache.hadoop.hdfs.protocol.Block, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.recoverRbw_added(org.apache.hadoop.hdfs.protocol.Block, long, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.setChannelPosition_removed(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.BlockWriteStreams, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.updateBlock_removed(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.updateReplicaUnderRecovery_added(org.apache.hadoop.hdfs.protocol.Block, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.validateBlockMetadata_removed(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.writeToBlock_removed(org.apache.hadoop.hdfs.protocol.Block, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.Replica"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.ReplicaInfo"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.ReplicaNotFoundException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter.SecureResources"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.metrics"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.metrics.DataNodeMetrics"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.metrics.DataNodeMetrics.readMetadataOp"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.metrics.DataNodeMetrics.volumeFailures"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.metrics.FSDatasetMBean"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.datanode.metrics.FSDatasetMBean.getNumFailedVolumes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.BackupNode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.BackupStorage"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.BlockManager"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicy"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicy.NotEnoughReplicasException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyDefault"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.CancelDelegationTokenServlet"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.CheckpointSignature"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.CheckpointSignature.ctor_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.ContentSummaryServlet"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor.ctor_added(org.apache.hadoop.hdfs.protocol.DatanodeID, java.lang.String, java.lang.String, long, long, long, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor.ctor_added(org.apache.hadoop.hdfs.protocol.DatanodeID, long, long, long, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor.ctor_removed(org.apache.hadoop.hdfs.protocol.DatanodeID, java.lang.String, java.lang.String, long, long, long, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor.ctor_removed(org.apache.hadoop.hdfs.protocol.DatanodeID, long, long, long, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor.getVolumeFailures_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor.needKeyUpdate"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor.updateRegInfo_changed(org.apache.hadoop.hdfs.protocol.DatanodeID)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSClusterStats"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSEditLog"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSEditLog.close_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSEditLog.createEditLogFile_removed(java.io.File)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSEditLog.getOutputStreamIterator_added(org.apache.hadoop.hdfs.server.namenode.JournalStream.JournalType)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSEditLog.logOpenFile_changed(java.lang.String, org.apache.hadoop.hdfs.server.namenode.INodeFileUnderConstruction)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSEditLog.logSync_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSEditLog.open_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSEditLog.setBufferCapacity_added(int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSEditLogLoader"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.ckptState"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.corruptPreUpgradeStorage_removed(java.io.File)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.ctor_removed(java.io.File)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.editLog"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.getFSNamesystem_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.getRestoreFailedStorage_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.imageDigest"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.isConversionNeeded_removed(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.isPreUpgradableLayout_added(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.moveCurrent_added(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.moveLastCheckpoint_added(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.namesystem"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.newImageDigest"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.saveCurrent_added(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.saveFSImage_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.setImageDigest_added(org.apache.hadoop.io.MD5Hash)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImage.setRestoreFailedStorage_added(boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSImageSerialization"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSInodeInfo"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.AUDIT_FORMAT"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.abandonBlock_changed(org.apache.hadoop.hdfs.protocol.Block, java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.cancelDelegationToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.completeFile_changed(java.lang.String, java.lang.String, org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.concat_added(java.lang.String, java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.corruptReplicas"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.createSymlink_added(java.lang.String, java.lang.String, org.apache.hadoop.fs.permission.PermissionStatus, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.delete_changed(java.lang.String, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.fsNamesystemObject"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getAdditionalBlock_changed(java.lang.String, java.lang.String, org.apache.hadoop.hdfs.protocol.Block, java.util.HashMap)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockCapacity_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations_removed(java.lang.String, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getBlockLocations_removed(java.lang.String, long, long, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getCorruptReplicaBlocksCount_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getCorruptReplicaBlocks_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getDFSNameNodeAddress_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getDeadNodes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getDecomNodes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getDecommissioningNodes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getDelegationTokenSecretManager_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getDelegationToken_added(org.apache.hadoop.io.Text)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getExcessBlocks_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFSNamesystem_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getFree_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getListing_changed(java.lang.String, byte[], boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getLiveNodes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getNonDfsUsedSpace_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getNumDeadDataNodes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getNumLiveDataNodes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPendingDeletionBlocks_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPercentRemaining_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getPercentUsed_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getRandomDatanode_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getSafemode_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getStorageDirs_added(org.apache.hadoop.conf.Configuration, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getThreads_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getTotalBlocks_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getTotalFiles_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getTotal_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getUsed_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.getVersion_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.invalidateBlock_removed(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.DatanodeInfo)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.isUpgradeFinalized_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.logUpdateMasterKey_added(org.apache.hadoop.security.token.delegation.DelegationKey)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.mkdirs_changed(java.lang.String, org.apache.hadoop.fs.permission.PermissionStatus, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.numCorruptReplicas_added(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.numDeadDataNodes_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.numLiveDataNodes_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.randomDataNode_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renameTo_removed(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.renewDelegationToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setOwner_changed(java.lang.String, java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setPermission_changed(java.lang.String, org.apache.hadoop.fs.permission.FsPermission)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setReplication_changed(java.lang.String, short)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FSNamesystem.setTimes_changed(java.lang.String, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FileDataServlet"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FileDataServlet.createUri_changed(java.lang.String, org.apache.hadoop.hdfs.protocol.HdfsFileStatus, org.apache.hadoop.security.UserGroupInformation, org.apache.hadoop.hdfs.protocol.ClientProtocol, javax.servlet.http.HttpServletRequest, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FsckServlet"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.FsckServlet.doGet_changed(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.GetDelegationTokenServlet"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.GetImageServlet"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.GetImageServlet.isValidRequestor_added(java.lang.String, org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.INodeSymlink"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.JspHelper"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.ListPathsServlet"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.ListPathsServlet.df"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.addBlock_changed(java.lang.String, java.lang.String, org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.DatanodeInfo[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.cancelDelegationToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.complete_changed(java.lang.String, java.lang.String, org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.concat_added(java.lang.String, java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.createSymlink_added(java.lang.String, java.lang.String, org.apache.hadoop.fs.permission.FsPermission, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.create_changed(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, java.lang.String, org.apache.hadoop.io.EnumSetWritable, boolean, short, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.ctor_added(org.apache.hadoop.conf.Configuration, org.apache.hadoop.hdfs.server.common.HdfsConstants.NamenodeRole)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.endCheckpoint_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, org.apache.hadoop.hdfs.server.namenode.CheckpointSignature)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.errorReport_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, int, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getBlockKeys_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getDelegationToken_added(org.apache.hadoop.io.Text)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getFileInfo_changed(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getFileLinkInfo_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getHostPortString_added(java.net.InetSocketAddress)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getHttpServerAddress_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getInfoServer_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getLinkTarget_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getListing_changed(java.lang.String, byte[], boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getNamesystem_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getRole_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getRpcServerAddress_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getServerDefaults_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getServiceAddress_added(org.apache.hadoop.conf.Configuration, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getServiceRpcServerAddress_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.getStats_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.httpAddress"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.httpServer"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.initialize_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.journalSize_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.journal_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, int, int, byte[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.listCorruptFileBlocks_added(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.loadNamesystem_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.mkdirs_changed(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.namesystem"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.nextGenerationStamp_removed(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.nodeRegistration"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.recoverLease_added(java.lang.String, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.refreshSuperUserGroupsConfiguration_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.refreshUserToGroupsMappings_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.registerDatanode_added(org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.register_changed(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.rename_added(java.lang.String, java.lang.String, org.apache.hadoop.fs.Options.Rename[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.renewDelegationToken_added(org.apache.hadoop.security.token.Token)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.restoreFailedStorage_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.role"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.rollFsImage_changed(org.apache.hadoop.hdfs.server.namenode.CheckpointSignature)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.rpcAddress"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.sendHeartbeat_changed(org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration, long, long, long, int, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.serviceRPCAddress"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.serviceRpcServer"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.setHttpServerAddress_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.setRpcServerAddress_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.setRpcServiceServerAddress_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.setServiceAddress_added(org.apache.hadoop.conf.Configuration, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.startCheckpoint_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.stopRequested"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.updateBlockForPipeline_added(org.apache.hadoop.hdfs.protocol.Block, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.updatePipeline_added(java.lang.String, org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.DatanodeID[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNode.verifyRequest_changed(org.apache.hadoop.hdfs.server.protocol.NodeRegistration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NameNodeMXBean"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NamenodeFsck"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NamenodeFsck.FsckResult"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NamenodeFsck.ctor_removed(org.apache.hadoop.conf.Configuration, org.apache.hadoop.hdfs.server.namenode.NameNode, java.util.Map, javax.servlet.http.HttpServletResponse)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NamenodeFsck.fsck_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.NamenodeFsck.run_removed(java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.RenewDelegationTokenServlet"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.SafeModeException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.SafeModeException.ctor_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.doWork_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.getHttpAddress_added(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode.toString_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.StreamFile"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.StreamFile.CONTENT_LENGTH"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.StreamFile.getDFSClient_changed(javax.servlet.http.HttpServletRequest)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.UnsupportedActionException"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.UpgradeObjectNamenode"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.UpgradeObjectNamenode.getFSNamesystem_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMBean"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMBean.getNumDeadDataNodes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMBean.getNumLiveDataNodes_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMBean.numDeadDataNodes_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMBean.numLiveDataNodes_removed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.blocksTotal"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.capacityRemainingGB"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.capacityTotalGB"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.capacityUsedGB"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.ctor_changed(org.apache.hadoop.hdfs.server.namenode.FSNamesystem, org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.filesTotal"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.missingBlocks"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.numExpiredHeartbeats"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.pendingReplicationBlocks"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.registry"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.scheduledReplicationBlocks"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.totalLoad"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics.underReplicatedBlocks"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeActivityMBean"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeActivtyMBean"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics.ctor_changed(org.apache.hadoop.conf.Configuration, org.apache.hadoop.hdfs.server.common.HdfsConstants.NamenodeRole)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics.numFileInfoOps"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics.numFilesDeleted"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics.numFilesInGetListingOps"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics.numcreateSymlinkOps"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics.numgetLinkTargetOps"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.BlockMetaDataInfo"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand.RecoveringBlock"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.CheckpointCommand"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeCommand"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol.DNA_ACCESSKEYUPDATE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol.FATAL_DISK_ERROR"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol.nextGenerationStamp_removed(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol.registerDatanode_added(org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol.register_removed(org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol.sendHeartbeat_changed(org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration, long, long, long, int, int, int)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration.equals_changed(java.lang.Object)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration.exportedKeys"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration.getAddress_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration.hashCode_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.InterDatanodeProtocol"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.InterDatanodeProtocol.getBlockMetaDataInfo_removed(org.apache.hadoop.hdfs.protocol.Block)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.InterDatanodeProtocol.initReplicaRecovery_added(org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand.RecoveringBlock)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.InterDatanodeProtocol.updateBlock_removed(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.Block, boolean)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.InterDatanodeProtocol.updateReplicaUnderRecovery_added(org.apache.hadoop.hdfs.protocol.Block, long, long)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.KeyUpdateCommand"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeCommand"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.ACT_CHECKPOINT"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.ACT_SHUTDOWN"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.ACT_UNKNOWN"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.FATAL"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.JA_CHECKPOINT_TIME"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.JA_IS_ALIVE"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.JA_JOURNAL"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.JA_JSPOOL_START"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.NOTIFY"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.endCheckpoint_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, org.apache.hadoop.hdfs.server.namenode.CheckpointSignature)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.errorReport_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, int, java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.getBlockKeys_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.getEditLogSize_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.journalSize_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.journal_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, int, int, byte[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.register_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.rollEditLog_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.rollFsImage_changed(org.apache.hadoop.hdfs.server.namenode.CheckpointSignature)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.startCheckpoint_added(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol.versionRequest_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeProtocols"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NamespaceInfo"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.NodeRegistration"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.ReplicaRecoveryInfo"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.ServerCommand"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.ServerCommand.getAction_changed()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.ServerCommand.readFields_changed(java.io.DataInput)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.server.protocol.ServerCommand.write_changed(java.io.DataOutput)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.DFSAdmin"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.DFSAdmin.printTopology_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.DFSAdmin.refreshSuperUserGroupsConfiguration_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.DFSAdmin.refreshUserToGroupsMappings_added()"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.DFSAdmin.restoreFaileStorage_added(java.lang.String)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.DFSck"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.DFSck.ctor_added(org.apache.hadoop.conf.Configuration, java.io.PrintStream)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.DFSck.ctor_changed(org.apache.hadoop.conf.Configuration)"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.DFSck.run_changed(java.lang.String[])"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.DelegationTokenFetcher"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.HDFSConcat"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.JMXGet"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.tools.offlineImageViewer"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+<comment>
+  <identifier id="org.apache.hadoop.hdfs.util"/>
+  <text>
+    InsertCommentsHere
+  </text>
+</comment>
+
+</comments>

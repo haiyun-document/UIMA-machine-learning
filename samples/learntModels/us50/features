@@ -1,0 +1,396 @@
+173
+la 73 5:1
+tualatin 134 2:1
+ky 70 5:1
+ks 67 5:1
+anniston 9 4:1
+call 56 4:1
+wy 171 5:1
+wv 168 5:1
+fort 130 4:1
+phoenix 17 4:1
+lumberton 92 4:1
+decatur 63 4:1
+road 2 2:5
+columbus 128 4:1
+wi 166 5:1
+lake 155 4:1
+ridge 11 4:1
+vermont 31 2:1
+spit 1 2:1
+agra 66 4:1
+hwy 136 2:1
+lnlck 6 2:1
+grand 25 4:1
+junction 26 4:1
+aiea 47 4:1
+mays 113 4:1
+vt 163 5:1
+auburn 82 4:1
+albany 44 4:1
+lamere 161 2:1
+philadelphia 140 4:1
+va 160 5:1
+york 125 4:1
+mall 24 2:1
+in 64 5:1
+il 61 5:1
+harrison 158 2:1
+ludlow 162 4:1
+ut 157 5:1
+us 169 2:1
+id 57 5:1
+way 123 2:1
+milford 37 4:1
+ia 52 5:1
+banner 101 4:1
+westerly 142 4:1
+charleston 144 4:1
+yerington 120 4:1
+city 156 4:1
+college 78 4:1
+tx 153 5:1
+hi 48 5:1
+addison 172 4:1
+dupont 35 2:1
+tn 150 5:1
+center 8 2:1 4:1
+north 13 2:7
+monroe 62 2:2
+village 97 2:1
+DIGIT 5 0:45 2:9 6:51
+park 79 4:1
+ortonville 84 4:1
+hillside 27 2:1
+chicago 60 4:1
+beaverton 137 4:1
+south 58 2:5
+republic 39 2:1
+ga 45 5:1
+power 74 2:1
+sd 147 5:1
+sc 145 5:1
+broad 81 2:1
+highway 112 2:5
+main 50 2:4
+fl 42 5:1
+bway 122 2:1
+market 139 2:1
+salt 154 4:1
+shreveport 72 4:1
+deinhard 53 2:1
+tampa 41 4:1
+bethel 127 2:1
+ri 143 5:1
+new 124 4:1
+southwest 133 2:1
+fremont 108 4:1
+arlington 159 4:1
+raton 117 4:1
+elk 102 4:1
+denver 21 4:1
+metro 14 2:1
+westford 75 4:1
+hollywood 71 2:1
+slappey 43 2:1
+shps 98 2:1
+landing 114 4:1
+mesa 23 2:1
+de 38 2:1 5:1
+worland 170 4:1
+wilson 86 2:1
+dc 34 5:1
+greenwood 59 2:1
+kaahumanu 46 2:1
+faribault 87 4:1
+portsmouth 110 4:1
+state 104 2:4
+washington 33 4:1
+pa 141 5:1
+ct 30 5:1
+bismarck 105 4:1
+co 22 5:2
+poplar 95 4:1
+fairfax 19 2:1
+cuba 40 2:1
+macarthur 151 2:1
+or 138 5:1
+boulevard 36 2:4
+i 116 2:1
+street 20 2:15
+ok 132 5:1
+oh 129 5:1
+a 94 2:1
+of 99 2:1
+humboldt 149 4:1
+cobb 131 4:1
+donnell 89 2:1
+west 49 2:5
+homer 0 2:1 4:1
+76th 164 2:1
+parkway 15 2:1
+ute 51 4:1
+ny 126 5:1
+nv 121 5:1
+bell 107 2:1
+berwyn 77 2:1
+nm 118 5:1
+nj 115 5:1
+nh 111 5:1
+8th 148 2:1
+hartford 29 4:1
+az 18 5:1
+ne 109 5:1
+nd 106 5:1
+nc 103 5:1
+goldfield 119 2:1
+frontage 65 2:1
+6th 68 2:1
+irving 152 4:1
+ar 12 5:1
+lane 54 2:1
+lexington 69 4:1
+avenue 28 2:10
+al 10 5:2
+ak 4 5:1
+hazelwood 90 4:1
+mt 96 5:1
+ms 93 5:1
+, 3 2:50 4:51
+mo 91 5:1
+mn 88 5:1
+east 16 2:4
+greendale 165 4:1
+mi 85 5:1
+bnr 100 2:1
+me 83 5:1
+md 80 5:1
+mc 55 2:1 4:1
+ma 76 5:1
+alderson 167 4:1
+shopping 7 2:1
+northwest 32 2:1
+watertown 146 4:1
+valley 135 2:1
+******* Features ************
+220
+W_philadelphia:6892:4 187
+isAlpha_1_1:1146:2 4
+W_ok:6507:5 179
+W_mesa:1145:2 64
+W_8th:7270:2 195
+W_wy:8418:5 218
+W_monroe:3056:2 107
+W_mi:4204:5 131
+W_parkway:753:2 56
+W_de:1901:5 79
+W_vt:8026:5 210
+isAlpha_1_1:1132:0 51
+W_lane:2664:2 97
+W_new:6108:4 171
+W_shopping:361:2 38
+W_ct:1509:5 71
+E.0:357:2 53
+W_kaahumanu:2272:2 89
+W_co:1117:5 63
+W_lake:7627:4 202
+W_lexington:3413:4 115
+W_sd:7242:5 194
+W_de:1880:2 81
+W_il:3028:5 106
+W_fremont:5324:4 155
+W_berwyn:3791:2 123
+E.0:343:0 88
+W_i:5702:2 163
+W_ga:2244:5 87
+W_lumberton:4540:4 139
+W_cobb:6451:4 178
+W_bnr:4918:2 147
+W_metro:704:2 55
+W_worland:8362:4 217
+W_market:6829:2 186
+W_ortonville:4148:4 130
+W_deinhard:2615:2 96
+W_ma:3763:5 122
+W_milford:1845:4 78
+W_nj:5674:5 162
+W_lnlck:312:2 37
+W_ludlow:7970:4 209
+W_hartford:1453:4 70
+isAllSmallCase_1_1:1069:5 27
+W_salt:7578:4 201
+W_way:6045:2 170
+containsDigit_1_1:1832:2 114
+isAllSmallCase_1_1:1062:4 16
+W_denver:1061:4 62
+W_watertown:7186:4 193
+W_DIGIT:291:6 32
+W_chicago:2972:4 105
+W_or:6801:5 185
+W_ia:2587:5 95
+W_6th:3350:2 113
+W_mo:4498:5 138
+W_bell:5261:2 154
+isAllSmallCase_1_1:1048:2 3
+W_me:4106:5 129
+W_fort:6402:4 177
+W_of:4869:2 146
+W_albany:2188:4 86
+W_north:655:2 54
+W_DIGIT:263:2 102
+W_westford:3707:4 121
+W_tx:7536:5 200
+W_ks:3322:5 112
+W_us:8299:2 216
+W_landing:5618:4 161
+W_nd:5233:5 153
+W_bway:5996:2 169
+W_sc:7144:5 192
+W_boulevard:1782:2 77
+W_DIGIT:249:0 48
+W_lamere:7907:2 208
+E.5:630:6 30
+W_ar:627:5 46
+W_avenue:1390:2 69
+W_ak:235:5 25
+W_beaverton:6745:4 184
+W_ute:2531:4 94
+W_oh:6360:5 176
+W_street:998:2 61
+W_hazelwood:4442:4 137
+W_wv:8271:5 215
+W_greenwood:2909:2 104
+W_shps:4820:2 145
+W_nv:5968:5 168
+W_auburn:4050:4 128
+W_va:7879:5 207
+isAllCapital_1_1:978:6 34
+W_slappey:2125:2 85
+W_mays:5569:4 160
+W_irving:7480:4 199
+W_agra:3266:4 111
+W_dupont:1733:2 76
+W_bismarck:5177:4 152
+W_power:3644:2 120
+W_charleston:7088:4 191
+W_hillside:1341:2 68
+E.4:574:5 23
+singleComma_1_1:572:4 21
+W_ridge:571:4 45
+E.4:567:4 19
+isAllCapital_1_1:950:2 103
+W_fairfax:949:2 60
+W_fl:2097:5 84
+W_,:179:4 20
+W_south:2860:2 101
+W_columbus:6304:4 175
+W_village:4771:2 144
+singleComma_1_1:558:2 11
+W_dc:1705:5 75
+W_alderson:8215:4 214
+W_hwy:6682:2 183
+isAllCapital_1_1:936:0 50
+W_main:2468:2 93
+W_la:3616:5 119
+W_yerington:5912:4 167
+W_donnell:4379:2 136
+W_,:165:2 10
+W_arlington:7823:4 206
+W_junction:1306:4 67
+W_broad:3987:2 127
+W_az:921:5 59
+W_ri:7046:5 190
+W_id:2832:5 100
+W_mt:4743:5 143
+W_al:529:5 42
+W_highway:5506:2 159
+W_macarthur:7417:2 198
+W_frontage:3203:2 110
+W_mn:4351:5 134
+W_state:5114:2 151
+W_wi:8173:5 213
+W_md:3959:5 126
+W_tampa:2041:4 83
+isAlphaNumeric_1_1:1272:6 36
+W_valley:6633:2 182
+W_west:2419:2 92
+singlePunctuation_1_1:1650:4 22
+W_washington:1649:4 74
+W_nh:5478:5 158
+W_road:116:2 9
+isAlphaNumeric_1_1:1265:5 29
+W_bethel:6241:2 174
+W_shreveport:3560:4 118
+W_tn:7389:5 197
+W_in:3175:5 109
+isAlphaNumeric_1_1:1258:4 18
+W_grand:1257:4 66
+W_nc:5086:5 150
+W_goldfield:5849:2 166
+singlePunctuation_1_1:1636:2 12
+W_harrison:7760:2 205
+W_phoenix:865:4 58
+W_westerly:6990:4 189
+isWord_1_1:96:6 33
+isAlphaNumeric_1_1:1244:2 5
+W_call:2776:4 99
+W_hi:2391:5 91
+W_poplar:4687:4 142
+W_anniston:473:4 41
+isWord_1_1:89:5 26
+E.2:469:4 13
+W_ny:6213:5 173
+isWord_1_1:82:4 15
+W_faribault:4295:4 133
+isAlphaNumeric_1_1:1230:0 52
+W_nm:5821:5 165
+W_greendale:8117:4 212
+W_tualatin:6584:2 181
+W_park:3903:4 125
+W_ut:7732:5 204
+E.2:455:2 6
+isWord_1_1:68:2 2
+W_spit:67:2 8
+W_cuba:1978:2 82
+W_portsmouth:5422:4 157
+W_humboldt:7333:4 196
+W_decatur:3119:4 108
+W_pa:6948:5 188
+isWord_1_1:54:0 49
+W_northwest:1586:2 73
+W_elk:5030:4 149
+W_hollywood:3497:2 117
+W_mc:2727:4 98
+W_mall:1194:2 65
+End.:44:6 31
+W_center:424:4 44
+U:38:5 24
+W_aiea:2335:4 90
+W_east:802:2 57
+W_addison:8460:4 219
+W_homer:32:4 14
+W_mc:2713:2 135
+U:31:4 40
+W_york:6157:4 172
+S.:29:4 43
+W_a:4624:2 141
+W_center:410:2 39
+isAlpha_1_1:1174:6 35
+W_southwest:6535:2 180
+W_college:3854:4 124
+W_ky:3469:5 116
+W_raton:5765:4 164
+W_wilson:4232:2 132
+W_ne:5380:5 156
+W_homer:18:2 1
+isAlpha_1_1:1167:5 28
+U:17:2 7
+W_city:7676:4 203
+S.:15:2 0
+W_republic:1929:2 80
+W_76th:8054:2 211
+isAlpha_1_1:1160:4 17
+W_vermont:1537:2 72
+W_banner:4981:4 148
+S.:1:0 47
+W_ms:4596:5 140

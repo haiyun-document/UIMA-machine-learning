@@ -1,0 +1,711 @@
+2012-02-17 11:04:22,501 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = Rays-MacBook-Air.local/192.168.2.111
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.22.0
+STARTUP_MSG:   classpath = /Users/Ray/Documents/hadoop-0.22.0/bin/../conf:/System/Library/Frameworks/JavaVM.framework/Home/lib/tools.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/..:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-common-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-common-test-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-0.22.0-sources.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-ant-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-test-0.22.0-sources.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-test-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-0.22.0-sources.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-examples-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-test-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-tools-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/CRF.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/LBFGS.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ant-1.6.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ant-1.7.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ant-launcher-1.7.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/asm-3.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/aspectjrt-1.6.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/aspectjtools-1.6.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/avro-1.5.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/avro-compiler-1.5.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/avro-ipc-1.5.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/colt.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-cli-1.2.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-codec-1.4.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-collections-3.2.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-daemon-1.0.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-el-1.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-httpclient-3.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-lang-2.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-logging-1.1.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-logging-api-1.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-net-1.4.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/core-3.1.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ecj-3.5.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/guava-r09.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/hsqldb-1.8.0.10.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jackson-core-asl-1.7.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jackson-mapper-asl-1.7.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jasper-compiler-5.5.12.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jasper-runtime-5.5.12.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jdiff-1.0.9.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jets3t-0.7.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jetty-6.1.26.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jetty-util-6.1.26.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsch-0.1.42.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-2.1-jetty-6.1.26.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-api-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/junit-4.8.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/kfs-0.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/log4j-1.2.16.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/mockito-all-1.8.2.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/mockito-all-1.8.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/oro-2.0.8.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/paranamer-2.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/paranamer-ant-2.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/paranamer-generator-2.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/qdox-1.12.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/servlet-api-2.5-20081211.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/slf4j-api-1.6.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/snappy-java-1.0.3.2.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/trove.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/velocity-1.6.4.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/xmlenc-0.52.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-2.1/*.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hdfs/conf:/Users/Ray/Documents/hadoop-0.22.0/bin/../hdfs/hadoop-hdfs-*.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hdfs/lib/*.jar:/Users/Ray/Documents/hadoop/bin/..:/Users/Ray/Documents/hadoop/bin/../conf:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0-sources.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-examples-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-test-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-tools-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/CRF.jar:/Users/Ray/Documents/hadoop/bin/../lib/LBFGS.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-launcher-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/asm-3.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjrt-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjtools-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-compiler-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-ipc-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/colt.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-cli-1.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-codec-1.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-collections-3.2.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-daemon-1.0.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-el-1.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-httpclient-3.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-lang-2.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-1.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-api-1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-net-1.4.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/core-3.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ecj-3.5.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/guava-r09.jar:/Users/Ray/Documents/hadoop/bin/../lib/hsqldb-1.8.0.10.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-core-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-mapper-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-compiler-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-runtime-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jdiff-1.0.9.jar:/Users/Ray/Documents/hadoop/bin/../lib/jets3t-0.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-util-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsch-0.1.42.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-api-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/junit-4.8.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/kfs-0.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/log4j-1.2.16.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/oro-2.0.8.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-ant-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-generator-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/qdox-1.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/servlet-api-2.5-20081211.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-api-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/snappy-java-1.0.3.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/trove.jar:/Users/Ray/Documents/hadoop/bin/../lib/velocity-1.6.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/xmlenc-0.52.jar:/Users/Ray/Documents/hadoop/bin/..:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0-sources.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-examples-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-test-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-tools-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/CRF.jar:/Users/Ray/Documents/hadoop/bin/../lib/LBFGS.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-launcher-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/asm-3.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjrt-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjtools-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-compiler-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-ipc-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/colt.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-cli-1.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-codec-1.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-collections-3.2.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-daemon-1.0.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-el-1.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-httpclient-3.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-lang-2.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-1.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-api-1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-net-1.4.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/core-3.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ecj-3.5.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/guava-r09.jar:/Users/Ray/Documents/hadoop/bin/../lib/hsqldb-1.8.0.10.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-core-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-mapper-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-compiler-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-runtime-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jdiff-1.0.9.jar:/Users/Ray/Documents/hadoop/bin/../lib/jets3t-0.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-util-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsch-0.1.42.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-api-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/junit-4.8.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/kfs-0.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/log4j-1.2.16.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/oro-2.0.8.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-ant-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-generator-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/qdox-1.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/servlet-api-2.5-20081211.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-api-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/snappy-java-1.0.3.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/trove.jar:/Users/Ray/Documents/hadoop/bin/../lib/velocity-1.6.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/xmlenc-0.52.jar
+STARTUP_MSG:   build = http://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.22/common -r 1207774; compiled by 'jenkins' on Sun Dec  4 00:57:22 UTC 2011
+************************************************************/
+2012-02-17 11:04:23,527 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-17 11:04:23,607 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2012-02-17 11:04:23,630 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2012-02-17 11:04:23,651 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2012-02-17 11:04:23,651 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2012-02-17 11:04:23,651 INFO org.mortbay.log: jetty-6.1.26
+2012-02-17 11:04:24,134 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2012-02-17 11:04:24,153 INFO org.apache.hadoop.security.UserGroupInformation: JAAS Configuration already set up for Hadoop, not re-installing.
+2012-02-17 11:04:24,155 INFO org.apache.hadoop.mapred.TaskTracker: Starting tasktracker with owner as Ray
+2012-02-17 11:04:24,166 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2012-02-17 11:04:24,182 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 50049
+2012-02-17 11:04:24,184 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=50049
+2012-02-17 11:04:24,252 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=50049
+2012-02-17 11:04:24,255 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-17 11:04:24,255 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 50049: starting
+2012-02-17 11:04:24,256 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 50049: starting
+2012-02-17 11:04:24,256 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 50049: starting
+2012-02-17 11:04:24,257 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 50049: starting
+2012-02-17 11:04:24,257 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 50049: starting
+2012-02-17 11:04:24,258 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:50049
+2012-02-17 11:04:24,258 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_192.168.2.111:localhost/127.0.0.1:50049
+2012-02-17 11:04:24,263 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2012-02-17 16:48:06,460 ERROR org.apache.hadoop.mapred.TaskTracker: Can not start task tracker because java.io.IOException: Call to localhost/127.0.0.1:8001 failed on local exception: java.io.IOException: Connection reset by peer
+	at org.apache.hadoop.ipc.Client.wrapException(Client.java:1063)
+	at org.apache.hadoop.ipc.Client.call(Client.java:1031)
+	at org.apache.hadoop.ipc.WritableRpcEngine$Invoker.invoke(WritableRpcEngine.java:198)
+	at org.apache.hadoop.mapred.$Proxy4.getProtocolVersion(Unknown Source)
+	at org.apache.hadoop.ipc.WritableRpcEngine.getProxy(WritableRpcEngine.java:235)
+	at org.apache.hadoop.ipc.RPC.getProxy(RPC.java:275)
+	at org.apache.hadoop.ipc.RPC.waitForProxy(RPC.java:206)
+	at org.apache.hadoop.ipc.RPC.waitForProxy(RPC.java:185)
+	at org.apache.hadoop.ipc.RPC.waitForProxy(RPC.java:169)
+	at org.apache.hadoop.mapred.TaskTracker$2.run(TaskTracker.java:699)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at javax.security.auth.Subject.doAs(Subject.java:396)
+	at org.apache.hadoop.security.UserGroupInformation.doAs(UserGroupInformation.java:1153)
+	at org.apache.hadoop.mapred.TaskTracker.initialize(TaskTracker.java:695)
+	at org.apache.hadoop.mapred.TaskTracker.<init>(TaskTracker.java:1380)
+	at org.apache.hadoop.mapred.TaskTracker.main(TaskTracker.java:3608)
+Caused by: java.io.IOException: Connection reset by peer
+	at sun.nio.ch.FileDispatcher.read0(Native Method)
+	at sun.nio.ch.SocketDispatcher.read(SocketDispatcher.java:21)
+	at sun.nio.ch.IOUtil.readIntoNativeBuffer(IOUtil.java:198)
+	at sun.nio.ch.IOUtil.read(IOUtil.java:171)
+	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:243)
+	at org.apache.hadoop.net.SocketInputStream$Reader.performIO(SocketInputStream.java:59)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:159)
+	at org.apache.hadoop.net.SocketInputStream.read(SocketInputStream.java:132)
+	at java.io.FilterInputStream.read(FilterInputStream.java:116)
+	at org.apache.hadoop.ipc.Client$Connection$PingInputStream.read(Client.java:368)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:218)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:237)
+	at java.io.DataInputStream.readInt(DataInputStream.java:370)
+	at org.apache.hadoop.ipc.Client$Connection.receiveResponse(Client.java:760)
+	at org.apache.hadoop.ipc.Client$Connection.run(Client.java:698)
+
+2012-02-17 16:48:06,468 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at Rays-MacBook-Air.local/192.168.2.111
+************************************************************/
+2012-02-17 17:22:25,237 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = Rays-MacBook-Air.local/136.187.146.182
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.22.0
+STARTUP_MSG:   classpath = /Users/Ray/Documents/hadoop-0.22.0/bin/../conf:/System/Library/Frameworks/JavaVM.framework/Home/lib/tools.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/..:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-common-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-common-test-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-0.22.0-sources.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-ant-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-test-0.22.0-sources.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-test-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-0.22.0-sources.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-examples-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-test-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-tools-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/CRF.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/LBFGS.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ant-1.6.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ant-1.7.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ant-launcher-1.7.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/asm-3.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/aspectjrt-1.6.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/aspectjtools-1.6.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/avro-1.5.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/avro-compiler-1.5.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/avro-ipc-1.5.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/colt.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-cli-1.2.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-codec-1.4.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-collections-3.2.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-daemon-1.0.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-el-1.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-httpclient-3.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-lang-2.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-logging-1.1.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-logging-api-1.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-net-1.4.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/core-3.1.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ecj-3.5.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/guava-r09.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/hsqldb-1.8.0.10.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jackson-core-asl-1.7.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jackson-mapper-asl-1.7.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jasper-compiler-5.5.12.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jasper-runtime-5.5.12.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jdiff-1.0.9.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jets3t-0.7.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jetty-6.1.26.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jetty-util-6.1.26.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsch-0.1.42.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-2.1-jetty-6.1.26.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-api-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/junit-4.8.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/kfs-0.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/log4j-1.2.16.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/mockito-all-1.8.2.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/mockito-all-1.8.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/oro-2.0.8.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/paranamer-2.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/paranamer-ant-2.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/paranamer-generator-2.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/qdox-1.12.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/servlet-api-2.5-20081211.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/slf4j-api-1.6.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/snappy-java-1.0.3.2.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/trove.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/velocity-1.6.4.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/xmlenc-0.52.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-2.1/*.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hdfs/conf:/Users/Ray/Documents/hadoop-0.22.0/bin/../hdfs/hadoop-hdfs-*.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hdfs/lib/*.jar:/Users/Ray/Documents/hadoop/bin/..:/Users/Ray/Documents/hadoop/bin/../conf:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0-sources.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-examples-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-test-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-tools-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/CRF.jar:/Users/Ray/Documents/hadoop/bin/../lib/LBFGS.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-launcher-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/asm-3.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjrt-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjtools-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-compiler-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-ipc-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/colt.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-cli-1.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-codec-1.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-collections-3.2.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-daemon-1.0.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-el-1.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-httpclient-3.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-lang-2.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-1.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-api-1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-net-1.4.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/core-3.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ecj-3.5.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/guava-r09.jar:/Users/Ray/Documents/hadoop/bin/../lib/hsqldb-1.8.0.10.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-core-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-mapper-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-compiler-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-runtime-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jdiff-1.0.9.jar:/Users/Ray/Documents/hadoop/bin/../lib/jets3t-0.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-util-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsch-0.1.42.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-api-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/junit-4.8.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/kfs-0.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/log4j-1.2.16.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/oro-2.0.8.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-ant-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-generator-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/qdox-1.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/servlet-api-2.5-20081211.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-api-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/snappy-java-1.0.3.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/trove.jar:/Users/Ray/Documents/hadoop/bin/../lib/velocity-1.6.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/xmlenc-0.52.jar:/Users/Ray/Documents/hadoop/bin/..:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0-sources.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-examples-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-test-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-tools-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/CRF.jar:/Users/Ray/Documents/hadoop/bin/../lib/LBFGS.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-launcher-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/asm-3.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjrt-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjtools-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-compiler-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-ipc-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/colt.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-cli-1.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-codec-1.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-collections-3.2.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-daemon-1.0.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-el-1.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-httpclient-3.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-lang-2.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-1.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-api-1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-net-1.4.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/core-3.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ecj-3.5.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/guava-r09.jar:/Users/Ray/Documents/hadoop/bin/../lib/hsqldb-1.8.0.10.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-core-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-mapper-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-compiler-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-runtime-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jdiff-1.0.9.jar:/Users/Ray/Documents/hadoop/bin/../lib/jets3t-0.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-util-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsch-0.1.42.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-api-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/junit-4.8.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/kfs-0.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/log4j-1.2.16.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/oro-2.0.8.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-ant-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-generator-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/qdox-1.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/servlet-api-2.5-20081211.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-api-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/snappy-java-1.0.3.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/trove.jar:/Users/Ray/Documents/hadoop/bin/../lib/velocity-1.6.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/xmlenc-0.52.jar
+STARTUP_MSG:   build = http://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.22/common -r 1207774; compiled by 'jenkins' on Sun Dec  4 00:57:22 UTC 2011
+************************************************************/
+2012-02-17 17:22:25,840 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-17 17:22:25,900 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2012-02-17 17:22:25,918 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2012-02-17 17:22:25,935 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2012-02-17 17:22:25,935 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2012-02-17 17:22:25,935 INFO org.mortbay.log: jetty-6.1.26
+2012-02-17 17:22:26,339 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2012-02-17 17:22:26,350 INFO org.apache.hadoop.security.UserGroupInformation: JAAS Configuration already set up for Hadoop, not re-installing.
+2012-02-17 17:22:26,352 INFO org.apache.hadoop.mapred.TaskTracker: Starting tasktracker with owner as Ray
+2012-02-17 17:22:26,360 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2012-02-17 17:22:26,371 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 54617
+2012-02-17 17:22:26,373 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=54617
+2012-02-17 17:22:26,419 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=54617
+2012-02-17 17:22:26,420 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-17 17:22:26,421 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 54617: starting
+2012-02-17 17:22:26,421 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 54617: starting
+2012-02-17 17:22:26,422 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 54617: starting
+2012-02-17 17:22:26,422 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 54617: starting
+2012-02-17 17:22:26,422 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 54617: starting
+2012-02-17 17:22:26,422 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:54617
+2012-02-17 17:22:26,422 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_136.187.146.182:localhost/127.0.0.1:54617
+2012-02-17 17:22:26,426 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2012-02-17 17:35:50,313 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at Rays-MacBook-Air.local/136.187.146.182
+************************************************************/
+2012-02-17 17:39:15,418 INFO org.apache.hadoop.mapred.TaskTracker: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting TaskTracker
+STARTUP_MSG:   host = Rays-MacBook-Air.local/136.187.146.182
+STARTUP_MSG:   args = []
+STARTUP_MSG:   version = 0.22.0
+STARTUP_MSG:   classpath = /Users/Ray/Documents/hadoop-0.22.0/bin/../conf:/System/Library/Frameworks/JavaVM.framework/Home/lib/tools.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/..:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-common-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-common-test-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-0.22.0-sources.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-ant-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-test-0.22.0-sources.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-hdfs-test-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-0.22.0-sources.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-examples-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-test-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hadoop-mapred-tools-0.22.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/CRF.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/LBFGS.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ant-1.6.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ant-1.7.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ant-launcher-1.7.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/asm-3.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/aspectjrt-1.6.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/aspectjtools-1.6.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/avro-1.5.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/avro-compiler-1.5.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/avro-ipc-1.5.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/colt.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-cli-1.2.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-codec-1.4.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-collections-3.2.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-daemon-1.0.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-el-1.0.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-httpclient-3.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-lang-2.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-logging-1.1.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-logging-api-1.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/commons-net-1.4.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/core-3.1.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/ecj-3.5.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/guava-r09.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/hsqldb-1.8.0.10.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jackson-core-asl-1.7.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jackson-mapper-asl-1.7.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jasper-compiler-5.5.12.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jasper-runtime-5.5.12.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jdiff-1.0.9.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jets3t-0.7.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jetty-6.1.26.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jetty-util-6.1.26.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsch-0.1.42.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-2.1-jetty-6.1.26.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-api-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/junit-4.8.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/kfs-0.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/log4j-1.2.16.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/mockito-all-1.8.2.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/mockito-all-1.8.5.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/oro-2.0.8.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/paranamer-2.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/paranamer-ant-2.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/paranamer-generator-2.3.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/qdox-1.12.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/servlet-api-2.5-20081211.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/slf4j-api-1.6.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/snappy-java-1.0.3.2.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/trove.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/velocity-1.6.4.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/xmlenc-0.52.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../lib/jsp-2.1/*.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hdfs/conf:/Users/Ray/Documents/hadoop-0.22.0/bin/../hdfs/hadoop-hdfs-*.jar:/Users/Ray/Documents/hadoop-0.22.0/bin/../hdfs/lib/*.jar:/Users/Ray/Documents/hadoop/bin/..:/Users/Ray/Documents/hadoop/bin/../conf:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0-sources.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-examples-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-test-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-tools-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/CRF.jar:/Users/Ray/Documents/hadoop/bin/../lib/LBFGS.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-launcher-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/asm-3.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjrt-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjtools-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-compiler-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-ipc-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/colt.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-cli-1.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-codec-1.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-collections-3.2.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-daemon-1.0.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-el-1.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-httpclient-3.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-lang-2.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-1.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-api-1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-net-1.4.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/core-3.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ecj-3.5.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/guava-r09.jar:/Users/Ray/Documents/hadoop/bin/../lib/hsqldb-1.8.0.10.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-core-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-mapper-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-compiler-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-runtime-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jdiff-1.0.9.jar:/Users/Ray/Documents/hadoop/bin/../lib/jets3t-0.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-util-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsch-0.1.42.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-api-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/junit-4.8.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/kfs-0.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/log4j-1.2.16.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/oro-2.0.8.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-ant-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-generator-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/qdox-1.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/servlet-api-2.5-20081211.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-api-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/snappy-java-1.0.3.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/trove.jar:/Users/Ray/Documents/hadoop/bin/../lib/velocity-1.6.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/xmlenc-0.52.jar:/Users/Ray/Documents/hadoop/bin/..:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0-sources.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-examples-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-test-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../hadoop-mapred-tools-0.22.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/CRF.jar:/Users/Ray/Documents/hadoop/bin/../lib/LBFGS.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ant-launcher-1.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/asm-3.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjrt-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/aspectjtools-1.6.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-compiler-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/avro-ipc-1.5.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/colt.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-cli-1.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-codec-1.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-collections-3.2.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-daemon-1.0.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-el-1.0.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-httpclient-3.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-lang-2.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-1.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-logging-api-1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/commons-net-1.4.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/core-3.1.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/ecj-3.5.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/guava-r09.jar:/Users/Ray/Documents/hadoop/bin/../lib/hsqldb-1.8.0.10.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-core-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jackson-mapper-asl-1.7.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-compiler-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jasper-runtime-5.5.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/jdiff-1.0.9.jar:/Users/Ray/Documents/hadoop/bin/../lib/jets3t-0.7.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jetty-util-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsch-0.1.42.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-2.1-jetty-6.1.26.jar:/Users/Ray/Documents/hadoop/bin/../lib/jsp-api-2.1-glassfish-2.1.v20091210.jar:/Users/Ray/Documents/hadoop/bin/../lib/junit-4.8.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/kfs-0.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/log4j-1.2.16.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/mockito-all-1.8.5.jar:/Users/Ray/Documents/hadoop/bin/../lib/oro-2.0.8.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-ant-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/paranamer-generator-2.3.jar:/Users/Ray/Documents/hadoop/bin/../lib/qdox-1.12.jar:/Users/Ray/Documents/hadoop/bin/../lib/servlet-api-2.5-20081211.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-api-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/slf4j-log4j12-1.6.1.jar:/Users/Ray/Documents/hadoop/bin/../lib/snappy-java-1.0.3.2.jar:/Users/Ray/Documents/hadoop/bin/../lib/trove.jar:/Users/Ray/Documents/hadoop/bin/../lib/velocity-1.6.4.jar:/Users/Ray/Documents/hadoop/bin/../lib/xmlenc-0.52.jar
+STARTUP_MSG:   build = http://svn.apache.org/repos/asf/hadoop/common/branches/branch-0.22/common -r 1207774; compiled by 'jenkins' on Sun Dec  4 00:57:22 UTC 2011
+************************************************************/
+2012-02-17 17:39:16,038 INFO org.mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+2012-02-17 17:39:16,091 INFO org.apache.hadoop.http.HttpServer: Added global filtersafety (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+2012-02-17 17:39:16,109 INFO org.apache.hadoop.http.HttpServer: Port returned by webServer.getConnectors()[0].getLocalPort() before open() is -1. Opening the listener on 50060
+2012-02-17 17:39:16,126 INFO org.apache.hadoop.http.HttpServer: listener.getLocalPort() returned 50060 webServer.getConnectors()[0].getLocalPort() returned 50060
+2012-02-17 17:39:16,126 INFO org.apache.hadoop.http.HttpServer: Jetty bound to port 50060
+2012-02-17 17:39:16,126 INFO org.mortbay.log: jetty-6.1.26
+2012-02-17 17:39:16,520 INFO org.mortbay.log: Started SelectChannelConnector@0.0.0.0:50060
+2012-02-17 17:39:16,530 INFO org.apache.hadoop.security.UserGroupInformation: JAAS Configuration already set up for Hadoop, not re-installing.
+2012-02-17 17:39:16,532 INFO org.apache.hadoop.mapred.TaskTracker: Starting tasktracker with owner as Ray
+2012-02-17 17:39:16,538 INFO org.apache.hadoop.metrics.jvm.JvmMetrics: Initializing JVM Metrics with processName=TaskTracker, sessionId=
+2012-02-17 17:39:16,548 INFO org.apache.hadoop.ipc.Server: Starting Socket Reader #1 for port 49300
+2012-02-17 17:39:16,550 INFO org.apache.hadoop.ipc.metrics.RpcMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=49300
+2012-02-17 17:39:16,595 INFO org.apache.hadoop.ipc.metrics.RpcDetailedMetrics: Initializing RPC Metrics with hostName=TaskTracker, port=49300
+2012-02-17 17:39:16,596 INFO org.apache.hadoop.ipc.Server: IPC Server Responder: starting
+2012-02-17 17:39:16,597 INFO org.apache.hadoop.ipc.Server: IPC Server listener on 49300: starting
+2012-02-17 17:39:16,597 INFO org.apache.hadoop.ipc.Server: IPC Server handler 0 on 49300: starting
+2012-02-17 17:39:16,597 INFO org.apache.hadoop.ipc.Server: IPC Server handler 1 on 49300: starting
+2012-02-17 17:39:16,598 INFO org.apache.hadoop.ipc.Server: IPC Server handler 2 on 49300: starting
+2012-02-17 17:39:16,598 INFO org.apache.hadoop.ipc.Server: IPC Server handler 3 on 49300: starting
+2012-02-17 17:39:16,598 INFO org.apache.hadoop.mapred.TaskTracker: TaskTracker up at: localhost/127.0.0.1:49300
+2012-02-17 17:39:16,599 INFO org.apache.hadoop.mapred.TaskTracker: Starting tracker tracker_136.187.146.182:localhost/127.0.0.1:49300
+2012-02-17 17:39:16,605 WARN org.apache.hadoop.util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+2012-02-17 17:39:16,701 INFO org.apache.hadoop.mapred.TaskTracker: Starting thread: Map-events fetcher for all reduce tasks on tracker_136.187.146.182:localhost/127.0.0.1:49300
+2012-02-17 17:39:16,702 INFO org.apache.hadoop.mapred.TaskTracker:  Using ResourceCalculatorPlugin : null
+2012-02-17 17:39:16,720 WARN org.apache.hadoop.mapreduce.util.ProcessTree: setsid is not available on this machine. So not using it.
+2012-02-17 17:39:16,720 INFO org.apache.hadoop.mapreduce.util.ProcessTree: setsid exited with exit code 0
+2012-02-17 17:39:16,755 INFO org.apache.hadoop.mapreduce.util.ProcfsBasedProcessTree: ProcfsBasedProcessTree currently is supported only on Linux.
+2012-02-17 17:39:16,756 INFO org.apache.hadoop.mapred.TaskTracker: ProcessTree implementation is missing on this system. TaskMemoryManager is disabled.
+2012-02-17 17:39:16,758 INFO org.apache.hadoop.mapred.IndexCache: IndexCache created with max memory = 10485760
+2012-02-17 17:39:16,760 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201202150031_0001 for user-log deletion with retainTimeStamp:1329554356758
+2012-02-17 17:39:16,760 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201202150031_0002 for user-log deletion with retainTimeStamp:1329554356758
+2012-02-17 17:39:16,760 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201202150031_0004 for user-log deletion with retainTimeStamp:1329554356758
+2012-02-17 17:39:16,760 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201202150031_0005 for user-log deletion with retainTimeStamp:1329554356758
+2012-02-17 17:41:11,101 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0001_m_000002_0 task's state:UNASSIGNED
+2012-02-17 17:41:11,105 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0001_m_000002_0 which needs 1 slots
+2012-02-17 17:41:11,105 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0001_m_000002_0 which needs 1 slots
+2012-02-17 17:41:11,106 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: Initializing user Ray on this TT.
+2012-02-17 17:41:11,672 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0001_m_434321395
+2012-02-17 17:41:11,673 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0001_m_434321395 spawned.
+2012-02-17 17:41:12,648 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0001_m_434321395 given task: attempt_201202171739_0001_m_000002_0
+2012-02-17 17:41:13,164 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0001_m_000002_0 0.0% setup > map
+2012-02-17 17:41:13,166 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0001_m_000002_0 is done.
+2012-02-17 17:41:13,166 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0001_m_000002_0  was -1
+2012-02-17 17:41:13,168 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:41:13,369 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 785: No such process
+
+2012-02-17 17:41:13,370 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 785 with SIGTERM. Exit code 1
+2012-02-17 17:41:14,139 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0001_m_000000_0 task's state:UNASSIGNED
+2012-02-17 17:41:14,139 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0001_m_000000_0 which needs 1 slots
+2012-02-17 17:41:14,139 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0001_m_000000_0 which needs 1 slots
+2012-02-17 17:41:14,139 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202171739_0001_m_000002_0
+2012-02-17 17:41:14,139 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:41:14,139 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201202171739_0001_m_000002_0
+2012-02-17 17:41:14,141 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202171739_0001_m_000002_0 not found in cache
+2012-02-17 17:41:14,261 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0001_m_-1584144903
+2012-02-17 17:41:14,261 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0001_m_-1584144903 spawned.
+2012-02-17 17:41:15,143 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0001_m_-1584144903 given task: attempt_201202171739_0001_m_000000_0
+2012-02-17 17:41:15,888 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0001_m_000000_0 0.0% 
+2012-02-17 17:41:15,918 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0001_m_000000_0 0.667% map > sort
+2012-02-17 17:41:15,921 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0001_m_000000_0 is done.
+2012-02-17 17:41:15,921 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0001_m_000000_0  was 28
+2012-02-17 17:41:15,923 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:41:16,113 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 795: No such process
+
+2012-02-17 17:41:16,114 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 795 with SIGTERM. Exit code 1
+2012-02-17 17:41:17,166 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0001_r_000000_0 task's state:UNASSIGNED
+2012-02-17 17:41:17,167 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0001_r_000000_0 which needs 1 slots
+2012-02-17 17:41:17,167 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0001_r_000000_0 which needs 1 slots
+2012-02-17 17:41:17,168 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:41:17,259 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0001_r_434321395
+2012-02-17 17:41:17,259 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0001_r_434321395 spawned.
+2012-02-17 17:41:18,126 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0001_r_434321395 given task: attempt_201202171739_0001_r_000000_0
+2012-02-17 17:41:18,390 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0001_m_434321395 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:41:19,106 INFO org.apache.hadoop.mapred.TaskTracker: Sent out 28 bytes to reduce 0 from map: attempt_201202171739_0001_m_000000_0 given 28/24
+2012-02-17 17:41:19,106 INFO org.apache.hadoop.mapred.TaskTracker: Shuffled 1maps (mapIds=attempt_201202171739_0001_m_000000_0) to reduce 0 in 143s
+2012-02-17 17:41:19,107 INFO org.apache.hadoop.mapred.TaskTracker.clienttrace: src: 136.187.146.182:50060, dest: 136.187.146.182:49402, maps: 1, op: MAPRED_SHUFFLE, reduceID: 0, duration: 143
+2012-02-17 17:41:19,121 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0001_r_000000_0 0.0% 1 / 1 copied.
+2012-02-17 17:41:19,160 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0001_r_000000_0 0.0% 1 / 1 copied.
+2012-02-17 17:41:19,295 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0001_r_000000_0 is in commit-pending, task state:COMMIT_PENDING
+2012-02-17 17:41:19,295 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0001_r_000000_0 0.0% 1 / 1 copied.
+2012-02-17 17:41:20,174 INFO org.apache.hadoop.mapred.TaskTracker: Received commit task action for attempt_201202171739_0001_r_000000_0
+2012-02-17 17:41:20,323 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0001_r_000000_0 1.0% reduce > reduce
+2012-02-17 17:41:20,324 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0001_r_000000_0 is done.
+2012-02-17 17:41:20,324 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0001_r_000000_0  was -1
+2012-02-17 17:41:20,325 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:41:20,510 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 804: No such process
+
+2012-02-17 17:41:20,510 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 804 with SIGTERM. Exit code 1
+2012-02-17 17:41:21,133 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0001_m_-1584144903 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:41:23,192 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0001_m_000001_0 task's state:UNASSIGNED
+2012-02-17 17:41:23,193 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0001_m_000001_0 which needs 1 slots
+2012-02-17 17:41:23,193 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202171739_0001_r_000000_0
+2012-02-17 17:41:23,193 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0001_m_000001_0 which needs 1 slots
+2012-02-17 17:41:23,193 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201202171739_0001_r_000000_0
+2012-02-17 17:41:23,193 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:41:23,282 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0001_m_-792890336
+2012-02-17 17:41:23,282 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0001_m_-792890336 spawned.
+2012-02-17 17:41:24,142 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0001_m_-792890336 given task: attempt_201202171739_0001_m_000001_0
+2012-02-17 17:41:24,648 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0001_m_000001_0 0.0% 
+2012-02-17 17:41:24,684 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0001_m_000001_0 0.0% cleanup > map
+2012-02-17 17:41:24,687 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0001_m_000001_0 is done.
+2012-02-17 17:41:24,687 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0001_m_000001_0  was -1
+2012-02-17 17:41:24,688 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:41:24,879 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 816: No such process
+
+2012-02-17 17:41:24,879 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 816 with SIGTERM. Exit code 1
+2012-02-17 17:41:25,530 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0001_r_434321395 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:41:26,247 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201202171739_0001
+2012-02-17 17:41:26,248 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202171739_0001_m_000001_0 not found in cache
+2012-02-17 17:41:26,263 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201202171739_0001 for user-log deletion with retainTimeStamp:1329554486263
+2012-02-17 17:41:29,898 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0001_m_-792890336 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:45:32,508 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0002_m_000002_0 task's state:UNASSIGNED
+2012-02-17 17:45:32,508 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0002_m_000002_0 which needs 1 slots
+2012-02-17 17:45:32,508 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0002_m_000002_0 which needs 1 slots
+2012-02-17 17:45:32,508 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:45:32,730 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0002_m_-1880795613
+2012-02-17 17:45:32,731 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0002_m_-1880795613 spawned.
+2012-02-17 17:45:33,617 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0002_m_-1880795613 given task: attempt_201202171739_0002_m_000002_0
+2012-02-17 17:45:34,164 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000002_0 0.0% setup > map
+2012-02-17 17:45:34,165 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0002_m_000002_0 is done.
+2012-02-17 17:45:34,165 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0002_m_000002_0  was -1
+2012-02-17 17:45:34,166 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:45:34,378 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1019: No such process
+
+2012-02-17 17:45:34,378 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1019 with SIGTERM. Exit code 1
+2012-02-17 17:45:35,519 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0002_m_000000_0 task's state:UNASSIGNED
+2012-02-17 17:45:35,520 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0002_m_000000_0 which needs 1 slots
+2012-02-17 17:45:35,520 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202171739_0002_m_000002_0
+2012-02-17 17:45:35,520 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0002_m_000000_0 which needs 1 slots
+2012-02-17 17:45:35,520 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201202171739_0002_m_000002_0
+2012-02-17 17:45:35,520 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:45:35,521 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202171739_0002_m_000002_0 not found in cache
+2012-02-17 17:45:35,612 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0002_m_476703011
+2012-02-17 17:45:35,612 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0002_m_476703011 spawned.
+2012-02-17 17:45:36,495 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0002_m_476703011 given task: attempt_201202171739_0002_m_000000_0
+2012-02-17 17:45:37,297 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1029: No such process
+
+2012-02-17 17:45:37,298 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1029 with SIGTERM. Exit code 1
+2012-02-17 17:45:39,398 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0002_m_-1880795613 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:45:42,316 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0002_m_476703011 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 17:45:42,317 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0002_m_000000_0 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 17:45:45,324 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:45:47,544 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0002_m_000000_0 task's state:FAILED_UNCLEAN
+2012-02-17 17:45:47,545 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0002_m_000000_0 which needs 1 slots
+2012-02-17 17:45:47,545 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0002_m_000000_0 which needs 1 slots
+2012-02-17 17:45:47,545 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:45:47,600 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0002_m_171857888
+2012-02-17 17:45:47,600 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0002_m_171857888 spawned.
+2012-02-17 17:45:48,483 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0002_m_171857888 given task: attempt_201202171739_0002_m_000000_0
+2012-02-17 17:45:48,992 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000000_0 0.0% 
+2012-02-17 17:45:48,998 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000000_0 0.0% cleanup > map
+2012-02-17 17:45:48,999 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0002_m_000000_0 is done.
+2012-02-17 17:45:48,999 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0002_m_000000_0  was -1
+2012-02-17 17:45:49,000 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:45:49,203 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1039: No such process
+
+2012-02-17 17:45:49,203 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1039 with SIGTERM. Exit code 1
+2012-02-17 17:45:50,557 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0002_m_000000_1 task's state:UNASSIGNED
+2012-02-17 17:45:50,558 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0002_m_000000_1 which needs 1 slots
+2012-02-17 17:45:50,558 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0002_m_000000_1 which needs 1 slots
+2012-02-17 17:45:50,558 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:45:50,617 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0002_m_762835753
+2012-02-17 17:45:50,617 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0002_m_762835753 spawned.
+2012-02-17 17:45:51,643 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0002_m_762835753 given task: attempt_201202171739_0002_m_000000_1
+2012-02-17 17:45:52,470 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1048: No such process
+
+2012-02-17 17:45:52,470 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1048 with SIGTERM. Exit code 1
+2012-02-17 17:45:54,224 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0002_m_171857888 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:45:57,490 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0002_m_762835753 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 17:45:57,490 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0002_m_000000_1 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 17:46:00,495 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:46:02,579 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0002_m_000000_1 task's state:FAILED_UNCLEAN
+2012-02-17 17:46:02,580 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0002_m_000000_1 which needs 1 slots
+2012-02-17 17:46:02,580 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0002_m_000000_1 which needs 1 slots
+2012-02-17 17:46:02,580 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:46:02,646 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0002_m_44306524
+2012-02-17 17:46:02,646 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0002_m_44306524 spawned.
+2012-02-17 17:46:03,522 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0002_m_44306524 given task: attempt_201202171739_0002_m_000000_1
+2012-02-17 17:46:04,034 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000000_1 0.0% 
+2012-02-17 17:46:04,040 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000000_1 0.0% cleanup > map
+2012-02-17 17:46:04,041 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0002_m_000000_1 is done.
+2012-02-17 17:46:04,042 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0002_m_000000_1  was -1
+2012-02-17 17:46:04,042 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:46:04,253 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1062: No such process
+
+2012-02-17 17:46:04,253 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1062 with SIGTERM. Exit code 1
+2012-02-17 17:46:05,588 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0002_m_000000_2 task's state:UNASSIGNED
+2012-02-17 17:46:05,588 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0002_m_000000_2 which needs 1 slots
+2012-02-17 17:46:05,588 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0002_m_000000_2 which needs 1 slots
+2012-02-17 17:46:05,588 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:46:05,659 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0002_m_678183361
+2012-02-17 17:46:05,660 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0002_m_678183361 spawned.
+2012-02-17 17:46:06,584 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0002_m_678183361 given task: attempt_201202171739_0002_m_000000_2
+2012-02-17 17:46:07,396 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1071: No such process
+
+2012-02-17 17:46:07,397 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1071 with SIGTERM. Exit code 1
+2012-02-17 17:46:09,270 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0002_m_44306524 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:46:12,415 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0002_m_678183361 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 17:46:12,415 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0002_m_000000_2 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 17:46:15,420 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:46:17,607 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0002_m_000000_2 task's state:FAILED_UNCLEAN
+2012-02-17 17:46:17,607 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0002_m_000000_2 which needs 1 slots
+2012-02-17 17:46:17,607 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0002_m_000000_2 which needs 1 slots
+2012-02-17 17:46:17,607 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:46:17,656 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0002_m_2096375077
+2012-02-17 17:46:17,656 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0002_m_2096375077 spawned.
+2012-02-17 17:46:18,520 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0002_m_2096375077 given task: attempt_201202171739_0002_m_000000_2
+2012-02-17 17:46:19,030 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000000_2 0.0% 
+2012-02-17 17:46:19,035 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000000_2 0.0% cleanup > map
+2012-02-17 17:46:19,037 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0002_m_000000_2 is done.
+2012-02-17 17:46:19,037 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0002_m_000000_2  was -1
+2012-02-17 17:46:19,038 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:46:19,258 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1086: No such process
+
+2012-02-17 17:46:19,258 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1086 with SIGTERM. Exit code 1
+2012-02-17 17:46:20,615 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0002_m_000000_3 task's state:UNASSIGNED
+2012-02-17 17:46:20,616 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0002_m_000000_3 which needs 1 slots
+2012-02-17 17:46:20,616 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0002_m_000000_3 which needs 1 slots
+2012-02-17 17:46:20,616 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:46:20,676 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0002_m_282075804
+2012-02-17 17:46:20,676 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0002_m_282075804 spawned.
+2012-02-17 17:46:21,587 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0002_m_282075804 given task: attempt_201202171739_0002_m_000000_3
+2012-02-17 17:46:22,422 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1095: No such process
+
+2012-02-17 17:46:22,422 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1095 with SIGTERM. Exit code 1
+2012-02-17 17:46:24,275 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0002_m_2096375077 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:46:27,438 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0002_m_282075804 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 17:46:27,438 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0002_m_000000_3 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 17:46:30,442 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:46:32,638 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0002_m_000000_3 task's state:FAILED_UNCLEAN
+2012-02-17 17:46:32,638 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0002_m_000000_3 which needs 1 slots
+2012-02-17 17:46:32,638 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0002_m_000000_3 which needs 1 slots
+2012-02-17 17:46:32,638 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:46:32,697 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0002_m_-374935186
+2012-02-17 17:46:32,697 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0002_m_-374935186 spawned.
+2012-02-17 17:46:33,629 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0002_m_-374935186 given task: attempt_201202171739_0002_m_000000_3
+2012-02-17 17:46:34,232 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000000_3 0.0% 
+2012-02-17 17:46:34,239 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000000_3 0.0% cleanup > map
+2012-02-17 17:46:34,242 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0002_m_000000_3 is done.
+2012-02-17 17:46:34,242 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0002_m_000000_3  was -1
+2012-02-17 17:46:34,243 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:46:34,550 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1107: No such process
+
+2012-02-17 17:46:34,550 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1107 with SIGTERM. Exit code 1
+2012-02-17 17:46:35,662 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0002_m_000001_0 task's state:UNASSIGNED
+2012-02-17 17:46:35,662 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0002_m_000001_0 which needs 1 slots
+2012-02-17 17:46:35,663 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202171739_0002_m_000000_3
+2012-02-17 17:46:35,663 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0002_m_000001_0 which needs 1 slots
+2012-02-17 17:46:35,663 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:46:35,711 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0002_m_-858878882
+2012-02-17 17:46:35,712 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0002_m_-858878882 spawned.
+2012-02-17 17:46:36,599 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0002_m_-858878882 given task: attempt_201202171739_0002_m_000001_0
+2012-02-17 17:46:37,107 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000001_0 0.0% 
+2012-02-17 17:46:37,121 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0002_m_000001_0 0.0% cleanup > map
+2012-02-17 17:46:37,123 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0002_m_000001_0 is done.
+2012-02-17 17:46:37,123 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0002_m_000001_0  was -1
+2012-02-17 17:46:37,124 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:46:37,311 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1116: No such process
+
+2012-02-17 17:46:37,312 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1116 with SIGTERM. Exit code 1
+2012-02-17 17:46:38,688 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201202171739_0002
+2012-02-17 17:46:38,689 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202171739_0002_m_000001_0 not found in cache
+2012-02-17 17:46:38,700 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201202171739_0002 for user-log deletion with retainTimeStamp:1329554798691
+2012-02-17 17:46:39,569 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0002_m_-374935186 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:46:42,330 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0002_m_-858878882 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:51:56,993 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0004_m_000002_0 task's state:UNASSIGNED
+2012-02-17 17:51:56,993 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0004_m_000002_0 which needs 1 slots
+2012-02-17 17:51:56,994 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0004_m_000002_0 which needs 1 slots
+2012-02-17 17:51:56,994 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:51:57,194 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0004_m_-1730450863
+2012-02-17 17:51:57,195 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0004_m_-1730450863 spawned.
+2012-02-17 17:51:58,077 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0004_m_-1730450863 given task: attempt_201202171739_0004_m_000002_0
+2012-02-17 17:51:58,588 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000002_0 0.0% setup > map
+2012-02-17 17:51:58,590 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0004_m_000002_0 is done.
+2012-02-17 17:51:58,590 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0004_m_000002_0  was -1
+2012-02-17 17:51:58,591 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:51:58,802 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1230: No such process
+
+2012-02-17 17:51:58,802 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1230 with SIGTERM. Exit code 1
+2012-02-17 17:52:00,005 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0004_m_000000_0 task's state:UNASSIGNED
+2012-02-17 17:52:00,006 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0004_m_000000_0 which needs 1 slots
+2012-02-17 17:52:00,006 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202171739_0004_m_000002_0
+2012-02-17 17:52:00,006 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0004_m_000000_0 which needs 1 slots
+2012-02-17 17:52:00,006 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201202171739_0004_m_000002_0
+2012-02-17 17:52:00,006 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:52:00,007 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202171739_0004_m_000002_0 not found in cache
+2012-02-17 17:52:00,078 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0004_m_-1873427441
+2012-02-17 17:52:00,078 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0004_m_-1873427441 spawned.
+2012-02-17 17:52:00,952 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0004_m_-1873427441 given task: attempt_201202171739_0004_m_000000_0
+2012-02-17 17:52:01,765 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1240: No such process
+
+2012-02-17 17:52:01,765 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1240 with SIGTERM. Exit code 1
+2012-02-17 17:52:03,820 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0004_m_-1730450863 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:52:06,784 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0004_m_-1873427441 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 17:52:06,784 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0004_m_000000_0 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 17:52:09,789 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:52:12,028 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0004_m_000000_0 task's state:FAILED_UNCLEAN
+2012-02-17 17:52:12,028 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0004_m_000000_0 which needs 1 slots
+2012-02-17 17:52:12,029 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0004_m_000000_0 which needs 1 slots
+2012-02-17 17:52:12,029 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:52:12,082 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0004_m_310240722
+2012-02-17 17:52:12,083 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0004_m_310240722 spawned.
+2012-02-17 17:52:12,950 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0004_m_310240722 given task: attempt_201202171739_0004_m_000000_0
+2012-02-17 17:52:13,449 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000000_0 0.0% 
+2012-02-17 17:52:13,453 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000000_0 0.0% cleanup > map
+2012-02-17 17:52:13,455 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0004_m_000000_0 is done.
+2012-02-17 17:52:13,455 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0004_m_000000_0  was -1
+2012-02-17 17:52:13,456 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:52:13,677 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1250: No such process
+
+2012-02-17 17:52:13,678 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1250 with SIGTERM. Exit code 1
+2012-02-17 17:52:15,037 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0004_m_000000_1 task's state:UNASSIGNED
+2012-02-17 17:52:15,037 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0004_m_000000_1 which needs 1 slots
+2012-02-17 17:52:15,038 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0004_m_000000_1 which needs 1 slots
+2012-02-17 17:52:15,038 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:52:15,088 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0004_m_1250332395
+2012-02-17 17:52:15,089 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0004_m_1250332395 spawned.
+2012-02-17 17:52:16,000 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0004_m_1250332395 given task: attempt_201202171739_0004_m_000000_1
+2012-02-17 17:52:16,814 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1259: No such process
+
+2012-02-17 17:52:16,814 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1259 with SIGTERM. Exit code 1
+2012-02-17 17:52:18,695 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0004_m_310240722 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:52:21,832 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0004_m_1250332395 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 17:52:21,832 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0004_m_000000_1 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 17:52:24,837 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:52:27,056 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0004_m_000000_1 task's state:FAILED_UNCLEAN
+2012-02-17 17:52:27,057 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0004_m_000000_1 which needs 1 slots
+2012-02-17 17:52:27,057 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0004_m_000000_1 which needs 1 slots
+2012-02-17 17:52:27,057 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:52:27,104 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0004_m_414344958
+2012-02-17 17:52:27,104 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0004_m_414344958 spawned.
+2012-02-17 17:52:27,988 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0004_m_414344958 given task: attempt_201202171739_0004_m_000000_1
+2012-02-17 17:52:28,510 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000000_1 0.0% 
+2012-02-17 17:52:28,515 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000000_1 0.0% cleanup > map
+2012-02-17 17:52:28,516 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0004_m_000000_1 is done.
+2012-02-17 17:52:28,517 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0004_m_000000_1  was -1
+2012-02-17 17:52:28,517 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:52:28,733 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1273: No such process
+
+2012-02-17 17:52:28,733 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1273 with SIGTERM. Exit code 1
+2012-02-17 17:52:30,065 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0004_m_000000_2 task's state:UNASSIGNED
+2012-02-17 17:52:30,065 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0004_m_000000_2 which needs 1 slots
+2012-02-17 17:52:30,065 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0004_m_000000_2 which needs 1 slots
+2012-02-17 17:52:30,065 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:52:30,111 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0004_m_-1236407383
+2012-02-17 17:52:30,112 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0004_m_-1236407383 spawned.
+2012-02-17 17:52:31,062 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0004_m_-1236407383 given task: attempt_201202171739_0004_m_000000_2
+2012-02-17 17:52:31,887 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1282: No such process
+
+2012-02-17 17:52:31,887 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1282 with SIGTERM. Exit code 1
+2012-02-17 17:52:33,752 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0004_m_414344958 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:52:36,906 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0004_m_-1236407383 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 17:52:36,906 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0004_m_000000_2 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 17:52:39,911 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:52:42,085 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0004_m_000000_2 task's state:FAILED_UNCLEAN
+2012-02-17 17:52:42,085 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0004_m_000000_2 which needs 1 slots
+2012-02-17 17:52:42,086 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0004_m_000000_2 which needs 1 slots
+2012-02-17 17:52:42,086 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:52:42,133 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0004_m_-1216183974
+2012-02-17 17:52:42,133 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0004_m_-1216183974 spawned.
+2012-02-17 17:52:43,040 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0004_m_-1216183974 given task: attempt_201202171739_0004_m_000000_2
+2012-02-17 17:52:43,609 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000000_2 0.0% 
+2012-02-17 17:52:43,615 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000000_2 0.0% cleanup > map
+2012-02-17 17:52:43,617 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0004_m_000000_2 is done.
+2012-02-17 17:52:43,617 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0004_m_000000_2  was -1
+2012-02-17 17:52:43,618 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:52:43,828 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1296: No such process
+
+2012-02-17 17:52:43,829 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1296 with SIGTERM. Exit code 1
+2012-02-17 17:52:45,093 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0004_m_000000_3 task's state:UNASSIGNED
+2012-02-17 17:52:45,094 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0004_m_000000_3 which needs 1 slots
+2012-02-17 17:52:45,094 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0004_m_000000_3 which needs 1 slots
+2012-02-17 17:52:45,094 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:52:45,146 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0004_m_1838848363
+2012-02-17 17:52:45,147 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0004_m_1838848363 spawned.
+2012-02-17 17:52:46,088 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0004_m_1838848363 given task: attempt_201202171739_0004_m_000000_3
+2012-02-17 17:52:46,877 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1305: No such process
+
+2012-02-17 17:52:46,877 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1305 with SIGTERM. Exit code 1
+2012-02-17 17:52:48,847 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0004_m_-1216183974 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:52:51,896 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0004_m_1838848363 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 17:52:51,896 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0004_m_000000_3 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 17:52:54,900 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:52:57,113 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0004_m_000000_3 task's state:FAILED_UNCLEAN
+2012-02-17 17:52:57,114 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0004_m_000000_3 which needs 1 slots
+2012-02-17 17:52:57,114 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0004_m_000000_3 which needs 1 slots
+2012-02-17 17:52:57,114 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:52:57,169 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0004_m_76443767
+2012-02-17 17:52:57,169 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0004_m_76443767 spawned.
+2012-02-17 17:52:58,080 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0004_m_76443767 given task: attempt_201202171739_0004_m_000000_3
+2012-02-17 17:52:58,596 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000000_3 0.0% 
+2012-02-17 17:52:58,601 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000000_3 0.0% cleanup > map
+2012-02-17 17:52:58,603 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0004_m_000000_3 is done.
+2012-02-17 17:52:58,603 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0004_m_000000_3  was -1
+2012-02-17 17:52:58,604 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:52:58,804 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1319: No such process
+
+2012-02-17 17:52:58,804 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1319 with SIGTERM. Exit code 1
+2012-02-17 17:53:00,123 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0004_m_000001_0 task's state:UNASSIGNED
+2012-02-17 17:53:00,124 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0004_m_000001_0 which needs 1 slots
+2012-02-17 17:53:00,124 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202171739_0004_m_000000_3
+2012-02-17 17:53:00,124 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0004_m_000001_0 which needs 1 slots
+2012-02-17 17:53:00,124 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 17:53:00,169 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0004_m_-1939664905
+2012-02-17 17:53:00,170 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0004_m_-1939664905 spawned.
+2012-02-17 17:53:01,043 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0004_m_-1939664905 given task: attempt_201202171739_0004_m_000001_0
+2012-02-17 17:53:01,547 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000001_0 0.0% 
+2012-02-17 17:53:01,561 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0004_m_000001_0 0.0% cleanup > map
+2012-02-17 17:53:01,563 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0004_m_000001_0 is done.
+2012-02-17 17:53:01,563 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0004_m_000001_0  was -1
+2012-02-17 17:53:01,564 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 17:53:01,766 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1328: No such process
+
+2012-02-17 17:53:01,766 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1328 with SIGTERM. Exit code 1
+2012-02-17 17:53:03,150 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201202171739_0004
+2012-02-17 17:53:03,151 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202171739_0004_m_000001_0 not found in cache
+2012-02-17 17:53:03,153 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201202171739_0004 for user-log deletion with retainTimeStamp:1329555183153
+2012-02-17 17:53:03,821 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0004_m_76443767 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 17:53:06,785 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0004_m_-1939664905 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 18:09:00,715 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0005_m_000002_0 task's state:UNASSIGNED
+2012-02-17 18:09:00,720 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0005_m_000002_0 which needs 1 slots
+2012-02-17 18:09:00,721 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0005_m_000002_0 which needs 1 slots
+2012-02-17 18:09:00,721 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 18:09:00,885 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0005_m_-1435028364
+2012-02-17 18:09:00,885 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0005_m_-1435028364 spawned.
+2012-02-17 18:09:01,731 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0005_m_-1435028364 given task: attempt_201202171739_0005_m_000002_0
+2012-02-17 18:09:02,238 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000002_0 0.0% setup > map
+2012-02-17 18:09:02,239 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0005_m_000002_0 is done.
+2012-02-17 18:09:02,239 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0005_m_000002_0  was -1
+2012-02-17 18:09:02,240 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 18:09:02,506 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1600: No such process
+
+2012-02-17 18:09:02,506 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1600 with SIGTERM. Exit code 1
+2012-02-17 18:09:03,723 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0005_m_000000_0 task's state:UNASSIGNED
+2012-02-17 18:09:03,723 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0005_m_000000_0 which needs 1 slots
+2012-02-17 18:09:03,723 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202171739_0005_m_000002_0
+2012-02-17 18:09:03,723 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0005_m_000000_0 which needs 1 slots
+2012-02-17 18:09:03,723 INFO org.apache.hadoop.mapred.TaskTracker: About to purge task: attempt_201202171739_0005_m_000002_0
+2012-02-17 18:09:03,723 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 18:09:03,724 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202171739_0005_m_000002_0 not found in cache
+2012-02-17 18:09:03,784 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0005_m_-814330902
+2012-02-17 18:09:03,785 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0005_m_-814330902 spawned.
+2012-02-17 18:09:04,629 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0005_m_-814330902 given task: attempt_201202171739_0005_m_000000_0
+2012-02-17 18:09:05,435 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1610: No such process
+
+2012-02-17 18:09:05,435 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1610 with SIGTERM. Exit code 1
+2012-02-17 18:09:07,520 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0005_m_-1435028364 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 18:09:10,450 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0005_m_-814330902 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 18:09:10,450 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0005_m_000000_0 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 18:09:13,455 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 18:09:15,736 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0005_m_000000_0 task's state:FAILED_UNCLEAN
+2012-02-17 18:09:15,736 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0005_m_000000_0 which needs 1 slots
+2012-02-17 18:09:15,737 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0005_m_000000_0 which needs 1 slots
+2012-02-17 18:09:15,737 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 18:09:15,778 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0005_m_784167584
+2012-02-17 18:09:15,778 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0005_m_784167584 spawned.
+2012-02-17 18:09:16,627 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0005_m_784167584 given task: attempt_201202171739_0005_m_000000_0
+2012-02-17 18:09:17,118 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000000_0 0.0% 
+2012-02-17 18:09:17,124 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000000_0 0.0% cleanup > map
+2012-02-17 18:09:17,125 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0005_m_000000_0 is done.
+2012-02-17 18:09:17,126 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0005_m_000000_0  was -1
+2012-02-17 18:09:17,127 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 18:09:17,341 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1620: No such process
+
+2012-02-17 18:09:17,342 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1620 with SIGTERM. Exit code 1
+2012-02-17 18:09:18,742 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0005_m_000000_1 task's state:UNASSIGNED
+2012-02-17 18:09:18,743 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0005_m_000000_1 which needs 1 slots
+2012-02-17 18:09:18,743 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0005_m_000000_1 which needs 1 slots
+2012-02-17 18:09:18,743 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 18:09:18,788 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0005_m_1806025472
+2012-02-17 18:09:18,788 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0005_m_1806025472 spawned.
+2012-02-17 18:09:19,696 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0005_m_1806025472 given task: attempt_201202171739_0005_m_000000_1
+2012-02-17 18:09:20,565 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1629: No such process
+
+2012-02-17 18:09:20,566 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1629 with SIGTERM. Exit code 1
+2012-02-17 18:09:22,357 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0005_m_784167584 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 18:09:25,581 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0005_m_1806025472 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 18:09:25,581 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0005_m_000000_1 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 18:09:28,586 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 18:09:30,755 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0005_m_000000_1 task's state:FAILED_UNCLEAN
+2012-02-17 18:09:30,756 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0005_m_000000_1 which needs 1 slots
+2012-02-17 18:09:30,756 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0005_m_000000_1 which needs 1 slots
+2012-02-17 18:09:30,756 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 18:09:30,802 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0005_m_26087854
+2012-02-17 18:09:30,803 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0005_m_26087854 spawned.
+2012-02-17 18:09:31,744 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0005_m_26087854 given task: attempt_201202171739_0005_m_000000_1
+2012-02-17 18:09:32,269 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000000_1 0.0% 
+2012-02-17 18:09:32,274 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000000_1 0.0% cleanup > map
+2012-02-17 18:09:32,276 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0005_m_000000_1 is done.
+2012-02-17 18:09:32,276 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0005_m_000000_1  was -1
+2012-02-17 18:09:32,277 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 18:09:32,474 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1643: No such process
+
+2012-02-17 18:09:32,474 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1643 with SIGTERM. Exit code 1
+2012-02-17 18:09:33,761 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0005_m_000000_2 task's state:UNASSIGNED
+2012-02-17 18:09:33,761 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0005_m_000000_2 which needs 1 slots
+2012-02-17 18:09:33,761 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0005_m_000000_2 which needs 1 slots
+2012-02-17 18:09:33,761 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 18:09:33,808 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0005_m_636569517
+2012-02-17 18:09:33,809 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0005_m_636569517 spawned.
+2012-02-17 18:09:34,762 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0005_m_636569517 given task: attempt_201202171739_0005_m_000000_2
+2012-02-17 18:09:35,590 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1652: No such process
+
+2012-02-17 18:09:35,590 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1652 with SIGTERM. Exit code 1
+2012-02-17 18:09:37,489 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0005_m_26087854 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 18:09:40,606 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0005_m_636569517 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 18:09:40,606 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0005_m_000000_2 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 18:09:43,610 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 18:09:45,776 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0005_m_000000_2 task's state:FAILED_UNCLEAN
+2012-02-17 18:09:45,777 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0005_m_000000_2 which needs 1 slots
+2012-02-17 18:09:45,777 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0005_m_000000_2 which needs 1 slots
+2012-02-17 18:09:45,777 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 18:09:45,818 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0005_m_1355029267
+2012-02-17 18:09:45,818 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0005_m_1355029267 spawned.
+2012-02-17 18:09:46,669 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0005_m_1355029267 given task: attempt_201202171739_0005_m_000000_2
+2012-02-17 18:09:47,226 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000000_2 0.0% 
+2012-02-17 18:09:47,231 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000000_2 0.0% cleanup > map
+2012-02-17 18:09:47,232 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0005_m_000000_2 is done.
+2012-02-17 18:09:47,233 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0005_m_000000_2  was -1
+2012-02-17 18:09:47,234 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 18:09:47,455 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1667: No such process
+
+2012-02-17 18:09:47,456 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1667 with SIGTERM. Exit code 1
+2012-02-17 18:09:48,783 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0005_m_000000_3 task's state:UNASSIGNED
+2012-02-17 18:09:48,783 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0005_m_000000_3 which needs 1 slots
+2012-02-17 18:09:48,783 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0005_m_000000_3 which needs 1 slots
+2012-02-17 18:09:48,783 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 18:09:48,829 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0005_m_-1397266282
+2012-02-17 18:09:48,829 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0005_m_-1397266282 spawned.
+2012-02-17 18:09:49,733 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0005_m_-1397266282 given task: attempt_201202171739_0005_m_000000_3
+2012-02-17 18:09:50,590 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1676: No such process
+
+2012-02-17 18:09:50,590 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1676 with SIGTERM. Exit code 1
+2012-02-17 18:09:52,472 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0005_m_1355029267 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 18:09:55,605 WARN org.apache.hadoop.mapred.TaskRunner: attempt_201202171739_0005_m_000000_3 : Child Error
+java.io.IOException: Task process exit with nonzero status of 255.
+	at org.apache.hadoop.mapred.TaskRunner.run(TaskRunner.java:212)
+2012-02-17 18:09:55,605 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0005_m_-1397266282 exited with exit code 255. Number of tasks it ran: 0
+2012-02-17 18:09:58,610 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 18:10:00,798 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0005_m_000000_3 task's state:FAILED_UNCLEAN
+2012-02-17 18:10:00,799 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0005_m_000000_3 which needs 1 slots
+2012-02-17 18:10:00,799 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0005_m_000000_3 which needs 1 slots
+2012-02-17 18:10:00,799 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 18:10:00,841 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0005_m_1725425533
+2012-02-17 18:10:00,842 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0005_m_1725425533 spawned.
+2012-02-17 18:10:01,702 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0005_m_1725425533 given task: attempt_201202171739_0005_m_000000_3
+2012-02-17 18:10:02,200 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000000_3 0.0% 
+2012-02-17 18:10:02,206 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000000_3 0.0% cleanup > map
+2012-02-17 18:10:02,208 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0005_m_000000_3 is done.
+2012-02-17 18:10:02,208 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0005_m_000000_3  was -1
+2012-02-17 18:10:02,209 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 18:10:02,420 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1690: No such process
+
+2012-02-17 18:10:02,420 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1690 with SIGTERM. Exit code 1
+2012-02-17 18:10:03,804 INFO org.apache.hadoop.mapred.TaskTracker: LaunchTaskAction (registerTask): attempt_201202171739_0005_m_000001_0 task's state:UNASSIGNED
+2012-02-17 18:10:03,805 INFO org.apache.hadoop.mapred.TaskTracker: Trying to launch : attempt_201202171739_0005_m_000001_0 which needs 1 slots
+2012-02-17 18:10:03,805 INFO org.apache.hadoop.mapred.TaskTracker: Received KillTaskAction for task: attempt_201202171739_0005_m_000000_3
+2012-02-17 18:10:03,805 INFO org.apache.hadoop.mapred.TaskTracker: In TaskLauncher, current free slots : 2 and trying to launch attempt_201202171739_0005_m_000001_0 which needs 1 slots
+2012-02-17 18:10:03,805 INFO org.apache.hadoop.mapreduce.server.tasktracker.Localizer: User-directories for the user Ray are already initialized on this TT. Not doing anything.
+2012-02-17 18:10:03,849 INFO org.apache.hadoop.mapred.JvmManager: In JvmRunner constructed JVM ID: jvm_201202171739_0005_m_-1619837014
+2012-02-17 18:10:03,849 INFO org.apache.hadoop.mapred.JvmManager: JVM Runner jvm_201202171739_0005_m_-1619837014 spawned.
+2012-02-17 18:10:04,717 INFO org.apache.hadoop.mapred.TaskTracker: JVM with ID: jvm_201202171739_0005_m_-1619837014 given task: attempt_201202171739_0005_m_000001_0
+2012-02-17 18:10:05,232 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000001_0 0.0% 
+2012-02-17 18:10:05,244 INFO org.apache.hadoop.mapred.TaskTracker: attempt_201202171739_0005_m_000001_0 0.0% cleanup > map
+2012-02-17 18:10:05,246 INFO org.apache.hadoop.mapred.TaskTracker: Task attempt_201202171739_0005_m_000001_0 is done.
+2012-02-17 18:10:05,246 INFO org.apache.hadoop.mapred.TaskTracker: reported output size for attempt_201202171739_0005_m_000001_0  was -1
+2012-02-17 18:10:05,247 INFO org.apache.hadoop.mapred.TaskTracker: addFreeSlot : current free slots : 2
+2012-02-17 18:10:05,452 WARN org.apache.hadoop.mapreduce.util.ProcessTree: Error executing shell command org.apache.hadoop.util.Shell$ExitCodeException: kill: 1699: No such process
+
+2012-02-17 18:10:05,453 INFO org.apache.hadoop.mapreduce.util.ProcessTree: Signaling process 1699 with SIGTERM. Exit code 1
+2012-02-17 18:10:06,827 INFO org.apache.hadoop.mapred.TaskTracker: Received 'KillJobAction' for job: job_201202171739_0005
+2012-02-17 18:10:06,828 INFO org.apache.hadoop.mapred.IndexCache: Map ID attempt_201202171739_0005_m_000001_0 not found in cache
+2012-02-17 18:10:06,840 INFO org.apache.hadoop.mapred.UserLogCleaner: Adding job_201202171739_0005 for user-log deletion with retainTimeStamp:1329556206839
+2012-02-17 18:10:07,434 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0005_m_1725425533 exited with exit code 0. Number of tasks it ran: 1
+2012-02-17 18:10:10,468 INFO org.apache.hadoop.mapred.JvmManager: JVM : jvm_201202171739_0005_m_-1619837014 exited with exit code 0. Number of tasks it ran: 1

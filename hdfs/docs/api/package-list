@@ -1,0 +1,15 @@
+org.apache.hadoop.fs
+org.apache.hadoop.hdfs
+org.apache.hadoop.hdfs.protocol
+org.apache.hadoop.hdfs.security.token.block
+org.apache.hadoop.hdfs.security.token.delegation
+org.apache.hadoop.hdfs.server.balancer
+org.apache.hadoop.hdfs.server.common
+org.apache.hadoop.hdfs.server.datanode
+org.apache.hadoop.hdfs.server.datanode.metrics
+org.apache.hadoop.hdfs.server.namenode
+org.apache.hadoop.hdfs.server.namenode.metrics
+org.apache.hadoop.hdfs.server.protocol
+org.apache.hadoop.hdfs.tools
+org.apache.hadoop.hdfs.tools.offlineImageViewer
+org.apache.hadoop.hdfs.util

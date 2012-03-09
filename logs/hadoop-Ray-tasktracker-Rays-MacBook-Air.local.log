@@ -1,0 +1,4 @@
+2012-02-20 09:00:03,924 INFO org.apache.hadoop.mapred.TaskTracker: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down TaskTracker at Rays-MacBook-Air.local/136.187.146.182
+************************************************************/

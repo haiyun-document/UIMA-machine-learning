@@ -1,0 +1,33 @@
+2012-02-20 08:46:54,416 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2012-02-20 08:46:54,622 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 3624 bytes.
+2012-02-20 08:46:54,626 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 4 bytes.
+2012-02-20 08:46:54,643 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: defaultReplication = 1
+2012-02-20 08:46:54,643 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: maxReplication = 512
+2012-02-20 08:46:54,643 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: minReplication = 1
+2012-02-20 08:46:54,643 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: maxReplicationStreams = 2
+2012-02-20 08:46:54,643 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: shouldCheckForEnoughRacks = false
+2012-02-20 08:46:54,643 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2012-02-20 08:46:54,646 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.83375 MB
+2012-02-20 08:46:54,646 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2012-02-20 08:46:54,646 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2012-02-20 08:46:54,908 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=Ray
+2012-02-20 08:46:54,909 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2012-02-20 08:46:54,909 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2012-02-20 08:46:54,910 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isBlockTokenEnabled=false blockKeyUpdateInterval=0 min(s), blockTokenLifetime=0 min(s)
+2012-02-20 08:46:54,923 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2012-02-20 08:46:54,950 INFO org.apache.hadoop.hdfs.server.common.Storage: Loading image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-20 08:46:54,951 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 37
+2012-02-20 08:46:54,957 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2012-02-20 08:46:54,958 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 3624 loaded in 0 seconds.
+2012-02-20 08:46:54,959 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /tmp/hadoop-Ray/dfs/namesecondary/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2012-02-20 08:46:54,959 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2012-02-20 08:46:54,961 INFO org.apache.hadoop.hdfs.server.common.Storage: Saving image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-20 08:46:54,964 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 3624 saved in 0 seconds.
+2012-02-20 08:46:54,978 INFO org.apache.hadoop.hdfs.server.common.Storage: Saving image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-20 08:46:54,981 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 3624 saved in 0 seconds.
+2012-02-20 08:46:55,006 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL localhost:50070putimage=1&port=50090&machine=0.0.0.0&token=-33:1014621752:0:1329695214000:1329653048844:dc1528791668f878c285c0b152a203a7&newChecksum=dc1528791668f878c285c0b152a203a7
+2012-02-20 08:46:55,193 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 3624
+2012-02-20 09:00:03,838 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down SecondaryNameNode at Rays-MacBook-Air.local/136.187.146.182
+************************************************************/

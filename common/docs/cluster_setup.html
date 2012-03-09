@@ -1,0 +1,1814 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.9">
+<meta name="Forrest-skin-name" content="pelt">
+<title>Cluster Setup</title>
+<link type="text/css" href="skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="skin/print.css" rel="stylesheet">
+<link type="text/css" href="skin/profile.css" rel="stylesheet">
+<script src="skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://hadoop.apache.org/">Hadoop</a> &gt; <a href="http://hadoop.apache.org/common/">Common</a><script src="skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<!--+
+    |header
+    +-->
+<div class="header">
+<!--+
+    |start group logo
+    +-->
+<div class="grouplogo">
+<a href="http://hadoop.apache.org/"><img class="logoImage" alt="Hadoop" src="images/hadoop-logo.jpg" title="Apache Hadoop"></a>
+</div>
+<!--+
+    |end group logo
+    +-->
+<!--+
+    |start Project Logo
+    +-->
+<div class="projectlogo">
+<a href="http://hadoop.apache.org/core/"><img class="logoImage" alt="Hadoop" src="images/common-logo.jpg" title="Scalable Computing Platform"></a>
+</div>
+<!--+
+    |end Project Logo
+    +-->
+<!--+
+    |start Search
+    +-->
+<div class="searchbox">
+<form action="http://www.google.com/search" method="get" class="roundtopsmall">
+<input value="hadoop.apache.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="25" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                    <input name="Search" value="Search" type="submit">
+</form>
+</div>
+<!--+
+    |end search
+    +-->
+<!--+
+    |start Tabs
+    +-->
+<ul id="tabs">
+<li>
+<a class="unselected" href="http://hadoop.apache.org/common/">Project</a>
+</li>
+<li>
+<a class="unselected" href="http://wiki.apache.org/hadoop">Wiki</a>
+</li>
+<li class="current">
+<a class="selected" href="index.html">Common 0.22 Documentation</a>
+</li>
+</ul>
+<!--+
+    |end Tabs
+    +-->
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<!--+
+    |start Subtabs
+    +-->
+<div id="level2tabs"></div>
+<!--+
+    |end Endtabs
+    +-->
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+
+             &nbsp;
+           </div>
+<!--+
+    |start Menu, mainarea
+    +-->
+<!--+
+    |start Menu
+    +-->
+<div id="menu">
+<div onclick="SwitchMenu('menu_selected_1.1', 'skin/')" id="menu_selected_1.1Title" class="menutitle" style="background-image: url('skin/images/chapter_open.gif');">Getting Started</div>
+<div id="menu_selected_1.1" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="index.html">Overview</a>
+</div>
+<div class="menuitem">
+<a href="single_node_setup.html">Single Node Setup</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Cluster Setup</div>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_1.2', 'skin/')" id="menu_1.2Title" class="menutitle">Guides</div>
+<div id="menu_1.2" class="menuitemgroup">
+<div class="menuitem">
+<a href="commands_manual.html">Hadoop Commands</a>
+</div>
+<div class="menuitem">
+<a href="file_system_shell.html">File System Shell</a>
+</div>
+<div class="menuitem">
+<a href="service_level_auth.html">Service Level Authorization</a>
+</div>
+<div class="menuitem">
+<a href="native_libraries.html">Native Libraries</a>
+</div>
+<div class="menuitem">
+<a href="Superusers.html">Superusers Acting On Behalf Of Other Users</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_1.3', 'skin/')" id="menu_1.3Title" class="menutitle">Miscellaneous</div>
+<div id="menu_1.3" class="menuitemgroup">
+<div class="menuitem">
+<a href="api/index.html">API Docs</a>
+</div>
+<div class="menuitem">
+<a href="jdiff/changes.html">API Changes</a>
+</div>
+<div class="menuitem">
+<a href="http://wiki.apache.org/hadoop/Common">Wiki</a>
+</div>
+<div class="menuitem">
+<a href="http://wiki.apache.org/hadoop/Common/FAQ">FAQ</a>
+</div>
+<div class="menuitem">
+<a href="releasenotes.html">Release Notes</a>
+</div>
+<div class="menuitem">
+<a href="changes.html">Change Log</a>
+</div>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<!--+
+  |alternative credits
+  +-->
+<div id="credit2"></div>
+</div>
+<!--+
+    |end Menu
+    +-->
+<!--+
+    |start content
+    +-->
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="cluster_setup.pdf"><img alt="PDF -icon" src="skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Cluster Setup</h1>
+<div id="front-matter">
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Purpose">Purpose</a>
+</li>
+<li>
+<a href="#Pre-requisites">Pre-requisites</a>
+</li>
+<li>
+<a href="#Installation">Installation</a>
+</li>
+<li>
+<a href="#Configuration">Configuration</a>
+<ul class="minitoc">
+<li>
+<a href="#Configuration+Files">Configuration Files</a>
+</li>
+<li>
+<a href="#Site+Configuration">Site Configuration</a>
+<ul class="minitoc">
+<li>
+<a href="#Configuring+the+Environment+of+the+Hadoop+Daemons">Configuring the Environment of the Hadoop Daemons</a>
+</li>
+<li>
+<a href="#Configuring+the+Hadoop+Daemons">Configuring the Hadoop Daemons</a>
+</li>
+<li>
+<a href="#Real-World+Cluster+Configurations">Real-World Cluster Configurations</a>
+</li>
+<li>
+<a href="#Configuring+Memory+Parameters+for+MapReduce+Jobs">Configuring Memory Parameters for MapReduce Jobs</a>
+</li>
+<li>
+<a href="#Task+Controllers">Task Controllers</a>
+</li>
+<li>
+<a href="#Monitoring+Health+of+TaskTracker+Nodes">Monitoring Health of TaskTracker Nodes</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Slaves">Slaves</a>
+</li>
+<li>
+<a href="#Logging">Logging</a>
+<ul class="minitoc">
+<li>
+<a href="#History+Logging">History Logging</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Cluster+Restartability">Cluster Restartability</a>
+<ul class="minitoc">
+<li>
+<a href="#Map%2FReduce">Map/Reduce</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Hadoop+Rack+Awareness">Hadoop Rack Awareness</a>
+</li>
+<li>
+<a href="#Hadoop+Startup">Hadoop Startup</a>
+</li>
+<li>
+<a href="#Hadoop+Shutdown">Hadoop Shutdown</a>
+</li>
+</ul>
+</div>
+</div>
+  
+    
+<a name="Purpose"></a>
+<h2 class="h3">Purpose</h2>
+<div class="section">
+<p>This document describes how to install, configure and manage non-trivial
+      Hadoop clusters ranging from a few nodes to extremely large clusters with 
+      thousands of nodes.</p>
+<p>
+      To play with Hadoop, you may first want to install Hadoop on a single machine (see <a href="single_node_setup.html"> Hadoop Quick Start</a>).
+      </p>
+</div>
+    
+    
+<a name="Pre-requisites"></a>
+<h2 class="h3">Pre-requisites</h2>
+<div class="section">
+<ol>
+        
+<li>
+          Make sure all <a href="single_node_setup.html#PreReqs">requisite</a> software 
+          is installed on all nodes in your cluster.
+        </li>
+        
+<li>
+          
+<a href="single_node_setup.html#Download">Get</a> the Hadoop software.
+        </li>
+      
+</ol>
+</div>
+    
+    
+<a name="Installation"></a>
+<h2 class="h3">Installation</h2>
+<div class="section">
+<p>Installing a Hadoop cluster typically involves unpacking the software 
+      on all the machines in the cluster.</p>
+<p>Typically one machine in the cluster is designated as the 
+      <span class="codefrag">NameNode</span> and another machine the as <span class="codefrag">JobTracker</span>,
+      exclusively. These are the <em>masters</em>. The rest of the machines in 
+      the cluster act as both <span class="codefrag">DataNode</span> <em>and</em> 
+      <span class="codefrag">TaskTracker</span>. These are the <em>slaves</em>.</p>
+<p>The root of the distribution is referred to as 
+      <span class="codefrag">HADOOP_HOME</span>. All machines in the cluster usually have the same 
+      <span class="codefrag">HADOOP_HOME</span> path.</p>
+</div>
+    
+    
+<a name="Configuration"></a>
+<h2 class="h3">Configuration</h2>
+<div class="section">
+<p>The following sections describe how to configure a Hadoop cluster.</p>
+<a name="Configuration+Files"></a>
+<h3 class="h4">Configuration Files</h3>
+<p>Hadoop configuration is driven by two types of important 
+        configuration files:</p>
+<ol>
+          
+<li>
+            Read-only default configuration - 
+            <a href="http://hadoop.apache.org/common/docs/current/core-default.html">src/core/core-default.xml</a>, 
+            <a href="http://hadoop.apache.org/hdfs/docs/current/hdfs-default.html">src/hdfs/hdfs-default.xml</a>, 
+            <a href="http://hadoop.apache.org/mapreduce/docs/current/mapred-default.html">src/mapred/mapred-default.xml</a> and
+            <a href="http://hadoop.apache.org/mapreduce/docs/current/mapred_queues.xml">conf/mapred-queues.xml.template</a>.
+          </li>
+          
+<li>
+            Site-specific configuration - 
+            <a href="#core-site.xml">conf/core-site.xml</a>, 
+            <a href="#hdfs-site.xml">conf/hdfs-site.xml</a>, 
+            <a href="#mapred-site.xml">conf/mapred-site.xml</a> and
+            <a href="#mapred-queues.xml">conf/mapred-queues.xml</a>.
+          </li>
+        
+</ol>
+<p>To learn more about how the Hadoop framework is controlled by these 
+        configuration files, look 
+        <a href="api/org/apache/hadoop/conf/Configuration.html">here</a>.</p>
+<p>Additionally, you can control the Hadoop scripts found in the 
+        <span class="codefrag">bin/</span> directory of the distribution, by setting site-specific 
+        values via the <span class="codefrag">conf/hadoop-env.sh</span>.</p>
+<a name="Site+Configuration"></a>
+<h3 class="h4">Site Configuration</h3>
+<p>To configure the Hadoop cluster you will need to configure the
+        <em>environment</em> in which the Hadoop daemons execute as well as
+        the <em>configuration parameters</em> for the Hadoop daemons.</p>
+<p>The Hadoop daemons are <span class="codefrag">NameNode</span>/<span class="codefrag">DataNode</span> 
+        and <span class="codefrag">JobTracker</span>/<span class="codefrag">TaskTracker</span>.</p>
+<a name="Configuring+the+Environment+of+the+Hadoop+Daemons"></a>
+<h4>Configuring the Environment of the Hadoop Daemons</h4>
+<p>Administrators should use the <span class="codefrag">conf/hadoop-env.sh</span> script
+          to do site-specific customization of the Hadoop daemons' process 
+          environment.</p>
+<p>At the very least you should specify the
+          <span class="codefrag">JAVA_HOME</span> so that it is correctly defined on each
+          remote node.</p>
+<p>Administrators can configure individual daemons using the
+          configuration options <span class="codefrag">HADOOP_*_OPTS</span>. Various options 
+          available are shown below in the table. </p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+          
+<tr>
+<th colspan="1" rowspan="1">Daemon</th><th colspan="1" rowspan="1">Configure Options</th>
+</tr>
+          
+<tr>
+<td colspan="1" rowspan="1">NameNode</td><td colspan="1" rowspan="1">HADOOP_NAMENODE_OPTS</td>
+</tr>
+          
+<tr>
+<td colspan="1" rowspan="1">DataNode</td><td colspan="1" rowspan="1">HADOOP_DATANODE_OPTS</td>
+</tr>
+          
+<tr>
+<td colspan="1" rowspan="1">SecondaryNamenode</td>
+              <td colspan="1" rowspan="1">HADOOP_SECONDARYNAMENODE_OPTS</td>
+</tr>
+          
+<tr>
+<td colspan="1" rowspan="1">JobTracker</td><td colspan="1" rowspan="1">HADOOP_JOBTRACKER_OPTS</td>
+</tr>
+          
+<tr>
+<td colspan="1" rowspan="1">TaskTracker</td><td colspan="1" rowspan="1">HADOOP_TASKTRACKER_OPTS</td>
+</tr>
+          
+</table>
+<p> For example, To configure Namenode to use parallelGC, the
+          following statement should be added in <span class="codefrag">hadoop-env.sh</span> :
+          <br>
+<span class="codefrag">
+          export HADOOP_NAMENODE_OPTS="-XX:+UseParallelGC ${HADOOP_NAMENODE_OPTS}"
+          </span>
+<br>
+</p>
+<p>Other useful configuration parameters that you can customize 
+          include:</p>
+<ul>
+            
+<li>
+              
+<span class="codefrag">HADOOP_LOG_DIR</span> - The directory where the daemons'
+              log files are stored. They are automatically created if they don't
+              exist.
+            </li>
+            
+<li>
+              
+<span class="codefrag">HADOOP_HEAPSIZE</span> - The maximum amount of heapsize 
+              to use, in MB e.g. <span class="codefrag">1000MB</span>. This is used to 
+              configure the heap size for the hadoop daemon. By default,
+              the value is <span class="codefrag">1000MB</span>.
+            </li>
+          
+</ul>
+<a name="Configuring+the+Hadoop+Daemons"></a>
+<h4>Configuring the Hadoop Daemons</h4>
+<p>This section deals with important parameters to be specified in the
+          following:</p>
+<a name="core-site.xml" id="core-site.xml"></a>
+<p>
+<span class="codefrag">conf/core-site.xml</span>:</p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+  		    
+<tr>
+		      
+<th colspan="1" rowspan="1">Parameter</th>
+		      <th colspan="1" rowspan="1">Value</th> 
+		      <th colspan="1" rowspan="1">Notes</th>
+		    
+</tr>
+		    
+<tr>
+              
+<td colspan="1" rowspan="1">fs.defaultFS</td>
+              <td colspan="1" rowspan="1">URI of <span class="codefrag">NameNode</span>.</td>
+              <td colspan="1" rowspan="1"><em>hdfs://hostname/</em></td>
+            
+</tr>
+          
+</table>
+<a name="hdfs-site.xml" id="hdfs-site.xml"></a>
+<p>
+<span class="codefrag">conf/hdfs-site.xml</span>:</p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">   
+        
+<tr>
+          
+<th colspan="1" rowspan="1">Parameter</th>
+          <th colspan="1" rowspan="1">Value</th> 
+          <th colspan="1" rowspan="1">Notes</th>
+        
+</tr>
+		    
+<tr>
+		      
+<td colspan="1" rowspan="1">dfs.namenode.name.dir</td>
+		      <td colspan="1" rowspan="1">
+		        Path on the local filesystem where the <span class="codefrag">NameNode</span> 
+		        stores the namespace and transactions logs persistently.</td>
+		      <td colspan="1" rowspan="1">
+		        If this is a comma-delimited list of directories then the name 
+		        table is replicated in all of the directories, for redundancy.
+		      </td>
+		    
+</tr>
+		    
+<tr>
+		      
+<td colspan="1" rowspan="1">dfs.datanode.data.dir</td>
+		      <td colspan="1" rowspan="1">
+		        Comma separated list of paths on the local filesystem of a 
+		        <span class="codefrag">DataNode</span> where it should store its blocks.
+		      </td>
+		      <td colspan="1" rowspan="1">
+		        If this is a comma-delimited list of directories, then data will 
+		        be stored in all named directories, typically on different 
+		        devices.
+		      </td>
+		    
+</tr>
+      
+</table>
+<a name="mapred-site.xml" id="mapred-site.xml"></a>
+<p>
+<span class="codefrag">conf/mapred-site.xml</span>:</p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+          
+<tr>
+          
+<th colspan="1" rowspan="1">Parameter</th>
+          <th colspan="1" rowspan="1">Value</th> 
+          <th colspan="1" rowspan="1">Notes</th>
+        
+</tr>
+        
+<tr>
+          
+<td colspan="1" rowspan="1">mapreduce.jobtracker.address</td>
+          <td colspan="1" rowspan="1">Host or IP and port of <span class="codefrag">JobTracker</span>.</td>
+          <td colspan="1" rowspan="1"><em>host:port</em> pair.</td>
+        
+</tr>
+		    
+<tr>
+		      
+<td colspan="1" rowspan="1">mapreduce.jobtracker.system.dir</td>
+		      <td colspan="1" rowspan="1">
+		        Path on the HDFS where where the Map/Reduce framework stores 
+		        system files e.g. <span class="codefrag">/hadoop/mapred/system/</span>.
+		      </td>
+		      <td colspan="1" rowspan="1">
+		        This is in the default filesystem (HDFS) and must be accessible 
+		        from both the server and client machines.
+		      </td>
+		    
+</tr>
+		    
+<tr>
+		      
+<td colspan="1" rowspan="1">mapreduce.cluster.local.dir</td>
+		      <td colspan="1" rowspan="1">
+		        Comma-separated list of paths on the local filesystem where 
+		        temporary Map/Reduce data is written.
+		      </td>
+		      <td colspan="1" rowspan="1">Multiple paths help spread disk i/o.</td>
+		    
+</tr>
+		    
+<tr>
+		      
+<td colspan="1" rowspan="1">mapred.tasktracker.{map|reduce}.tasks.maximum</td>
+		      <td colspan="1" rowspan="1">
+		        The maximum number of Map/Reduce tasks, which are run 
+		        simultaneously on a given <span class="codefrag">TaskTracker</span>, individually.
+		      </td>
+		      <td colspan="1" rowspan="1">
+		        Defaults to 2 (2 maps and 2 reduces), but vary it depending on 
+		        your hardware.
+		      </td>
+		    
+</tr>
+		    
+<tr>
+		      
+<td colspan="1" rowspan="1">dfs.hosts/dfs.hosts.exclude</td>
+		      <td colspan="1" rowspan="1">List of permitted/excluded DataNodes.</td>
+		      <td colspan="1" rowspan="1">
+		        If necessary, use these files to control the list of allowable 
+		        datanodes.
+		      </td>
+		    
+</tr>
+		    
+<tr>
+		      
+<td colspan="1" rowspan="1">mapreduce.jobtracker.hosts.filename/mapreduce.jobtracker.hosts.exclude.filename</td>
+		      <td colspan="1" rowspan="1">List of permitted/excluded TaskTrackers.</td>
+		      <td colspan="1" rowspan="1">
+		        If necessary, use these files to control the list of allowable 
+		        TaskTrackers.
+		      </td>
+      
+</tr>
+      
+<tr>
+        
+<td colspan="1" rowspan="1">mapreduce.cluster.acls.enabled</td>
+        <td colspan="1" rowspan="1">Boolean, specifying whether checks for queue ACLs and job ACLs
+            are to be done for authorizing users for doing queue operations and
+            job operations.
+        </td>
+        <td colspan="1" rowspan="1">
+          If <em>true</em>, queue ACLs are checked while submitting
+          and administering jobs and job ACLs are checked for authorizing
+          view and modification of jobs. Queue ACLs are specified using the
+          configuration parameters of the form defined below under
+          mapred-queues.xml. Job ACLs are described at
+          mapred-tutorial in "Job Authorization" section.
+          For enabling this flag(mapreduce.cluster.acls.enabled), this is to be
+          set to true in mapred-site.xml on JobTracker node and on all
+          TaskTracker nodes.
+        </td>
+      
+</tr>
+  		    
+		  
+</table>
+<p>Typically all the above parameters are marked as 
+          <a href="api/org/apache/hadoop/conf/Configuration.html#FinalParams">
+          final</a> to ensure that they cannot be overriden by user-applications.
+          </p>
+<a name="mapred-queues.xml" id="mapred-queues.xml"></a>
+<p>
+<span class="codefrag">conf/mapred-queues.xml
+          </span>:</p>
+<p>This file is used to configure the queues in the Map/Reduce
+          system. Queues are abstract entities in the JobTracker that can be
+          used to manage collections of jobs. They provide a way for 
+          administrators to organize jobs in specific ways and to enforce 
+          certain policies on such collections, thus providing varying
+          levels of administrative control and management functions on jobs.
+          </p>
+<p>One can imagine the following sample scenarios:</p>
+<ul>
+            
+<li> Jobs submitted by a particular group of users can all be 
+            submitted to one queue. </li> 
+            
+<li> Long running jobs in an organization can be submitted to a
+            queue. </li>
+            
+<li> Short running jobs can be submitted to a queue and the number
+            of jobs that can run concurrently can be restricted. </li> 
+          
+</ul>
+<p>The usage of queues is closely tied to the scheduler configured
+          at the JobTracker via <em>mapreduce.jobtracker.taskscheduler</em>.
+          The degree of support of queues depends on the scheduler used. Some
+          schedulers support a single queue, while others support more complex
+          configurations. Schedulers also implement the policies that apply 
+          to jobs in a queue. Some schedulers, such as the Fairshare scheduler,
+          implement their own mechanisms for collections of jobs and do not rely
+          on queues provided by the framework. The administrators are 
+          encouraged to refer to the documentation of the scheduler they are
+          interested in for determining the level of support for queues.</p>
+<p>The Map/Reduce framework supports some basic operations on queues
+          such as job submission to a specific queue, access control for queues,
+          queue states, viewing configured queues and their properties
+          and refresh of queue properties. In order to fully implement some of
+          these operations, the framework takes the help of the configured
+          scheduler.</p>
+<p>The following types of queue configurations are possible:</p>
+<ul>
+            
+<li> Single queue: The default configuration in Map/Reduce comprises
+            of a single queue, as supported by the default scheduler. All jobs
+            are submitted to this default queue which maintains jobs in a priority
+            based FIFO order.</li>
+            
+<li> Multiple single level queues: Multiple queues are defined, and
+            jobs can be submitted to any of these queues. Different policies
+            can be applied to these queues by schedulers that support this 
+            configuration to provide a better level of support. For example,
+            the <a href="http://hadoop.apache.org/mapreduce/docs/current/capacity_scheduler.html">capacity scheduler</a>
+            provides ways of configuring different 
+            capacity and fairness guarantees on these queues.</li>
+            
+<li> Hierarchical queues: Hierarchical queues are a configuration in
+            which queues can contain other queues within them recursively. The
+            queues that contain other queues are referred to as 
+            container queues. Queues that do not contain other queues are 
+            referred as leaf or job queues. Jobs can only be submitted to leaf
+            queues. Hierarchical queues can potentially offer a higher level 
+            of control to administrators, as schedulers can now build a
+            hierarchy of policies where policies applicable to a container
+            queue can provide context for policies applicable to queues it
+            contains. It also opens up possibilities for delegating queue
+            administration where administration of queues in a container queue
+            can be turned over to a different set of administrators, within
+            the context provided by the container queue. For example, the
+            <a href="http://hadoop.apache.org/mapreduce/docs/current/capacity_scheduler.html">capacity scheduler</a>
+            uses hierarchical queues to partition capacity of a cluster
+            among container queues, and allowing queues they contain to divide
+            that capacity in more ways.</li> 
+          
+</ul>
+<p>Most of the configuration of the queues can be refreshed/reloaded
+          without restarting the Map/Reduce sub-system by editing this
+          configuration file as described in the section on
+          <a href="commands_manual.html#RefreshQueues">reloading queue 
+          configuration</a>.
+          Not all configuration properties can be reloaded of course,
+          as will description of each property below explain.</p>
+<p>The format of conf/mapred-queues.xml is different from the other 
+          configuration files, supporting nested configuration
+          elements to support hierarchical queues. The format is as follows:
+          </p>
+<pre class="code">
+          &lt;queues&gt;
+            &lt;queue&gt;
+              &lt;name&gt;$queue-name&lt;/name&gt;
+              &lt;state&gt;$state&lt;/state&gt;
+              &lt;queue&gt;
+                &lt;name&gt;$child-queue1&lt;/name&gt;
+                &lt;properties&gt;
+                   &lt;property key="$key" value="$value"/&gt;
+                   ...
+                &lt;/properties&gt;
+                &lt;queue&gt;
+                  &lt;name&gt;$grand-child-queue1&lt;/name&gt;
+                  ...
+                &lt;/queue&gt;
+              &lt;/queue&gt;
+              &lt;queue&gt;
+                &lt;name&gt;$child-queue2&lt;/name&gt;
+                ...
+              &lt;/queue&gt;
+              ...
+              ...
+              ...
+              &lt;queue&gt;
+                &lt;name&gt;$leaf-queue&lt;/name&gt;
+                &lt;acl-submit-job&gt;$acls&lt;/acl-submit-job&gt;
+                &lt;acl-administer-jobs&gt;$acls&lt;/acl-administer-jobs&gt;
+                &lt;properties&gt;
+                   &lt;property key="$key" value="$value"/&gt;
+                   ...
+                &lt;/properties&gt;
+              &lt;/queue&gt;
+            &lt;/queue&gt;
+          &lt;/queues&gt;
+          </pre>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+            
+<tr>
+              
+<th colspan="1" rowspan="1">Tag/Attribute</th>
+              <th colspan="1" rowspan="1">Value</th>
+              <th colspan="1" rowspan="1">
+              	<a href="commands_manual.html#RefreshQueues">Refresh-able?</a>
+              </th>
+              <th colspan="1" rowspan="1">Notes</th>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1"><a name="queues_tag" id="queues_tag"></a>queues</td>
+              <td colspan="1" rowspan="1">Root element of the configuration file.</td>
+              <td colspan="1" rowspan="1">Not-applicable</td>
+              <td colspan="1" rowspan="1">All the queues are nested inside this root element of the
+              file. There can be only one root queues element in the file.</td>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1">aclsEnabled</td>
+              <td colspan="1" rowspan="1">Boolean attribute to the
+              <a href="#queues_tag"><em>&lt;queues&gt;</em></a> tag
+              specifying whether ACLs are supported for controlling job
+              submission and administration for <em>all</em> the queues
+              configured.
+              </td>
+              <td colspan="1" rowspan="1">Yes</td>
+              <td colspan="1" rowspan="1">If <em>false</em>, ACLs are ignored for <em>all</em> the
+              configured queues. <br>
+<br>
+              If <em>true</em>, the user and group details of the user
+              are checked against the configured ACLs of the corresponding
+              job-queue while submitting and administering jobs. ACLs can be
+              specified for each queue using the queue-specific tags
+              "acl-$acl_name", defined below. ACLs are checked only against
+              the job-queues, i.e. the leaf-level queues; ACLs configured
+              for the rest of the queues in the hierarchy are ignored.
+              </td>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1"><a name="queue_tag" id="queue_tag"></a>queue</td>
+              <td colspan="1" rowspan="1">A child element of the
+              <a href="#queues_tag"><em>&lt;queues&gt;</em></a> tag or another
+              <a href="#queue_tag"><em>&lt;queue&gt;</em></a>. Denotes a queue
+              in the system.
+              </td>
+              <td colspan="1" rowspan="1">Not applicable</td>
+              <td colspan="1" rowspan="1">Queues can be hierarchical and so this element can contain
+              children of this same type.</td>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1">name</td>
+              <td colspan="1" rowspan="1">Child element of a 
+              <a href="#queue_tag"><em>&lt;queue&gt;</em></a> specifying the
+              name of the queue.</td>
+              <td colspan="1" rowspan="1">No</td>
+              <td colspan="1" rowspan="1">Name of the queue cannot contain the character <em>":"</em>
+              which is reserved as the queue-name delimiter when addressing a
+              queue in a hierarchy.</td>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1">state</td>
+              <td colspan="1" rowspan="1">Child element of a
+              <a href="#queue_tag"><em>&lt;queue&gt;</em></a> specifying the
+              state of the queue.
+              </td>
+              <td colspan="1" rowspan="1">Yes</td>
+              <td colspan="1" rowspan="1">Each queue has a corresponding state. A queue in
+              <em>'running'</em> state can accept new jobs, while a queue in
+              <em>'stopped'</em> state will stop accepting any new jobs. State
+              is defined and respected by the framework only for the
+              leaf-level queues and is ignored for all other queues.
+              <br>
+<br>
+              The state of the queue can be viewed from the command line using
+              <span class="codefrag">'bin/mapred queue'</span> command and also on the the Web
+              UI.<br>
+<br>
+              Administrators can stop and start queues at runtime using the
+              feature of <a href="commands_manual.html#RefreshQueues">reloading
+              queue configuration</a>. If a queue is stopped at runtime, it
+              will complete all the existing running jobs and will stop
+              accepting any new jobs.
+              </td>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1">acl-submit-job</td>
+              <td colspan="1" rowspan="1">Child element of a
+              <a href="#queue_tag"><em>&lt;queue&gt;</em></a> specifying the
+              list of users and groups that can submit jobs to the specified
+              queue.</td>
+              <td colspan="1" rowspan="1">Yes</td>
+              <td colspan="1" rowspan="1">
+              Applicable only to leaf-queues.<br>
+<br>
+              The list of users and groups are both comma separated
+              list of names. The two lists are separated by a blank.
+              Example: <em>user1,user2 group1,group2</em>.
+              If you wish to define only a list of groups, provide
+              a blank at the beginning of the value.
+              <br>
+<br>
+              
+</td>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1">acl-administer-jobs</td>
+              <td colspan="1" rowspan="1">Child element of a
+              <a href="#queue_tag"><em>&lt;queue&gt;</em></a> specifying the
+              list of users and groups that can view job details, change the
+              priority of a job or kill a job that has been submitted to the
+              specified queue.
+              </td>
+              <td colspan="1" rowspan="1">Yes</td>
+              <td colspan="1" rowspan="1">
+              Applicable only to leaf-queues.<br>
+<br>
+              The list of users and groups are both comma separated
+              list of names. The two lists are separated by a blank.
+              Example: <em>user1,user2 group1,group2</em>.
+              If you wish to define only a list of groups, provide
+              a blank at the beginning of the value. Note that the
+              owner of a job can always change the priority or kill
+              his/her own job, irrespective of the ACLs.
+              </td>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1"><a name="properties_tag" id="properties_tag"></a>properties</td>
+              <td colspan="1" rowspan="1">Child element of a 
+              <a href="#queue_tag"><em>&lt;queue&gt;</em></a> specifying the
+              scheduler specific properties.</td>
+              <td colspan="1" rowspan="1">Not applicable</td>
+              <td colspan="1" rowspan="1">The scheduler specific properties are the children of this
+              element specified as a group of &lt;property&gt; tags described
+              below. The JobTracker completely ignores these properties. These
+              can be used as per-queue properties needed by the scheduler
+              being configured. Please look at the scheduler specific
+              documentation as to how these properties are used by that
+              particular scheduler.
+              </td>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1"><a name="property_tag" id="property_tag"></a>property</td>
+              <td colspan="1" rowspan="1">Child element of
+              <a href="#properties_tag"><em>&lt;properties&gt;</em></a> for a
+              specific queue.</td>
+              <td colspan="1" rowspan="1">Not applicable</td>
+              <td colspan="1" rowspan="1">A single scheduler specific queue-property. Ignored by
+              the JobTracker and used by the scheduler that is configured.</td>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1">key</td>
+              <td colspan="1" rowspan="1">Attribute of a
+              <a href="#property_tag"><em>&lt;property&gt;</em></a> for a
+              specific queue.</td>
+              <td colspan="1" rowspan="1">Scheduler-specific</td>
+              <td colspan="1" rowspan="1">The name of a single scheduler specific queue-property.</td>
+            
+</tr>
+
+            
+<tr>
+              
+<td colspan="1" rowspan="1">value</td>
+              <td colspan="1" rowspan="1">Attribute of a
+              <a href="#property_tag"><em>&lt;property&gt;</em></a> for a
+              specific queue.</td>
+              <td colspan="1" rowspan="1">Scheduler-specific</td>
+              <td colspan="1" rowspan="1">The value of a single scheduler specific queue-property.
+              The value can be anything that is left for the proper
+              interpretation by the scheduler that is configured.</td>
+            
+</tr>
+
+         
+</table>
+<p>Once the queues are configured properly and the Map/Reduce
+          system is up and running, from the command line one can
+          <a href="commands_manual.html#QueuesList">get the list
+          of queues</a> and
+          <a href="commands_manual.html#QueuesInfo">obtain
+          information specific to each queue</a>. This information is also
+          available from the web UI. On the web UI, queue information can be
+          seen by going to queueinfo.jsp, linked to from the queues table-cell
+          in the cluster-summary table. The queueinfo.jsp prints the hierarchy
+          of queues as well as the specific information for each queue.
+          </p>
+<p> Users can submit jobs only to a
+          leaf-level queue by specifying the fully-qualified queue-name for
+          the property name <em>mapreduce.job.queuename</em> in the job
+          configuration. The character ':' is the queue-name delimiter and so,
+          for e.g., if one wants to submit to a configured job-queue 'Queue-C'
+          which is one of the sub-queues of 'Queue-B' which in-turn is a
+          sub-queue of 'Queue-A', then the job configuration should contain
+          property <em>mapreduce.job.queuename</em> set to the <em>
+          &lt;value&gt;Queue-A:Queue-B:Queue-C&lt;/value&gt;</em>
+</p>
+<a name="Real-World+Cluster+Configurations"></a>
+<h4>Real-World Cluster Configurations</h4>
+<p>This section lists some non-default configuration parameters which 
+            have been used to run the <em>sort</em> benchmark on very large 
+            clusters.</p>
+<ul>
+              
+<li>
+                
+<p>Some non-default configuration values used to run sort900,
+                that is 9TB of data sorted on a cluster with 900 nodes:</p>
+                
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+  		          
+<tr>
+                
+<th colspan="1" rowspan="1">Configuration File</th>
+		            <th colspan="1" rowspan="1">Parameter</th>
+		            <th colspan="1" rowspan="1">Value</th> 
+		            <th colspan="1" rowspan="1">Notes</th>
+		          
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/hdfs-site.xml</td>
+                    <td colspan="1" rowspan="1">dfs.blocksize</td>
+                    <td colspan="1" rowspan="1">134217728</td>
+                    <td colspan="1" rowspan="1">HDFS blocksize of 128MB for large file-systems.</td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/hdfs-site.xml</td>
+                    <td colspan="1" rowspan="1">dfs.namenode.handler.count</td>
+                    <td colspan="1" rowspan="1">40</td>
+                    <td colspan="1" rowspan="1">
+                      More NameNode server threads to handle RPCs from large 
+                      number of DataNodes.
+                    </td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.reduce.shuffle.parallelcopies</td>
+                    <td colspan="1" rowspan="1">20</td>
+                    <td colspan="1" rowspan="1">
+                      Higher number of parallel copies run by reduces to fetch
+                      outputs from very large number of maps.
+                    </td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.map.java.opts</td>
+                    <td colspan="1" rowspan="1">-Xmx512M</td>
+                    <td colspan="1" rowspan="1">
+                      Larger heap-size for child jvms of maps. 
+                    </td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.reduce.java.opts</td>
+                    <td colspan="1" rowspan="1">-Xmx512M</td>
+                    <td colspan="1" rowspan="1">
+                      Larger heap-size for child jvms of reduces. 
+                    </td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.reduce.shuffle.input.buffer.percent</td>
+                    <td colspan="1" rowspan="1">0.80</td>
+                    <td colspan="1" rowspan="1">
+                      Larger amount of memory allocated for merging map output
+                      in memory during the shuffle. Expressed as a fraction of
+                      the total heap.
+                    </td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.reduce.input.buffer.percent</td>
+                    <td colspan="1" rowspan="1">0.80</td>
+                    <td colspan="1" rowspan="1">
+                      Larger amount of memory allocated for retaining map output
+                      in memory during the reduce. Expressed as a fraction of
+                      the total heap.
+                    </td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.task.io.sort.factor</td>
+                    <td colspan="1" rowspan="1">100</td>
+                    <td colspan="1" rowspan="1">More streams merged at once while sorting files.</td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.task.io.sort.mb</td>
+                    <td colspan="1" rowspan="1">200</td>
+                    <td colspan="1" rowspan="1">Higher memory-limit while sorting data.</td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/core-site.xml</td>
+                    <td colspan="1" rowspan="1">io.file.buffer.size</td>
+                    <td colspan="1" rowspan="1">131072</td>
+                    <td colspan="1" rowspan="1">Size of read/write buffer used in SequenceFiles.</td>
+                  
+</tr>
+                
+</table>
+              
+</li>
+              
+<li>
+                
+<p>Updates to some configuration values to run sort1400 and 
+                sort2000, that is 14TB of data sorted on 1400 nodes and 20TB of
+                data sorted on 2000 nodes:</p>
+                
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+  		          
+<tr>
+                
+<th colspan="1" rowspan="1">Configuration File</th>
+		            <th colspan="1" rowspan="1">Parameter</th>
+		            <th colspan="1" rowspan="1">Value</th> 
+		            <th colspan="1" rowspan="1">Notes</th>
+		          
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.jobtracker.handler.count</td>
+                    <td colspan="1" rowspan="1">60</td>
+                    <td colspan="1" rowspan="1">
+                      More JobTracker server threads to handle RPCs from large 
+                      number of TaskTrackers.
+                    </td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.reduce.shuffle.parallelcopies</td>
+                    <td colspan="1" rowspan="1">50</td>
+                    <td colspan="1" rowspan="1"></td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.tasktracker.http.threads</td>
+                    <td colspan="1" rowspan="1">50</td>
+                    <td colspan="1" rowspan="1">
+                      More worker threads for the TaskTracker's http server. The
+                      http server is used by reduces to fetch intermediate 
+                      map-outputs.
+                    </td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.map.java.opts</td>
+                    <td colspan="1" rowspan="1">-Xmx512M</td>
+                    <td colspan="1" rowspan="1">
+                      Larger heap-size for child jvms of maps. 
+                    </td>
+                  
+</tr>
+                  
+<tr>
+                    
+<td colspan="1" rowspan="1">conf/mapred-site.xml</td>
+                    <td colspan="1" rowspan="1">mapreduce.reduce.java.opts</td>
+                    <td colspan="1" rowspan="1">-Xmx1024M</td>
+                    <td colspan="1" rowspan="1">Larger heap-size for child jvms of reduces.</td>
+                  
+</tr>
+                
+</table>
+              
+</li>
+            
+</ul>
+<a name="Configuring+Memory+Parameters+for+MapReduce+Jobs"></a>
+<h4>Configuring Memory Parameters for MapReduce Jobs</h4>
+<p>
+        As MapReduce jobs could use varying amounts of memory, Hadoop
+        provides various configuration options to users and administrators
+        for managing memory effectively. Some of these options are job 
+        specific and can be used by users. While setting up a cluster, 
+        administrators can configure appropriate default values for these 
+        options so that users jobs run out of the box. Other options are 
+        cluster specific and can be used by administrators to enforce 
+        limits and prevent misconfigured or memory intensive jobs from 
+        causing undesired side effects on the cluster.
+        </p>
+<p> 
+        The values configured should
+        take into account the hardware resources of the cluster, such as the
+        amount of physical and virtual memory available for tasks,
+        the number of slots configured on the slaves and the requirements
+        for other processes running on the slaves. If right values are not
+        set, it is likely that jobs start failing with memory related
+        errors or in the worst case, even affect other tasks or
+        the slaves themselves.
+        </p>
+<a name="Monitoring+Task+Memory+Usage"></a>
+<h5>Monitoring Task Memory Usage</h5>
+<p>
+          Before describing the memory options, it is
+          useful to look at a feature provided by Hadoop to monitor
+          memory usage of MapReduce tasks it runs. The basic objective
+          of this feature is to prevent MapReduce tasks from consuming
+          memory beyond a limit that would result in their affecting
+          other processes running on the slave, including other tasks
+          and daemons like the DataNode or TaskTracker.
+          </p>
+<p>
+          
+<em>Note:</em> For the time being, this feature is available
+          only for the Linux platform.
+          </p>
+<p>
+          Hadoop allows monitoring to be done both for virtual
+          and physical memory usage of tasks. This monitoring 
+          can be done independently of each other, and therefore the
+          options can be configured independently of each other. It
+          has been found in some environments, particularly related
+          to streaming, that virtual memory recorded for tasks is high
+          because of libraries loaded by the programs used to run
+          the tasks. However, this memory is largely unused and does
+          not affect the slaves's memory itself. In such cases,
+          monitoring based on physical memory can provide a more
+          accurate picture of memory usage.
+          </p>
+<p>
+          This feature considers that there is a limit on
+          the amount of virtual or physical memory on the slaves 
+          that can be used by
+          the running MapReduce tasks. The rest of the memory is
+          assumed to be required for the system and other processes.
+          Since some jobs may require higher amount of memory for their
+          tasks than others, Hadoop allows jobs to specify how much
+          memory they expect to use at a maximum. Then by using
+          resource aware scheduling and monitoring, Hadoop tries to
+          ensure that at any time, only enough tasks are running on
+          the slaves as can meet the dual constraints of an individual
+          job's memory requirements and the total amount of memory
+          available for all MapReduce tasks.
+          </p>
+<p>
+          The TaskTracker monitors tasks in regular intervals. Each time,
+          it operates in two steps:
+          </p>
+<ul>
+          
+          
+<li>
+          In the first step, it
+          checks that a job's task and any child processes it
+          launches are not cumulatively using more virtual or physical 
+          memory than specified. If both virtual and physical memory
+          monitoring is enabled, then virtual memory usage is checked
+          first, followed by physical memory usage. 
+          Any task that is found to
+          use more memory is killed along with any child processes it
+          might have launched, and the task status is marked
+          <em>failed</em>. Repeated failures such as this will terminate
+          the job. 
+          </li>
+          
+          
+<li>
+          In the next step, it checks that the cumulative virtual and
+          physical memory 
+          used by all running tasks and their child processes
+          does not exceed the total virtual and physical memory limit,
+          respectively. Again, virtual memory limit is checked first, 
+          followed by physical memory limit. In this case, it kills
+          enough number of tasks, along with any child processes they
+          might have launched, until the cumulative memory usage
+          is brought under limit. In the case of virtual memory limit
+          being exceeded, the tasks chosen for killing are
+          the ones that have made the least progress. In the case of
+          physical memory limit being exceeded, the tasks chosen
+          for killing are the ones that have used the maximum amount
+          of physical memory. Also, the status
+          of these tasks is marked as <em>killed</em>, and hence repeated
+          occurrence of this will not result in a job failure. 
+          </li>
+          
+          
+</ul>
+<p>
+          In either case, the task's diagnostic message will indicate the
+          reason why the task was terminated.
+          </p>
+<p>
+          Resource aware scheduling can ensure that tasks are scheduled
+          on a slave only if their memory requirement can be satisfied
+          by the slave. The Capacity Scheduler, for example,
+          takes virtual memory requirements into account while 
+          scheduling tasks, as described in the section on 
+          <a href="http://hadoop.apache.org/mapreduce/docs/current/capacity_scheduler.html#Scheduling+Tasks+Considering+Memory+Requirements"> 
+          memory based scheduling</a>.
+          </p>
+<p>
+          Memory monitoring is enabled when certain configuration 
+          variables are defined with non-zero values, as described below.
+          </p>
+<a name="Job+Specific+Options"></a>
+<h5>Job Specific Options</h5>
+<p>
+          Memory related options that can be configured individually per 
+          job are described in detail in the section on
+          <a href="http://hadoop.apache.org/mapreduce/docs/current/mapred_tutorial.html#Configuring+Memory+Requirements+For+A+Job">
+          Configuring Memory Requirements For A Job</a> in the MapReduce
+          tutorial. While setting up
+          the cluster, the Hadoop defaults for these options can be reviewed
+          and changed to better suit the job profiles expected to be run on
+          the clusters, as also the hardware configuration.
+          </p>
+<p>
+          As with any other configuration option in Hadoop, if the 
+          administrators desire to prevent users from overriding these 
+          options in jobs they submit, these values can be marked as
+          <em>final</em> in the cluster configuration.
+          </p>
+<a name="Cluster+Specific+Options"></a>
+<h5>Cluster Specific Options</h5>
+<p>
+          This section describes the memory related options that are
+          used by the JobTracker and TaskTrackers, and cannot be changed 
+          by jobs. The values set for these options should be the same
+          for all the slave nodes in a cluster.
+          </p>
+<ul>
+          
+          
+<li>
+          
+<span class="codefrag">mapreduce.cluster.{map|reduce}memory.mb</span>: These
+          options define the default amount of virtual memory that should be
+          allocated for MapReduce tasks running in the cluster. They
+          typically match the default values set for the options
+          <span class="codefrag">mapreduce.{map|reduce}.memory.mb</span>. They help in the
+          calculation of the total amount of virtual memory available for 
+          MapReduce tasks on a slave, using the following equation:<br>
+          
+<em>Total virtual memory for all MapReduce tasks = 
+          (mapreduce.cluster.mapmemory.mb * 
+           mapreduce.tasktracker.map.tasks.maximum) +
+          (mapreduce.cluster.reducememory.mb * 
+           mapreduce.tasktracker.reduce.tasks.maximum)</em>
+<br>
+          Typically, reduce tasks require more memory than map tasks.
+          Hence a higher value is recommended for 
+          <em>mapreduce.cluster.reducememory.mb</em>. The value is  
+          specified in MB. To set a value of 2GB for reduce tasks, set
+          <em>mapreduce.cluster.reducememory.mb</em> to 2048.
+          </li>
+
+          
+<li>
+          
+<span class="codefrag">mapreduce.jobtracker.max{map|reduce}memory.mb</span>:
+          These options define the maximum amount of virtual memory that 
+          can be requested by jobs using the parameters
+          <span class="codefrag">mapreduce.{map|reduce}.memory.mb</span>. The system
+          will reject any job that is submitted requesting for more
+          memory than these limits. Typically, the values for these
+          options should be set to satisfy the following constraint:<br>
+          
+<em>mapreduce.jobtracker.maxmapmemory.mb =
+            mapreduce.cluster.mapmemory.mb * 
+             mapreduce.tasktracker.map.tasks.maximum<br>
+              mapreduce.jobtracker.maxreducememory.mb =
+            mapreduce.cluster.reducememory.mb * 
+             mapreduce.tasktracker.reduce.tasks.maximum</em>
+<br>
+          The value is specified in MB. If 
+          <span class="codefrag">mapreduce.cluster.reducememory.mb</span> is set to 2GB and
+          there are 2 reduce slots configured in the slaves, the value
+          for <span class="codefrag">mapreduce.jobtracker.maxreducememory.mb</span> should 
+          be set to 4096.
+          </li>
+          
+          
+<li>
+          
+<span class="codefrag">mapreduce.tasktracker.reserved.physicalmemory.mb</span>:
+          This option defines the amount of physical memory that is
+          marked for system and daemon processes. Using this, the amount
+          of physical memory available for MapReduce tasks is calculated
+          using the following equation:<br>
+          
+<em>Total physical memory for all MapReduce tasks = 
+                Total physical memory available on the system -
+                mapreduce.tasktracker.reserved.physicalmemory.mb</em>
+<br>
+          The value is specified in MB. To set this value to 2GB, 
+          specify the value as 2048.
+          </li>
+
+          
+<li>
+          
+<span class="codefrag">mapreduce.tasktracker.taskmemorymanager.monitoringinterval</span>:
+          This option defines the time the TaskTracker waits between
+          two cycles of memory monitoring. The value is specified in 
+          milliseconds.
+          </li>
+          
+          
+</ul>
+<p>
+          
+<em>Note:</em> The virtual memory monitoring function is only 
+          enabled if
+          the variables <span class="codefrag">mapreduce.cluster.{map|reduce}memory.mb</span>
+          and <span class="codefrag">mapreduce.jobtracker.max{map|reduce}memory.mb</span>
+          are set to values greater than zero. Likewise, the physical
+          memory monitoring function is only enabled if the variable
+          <span class="codefrag">mapreduce.tasktracker.reserved.physicalmemory.mb</span>
+          is set to a value greater than zero.
+          </p>
+<a name="Task+Controllers"></a>
+<h4>Task Controllers</h4>
+<p>Task controllers are classes in the Hadoop Map/Reduce 
+            framework that define how user's map and reduce tasks 
+            are launched and controlled. They can 
+            be used in clusters that require some customization in 
+            the process of launching or controlling the user tasks.
+            For example, in some 
+            clusters, there may be a requirement to run tasks as 
+            the user who submitted the job, instead of as the task 
+            tracker user, which is how tasks are launched by default.
+            This section describes how to configure and use 
+            task controllers.</p>
+<p>The following task controllers are the available in
+            Hadoop.
+            </p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+            
+<tr>
+<th colspan="1" rowspan="1">Name</th><th colspan="1" rowspan="1">Class Name</th><th colspan="1" rowspan="1">Description</th>
+</tr>
+            
+<tr>
+            
+<td colspan="1" rowspan="1">DefaultTaskController</td>
+            <td colspan="1" rowspan="1">org.apache.hadoop.mapred.DefaultTaskController</td>
+            <td colspan="1" rowspan="1"> The default task controller which Hadoop uses to manage task
+            execution. The tasks run as the task tracker user.</td>
+            
+</tr>
+            
+<tr>
+            
+<td colspan="1" rowspan="1">LinuxTaskController</td>
+            <td colspan="1" rowspan="1">org.apache.hadoop.mapred.LinuxTaskController</td>
+            <td colspan="1" rowspan="1">This task controller, which is supported only on Linux, 
+            runs the tasks as the user who submitted the job. It requires
+            these user accounts to be created on the cluster nodes 
+            where the tasks are launched. It 
+            uses a setuid executable that is included in the Hadoop
+            distribution. The task tracker uses this executable to 
+            launch and kill tasks. The setuid executable switches to
+            the user who has submitted the job and launches or kills
+            the tasks. For maximum security, this task controller 
+            sets up restricted permissions and user/group ownership of
+            local files and directories used by the tasks such as the
+            job jar files, intermediate files, task log files and distributed
+            cache files. Particularly note that, because of this, except the
+            job owner and tasktracker, no other user can access any of the
+            local files/directories including those localized as part of the
+            distributed cache.
+            </td>
+            
+</tr>
+            
+</table>
+<a name="Configuring+Task+Controllers"></a>
+<h5>Configuring Task Controllers</h5>
+<p>The task controller to be used can be configured by setting the
+            value of the following key in mapred-site.xml</p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+            
+<tr>
+            
+<th colspan="1" rowspan="1">Property</th><th colspan="1" rowspan="1">Value</th><th colspan="1" rowspan="1">Notes</th>
+            
+</tr>
+            
+<tr>
+            
+<td colspan="1" rowspan="1">mapreduce.tasktracker.taskcontroller</td>
+            <td colspan="1" rowspan="1">Fully qualified class name of the task controller class</td>
+            <td colspan="1" rowspan="1">Currently there are two implementations of task controller
+            in the Hadoop system, DefaultTaskController and LinuxTaskController.
+            Refer to the class names mentioned above to determine the value
+            to set for the class of choice.
+            </td>
+            
+</tr>
+            
+</table>
+<a name="Using+the+LinuxTaskController"></a>
+<h5>Using the LinuxTaskController</h5>
+<p>This section of the document describes the steps required to
+            use the LinuxTaskController.</p>
+<p>In order to use the LinuxTaskController, a setuid executable
+            should be built and deployed on the compute nodes. The
+            executable is named task-controller. To build the executable, 
+            execute 
+            <em>ant task-controller -Dhadoop.conf.dir=/path/to/conf/dir.
+            </em>
+            The path passed in <em>-Dhadoop.conf.dir</em> should be the path
+            on the cluster nodes where a configuration file for the setuid
+            executable would be located. The executable would be built to
+            <em>build.dir/dist.dir/bin</em> and should be installed to 
+            <em>$HADOOP_HOME/bin</em>.
+            </p>
+<p>
+            The executable must have specific permissions as follows. The
+            executable should have <em>6050 or --Sr-s---</em> permissions
+            user-owned by root(super-user) and group-owned by a special group 
+            of which the TaskTracker's user is the group member and no job 
+            submitter is. If any job submitter belongs to this special group,
+            security will be compromised. This special group name should be
+            specified for the configuration property 
+            <em>"mapreduce.tasktracker.group"</em> in both mapred-site.xml and 
+            <a href="#task-controller.cfg">task-controller.cfg</a>.  
+            For example, let's say that the TaskTracker is run as user
+            <em>mapred</em> who is part of the groups <em>users</em> and
+            <em>specialGroup</em> any of them being the primary group.
+            Let also be that <em>users</em> has both <em>mapred</em> and
+            another user (job submitter) <em>X</em> as its members, and X does
+            not belong to <em>specialGroup</em>. Going by the above
+            description, the setuid/setgid executable should be set
+            <em>6050 or --Sr-s---</em> with user-owner as <em>mapred</em> and
+            group-owner as <em>specialGroup</em> which has
+            <em>mapred</em> as its member(and not <em>users</em> which has
+            <em>X</em> also as its member besides <em>mapred</em>).
+            </p>
+<p>
+            The LinuxTaskController requires that paths including and leading up
+            to the directories specified in
+            <em>mapreduce.cluster.local.dir</em> and <em>hadoop.log.dir</em> to
+            be set 755 permissions.
+            </p>
+<a name="task-controller.cfg"></a>
+<h5>task-controller.cfg</h5>
+<p>The executable requires a configuration file called 
+            <em>taskcontroller.cfg</em> to be
+            present in the configuration directory passed to the ant target 
+            mentioned above. If the binary was not built with a specific 
+            conf directory, the path defaults to
+            <em>/path-to-binary/../conf</em>. The configuration file must be
+            owned by the user running TaskTracker (user <em>mapred</em> in the
+            above example), group-owned by anyone and should have the
+            permissions <em>0400 or r--------</em>.
+            </p>
+<p>The executable requires following configuration items to be 
+            present in the <em>taskcontroller.cfg</em> file. The items should
+            be mentioned as simple <em>key=value</em> pairs.
+            </p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+<tr>
+<th colspan="1" rowspan="1">Name</th><th colspan="1" rowspan="1">Description</th>
+</tr>
+            
+<tr>
+            
+<td colspan="1" rowspan="1">mapreduce.cluster.local.dir</td>
+            <td colspan="1" rowspan="1">Path to mapreduce.cluster.local.directories. Should be same as the value 
+            which was provided to key in mapred-site.xml. This is required to
+            validate paths passed to the setuid executable in order to prevent
+            arbitrary paths being passed to it.</td>
+            
+</tr>
+            
+<tr>
+            
+<td colspan="1" rowspan="1">hadoop.log.dir</td>
+            <td colspan="1" rowspan="1">Path to hadoop log directory. Should be same as the value which
+            the TaskTracker is started with. This is required to set proper
+            permissions on the log files so that they can be written to by the user's
+            tasks and read by the TaskTracker for serving on the web UI.</td>
+            
+</tr>
+            
+<tr>
+            
+<td colspan="1" rowspan="1">mapreduce.tasktracker.group</td>
+            <td colspan="1" rowspan="1">Group to which the TaskTracker belongs. The group owner of the
+            taskcontroller binary should be this group. Should be same as
+            the value with which the TaskTracker is configured. This 
+            configuration is required for validating the secure access of the
+            task-controller binary.</td>
+            
+</tr>
+            
+</table>
+<a name="Monitoring+Health+of+TaskTracker+Nodes"></a>
+<h4>Monitoring Health of TaskTracker Nodes</h4>
+<p>Hadoop Map/Reduce provides a mechanism by which administrators 
+            can configure the TaskTracker to run an administrator supplied
+            script periodically to determine if a node is healthy or not.
+            Administrators can determine if the node is in a healthy state
+            by performing any checks of their choice in the script. If the
+            script detects the node to be in an unhealthy state, it must print
+            a line to standard output beginning with the string <em>ERROR</em>.
+            The TaskTracker spawns the script periodically and checks its 
+            output. If the script's output contains the string <em>ERROR</em>,
+            as described above, the node's status is reported as 'unhealthy'
+            and the node is black-listed on the JobTracker. No further tasks 
+            will be assigned to this node. However, the
+            TaskTracker continues to run the script, so that if the node
+            becomes healthy again, it will be removed from the blacklisted
+            nodes on the JobTracker automatically. The node's health
+            along with the output of the script, if it is unhealthy, is
+            available to the administrator in the JobTracker's web interface.
+            The time since the node was healthy is also displayed on the 
+            web interface.
+            </p>
+<a name="Configuring+the+Node+Health+Check+Script"></a>
+<h5>Configuring the Node Health Check Script</h5>
+<p>The following parameters can be used to control the node health 
+            monitoring script in <em>mapred-site.xml</em>.</p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+            
+<tr>
+<th colspan="1" rowspan="1">Name</th><th colspan="1" rowspan="1">Description</th>
+</tr>
+            
+<tr>
+<td colspan="1" rowspan="1"><span class="codefrag">mapreduce.tasktracker.healthchecker.script.path</span></td>
+            <td colspan="1" rowspan="1">Absolute path to the script which is periodically run by the 
+            TaskTracker to determine if the node is 
+            healthy or not. The file should be executable by the TaskTracker.
+            If the value of this key is empty or the file does 
+            not exist or is not executable, node health monitoring
+            is not started.</td>
+            
+</tr>
+            
+<tr>
+            
+<td colspan="1" rowspan="1"><span class="codefrag">mapreduce.tasktracker.healthchecker.interval</span></td>
+            <td colspan="1" rowspan="1">Frequency at which the node health script is run, 
+            in milliseconds</td>
+            
+</tr>
+            
+<tr>
+            
+<td colspan="1" rowspan="1"><span class="codefrag">mapreduce.tasktracker.healthchecker.script.timeout</span></td>
+            <td colspan="1" rowspan="1">Time after which the node health script will be killed by
+            the TaskTracker if unresponsive.
+            The node is marked unhealthy. if node health script times out.</td>
+            
+</tr>
+            
+<tr>
+            
+<td colspan="1" rowspan="1"><span class="codefrag">mapreduce.tasktracker.healthchecker.script.args</span></td>
+            <td colspan="1" rowspan="1">Extra arguments that can be passed to the node health script 
+            when launched.
+            These should be comma separated list of arguments. </td>
+            
+</tr>
+            
+</table>
+<a name="Slaves"></a>
+<h3 class="h4">Slaves</h3>
+<p>Typically you choose one machine in the cluster to act as the 
+          <span class="codefrag">NameNode</span> and one machine as to act as the 
+          <span class="codefrag">JobTracker</span>, exclusively. The rest of the machines act as 
+          both a <span class="codefrag">DataNode</span> and <span class="codefrag">TaskTracker</span> and are 
+          referred to as <em>slaves</em>.</p>
+<p>List all slave hostnames or IP addresses in your 
+          <span class="codefrag">conf/slaves</span> file, one per line.</p>
+<a name="Logging"></a>
+<h3 class="h4">Logging</h3>
+<p>Hadoop uses the <a href="http://logging.apache.org/log4j/">Apache 
+          log4j</a> via the <a href="http://commons.apache.org/logging/">Apache 
+          Commons Logging</a> framework for logging. Edit the 
+          <span class="codefrag">conf/log4j.properties</span> file to customize the Hadoop 
+          daemons' logging configuration (log-formats and so on).</p>
+<a name="History+Logging"></a>
+<h4>History Logging</h4>
+<p> The job history files are stored in central location 
+            <span class="codefrag"> mapreduce.jobtracker.jobhistory.location </span> which can be on DFS also,
+            whose default value is <span class="codefrag">${HADOOP_LOG_DIR}/history</span>. 
+            The history web UI is accessible from job tracker web UI.</p>
+<p> The history files are also logged to user specified directory
+            <span class="codefrag">mapreduce.job.userhistorylocation</span> 
+            which defaults to job output directory. The files are stored in
+            "_logs/history/" in the specified directory. Hence, by default 
+            they will be in "mapreduce.output.fileoutputformat.outputdir/_logs/history/". User can stop
+            logging by giving the value <span class="codefrag">none</span> for 
+            <span class="codefrag">mapreduce.job.userhistorylocation</span> 
+</p>
+<p> User can view the history logs summary in specified directory 
+            using the following command <br>
+            
+<span class="codefrag">$ bin/hadoop job -history output-dir</span>
+<br> 
+            This command will print job details, failed and killed tip
+            details. <br>
+            More details about the job such as successful tasks and 
+            task attempts made for each task can be viewed using the  
+            following command <br>
+            
+<span class="codefrag">$ bin/hadoop job -history all output-dir</span>
+<br>
+</p>
+<p>Once all the necessary configuration is complete, distribute the files
+      to the <span class="codefrag">HADOOP_CONF_DIR</span> directory on all the machines, 
+      typically <span class="codefrag">${HADOOP_HOME}/conf</span>.</p>
+</div>
+    
+<a name="Cluster+Restartability"></a>
+<h2 class="h3">Cluster Restartability</h2>
+<div class="section">
+<a name="Map%2FReduce"></a>
+<h3 class="h4">Map/Reduce</h3>
+<p>The job tracker restart can recover running jobs if 
+        <span class="codefrag">mapreduce.jobtracker.restart.recover</span> is set true and 
+        <a href="#Logging">JobHistory logging</a> is enabled. Also 
+        <span class="codefrag">mapreduce.jobtracker.jobhistory.block.size</span> value should be 
+        set to an optimal value to dump job history to disk as soon as 
+        possible, the typical value is 3145728(3MB).</p>
+</div>
+    
+    
+<a name="Hadoop+Rack+Awareness"></a>
+<h2 class="h3">Hadoop Rack Awareness</h2>
+<div class="section">
+<p>The HDFS and the Map/Reduce components are rack-aware.</p>
+<p>The <span class="codefrag">NameNode</span> and the <span class="codefrag">JobTracker</span> obtains the
+      <span class="codefrag">rack id</span> of the slaves in the cluster by invoking an API 
+      <a href="api/org/apache/hadoop/net/DNSToSwitchMapping.html#resolve(java.util.List)">resolve</a> in an administrator configured
+      module. The API resolves the slave's DNS name (also IP address) to a 
+      rack id. What module to use can be configured using the configuration
+      item <span class="codefrag">net.topology.node.switch.mapping.impl</span>. The default 
+      implementation of the same runs a script/command configured using 
+      <span class="codefrag">net.topology.script.file.name</span>. If topology.script.file.name is
+      not set, the rack id <span class="codefrag">/default-rack</span> is returned for any 
+      passed IP address. The additional configuration in the Map/Reduce
+      part is <span class="codefrag">mapred.cache.task.levels</span> which determines the number
+      of levels (in the network topology) of caches. So, for example, if it is
+      the default value of 2, two levels of caches will be constructed - 
+      one for hosts (host -&gt; task mapping) and another for racks 
+      (rack -&gt; task mapping).
+      </p>
+</div>
+    
+    
+<a name="Hadoop+Startup"></a>
+<h2 class="h3">Hadoop Startup</h2>
+<div class="section">
+<p>To start a Hadoop cluster you will need to start both the HDFS and 
+      Map/Reduce cluster.</p>
+<p>
+        Format a new distributed filesystem:<br>
+        
+<span class="codefrag">$ bin/hadoop namenode -format</span>
+      
+</p>
+<p>
+        Start the HDFS with the following command, run on the designated
+        <span class="codefrag">NameNode</span>:<br>
+        
+<span class="codefrag">$ bin/start-dfs.sh</span>
+      
+</p>
+<p>The <span class="codefrag">bin/start-dfs.sh</span> script also consults the 
+      <span class="codefrag">${HADOOP_CONF_DIR}/slaves</span> file on the <span class="codefrag">NameNode</span> 
+      and starts the <span class="codefrag">DataNode</span> daemon on all the listed slaves.</p>
+<p>
+        Start Map-Reduce with the following command, run on the designated
+        <span class="codefrag">JobTracker</span>:<br>
+        
+<span class="codefrag">$ bin/start-mapred.sh</span>
+      
+</p>
+<p>The <span class="codefrag">bin/start-mapred.sh</span> script also consults the 
+      <span class="codefrag">${HADOOP_CONF_DIR}/slaves</span> file on the <span class="codefrag">JobTracker</span> 
+      and starts the <span class="codefrag">TaskTracker</span> daemon on all the listed slaves.
+      </p>
+</div>
+
+    
+<a name="Hadoop+Shutdown"></a>
+<h2 class="h3">Hadoop Shutdown</h2>
+<div class="section">
+<p>
+        Stop HDFS with the following command, run on the designated 
+        <span class="codefrag">NameNode</span>:<br>
+        
+<span class="codefrag">$ bin/stop-dfs.sh</span>
+      
+</p>
+<p>The <span class="codefrag">bin/stop-dfs.sh</span> script also consults the 
+      <span class="codefrag">${HADOOP_CONF_DIR}/slaves</span> file on the <span class="codefrag">NameNode</span> 
+      and stops the <span class="codefrag">DataNode</span> daemon on all the listed slaves.</p>
+<p>
+        Stop Map/Reduce with the following command, run on the designated
+        the designated <span class="codefrag">JobTracker</span>:<br>
+        
+<span class="codefrag">$ bin/stop-mapred.sh</span>
+<br>
+      
+</p>
+<p>The <span class="codefrag">bin/stop-mapred.sh</span> script also consults the 
+      <span class="codefrag">${HADOOP_CONF_DIR}/slaves</span> file on the <span class="codefrag">JobTracker</span> 
+      and stops the <span class="codefrag">TaskTracker</span> daemon on all the listed slaves.</p>
+</div>
+  
+</div>
+<!--+
+    |end content
+    +-->
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<!--+
+    |start bottomstrip
+    +-->
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2009 <a href="http://www.apache.org/licenses/">The Apache Software Foundation.</a>
+</div>
+<!--+
+    |end bottomstrip
+    +-->
+</div>
+</body>
+</html>

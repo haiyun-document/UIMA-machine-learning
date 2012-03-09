@@ -1,0 +1,39 @@
+<html>
+<body>
+<table border="1">
+<tr>
+<td>name</td><td>value</td><td>description</td>
+</tr>
+<tr>
+<td><a name="mapred.capacity-scheduler.default-supports-priority">mapred.capacity-scheduler.default-supports-priority</a></td><td>false</td><td>If true, priorities of jobs will be taken into 
+      account in scheduling decisions by default in a job queue.
+    </td>
+</tr>
+<tr>
+<td><a name="mapred.capacity-scheduler.default-minimum-user-limit-percent">mapred.capacity-scheduler.default-minimum-user-limit-percent</a></td><td>100</td><td>The percentage of the resources limited to a particular user
+      for the job queue at any given point of time by default.
+    </td>
+</tr>
+<tr>
+<td><a name="mapred.capacity-scheduler.default-maximum-initialized-jobs-per-user">mapred.capacity-scheduler.default-maximum-initialized-jobs-per-user</a></td><td>2</td><td>The maximum number of jobs to be pre-initialized for a user
+    of the job queue.
+    </td>
+</tr>
+<tr>
+<td><a name="mapred.capacity-scheduler.init-poll-interval">mapred.capacity-scheduler.init-poll-interval</a></td><td>5000</td><td>The amount of time in miliseconds which is used to poll 
+    the job queues for jobs to initialize.
+    </td>
+</tr>
+<tr>
+<td><a name="mapred.capacity-scheduler.init-worker-threads">mapred.capacity-scheduler.init-worker-threads</a></td><td>5</td><td>Number of worker threads which would be used by
+    Initialization poller to initialize jobs in a set of queue.
+    If number mentioned in property is equal to number of job queues
+    then a single thread would initialize jobs in a queue. If lesser
+    then a thread would get a set of queues assigned. If the number
+    is greater then number of threads would be equal to number of 
+    job queues.
+    </td>
+</tr>
+</table>
+</body>
+</html>

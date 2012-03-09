@@ -1,0 +1,1105 @@
+<!--
+**********************************************************
+** WARNING: This file is generated from CHANGES.txt by the 
+**          Perl script 'changes2html.pl'.
+**          Do *not* edit this file!
+**********************************************************
+          
+****************************************************************************
+* Licensed to the Apache Software Foundation (ASF) under one or more
+* contributor license agreements.  See the NOTICE file distributed with
+* this work for additional information regarding copyright ownership.
+* The ASF licenses this file to You under the Apache License, Version 2.0
+* (the "License"); you may not use this file except in compliance with
+* the License.  You may obtain a copy of the License at
+*
+*     http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+****************************************************************************
+-->
+<html>
+<head>
+  <title>Hadoop HDFS Change Log</title>
+  <link rel="stylesheet" href="ChangesFancyStyle.css" title="Fancy">
+  <link rel="alternate stylesheet" href="ChangesSimpleStyle.css" title="Simple">
+  <META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <SCRIPT>
+    function toggleList(e) {
+      element = document.getElementById(e).style;
+      element.display == 'none' ? element.display = 'block' : element.display='none';
+    }
+    function collapse() {
+      for (var i = 0; i < document.getElementsByTagName("ul").length; i++) {
+        var list = document.getElementsByTagName("ul")[i];
+        if (list.id != 'release_0.22.1_-_unreleased_' && list.id != 'release_0.22.0_-_2011-11-29_') {
+          list.style.display = "none";
+        }
+      }
+      for (var i = 0; i < document.getElementsByTagName("ol").length; i++) {
+        document.getElementsByTagName("ol")[i].style.display = "none"; 
+      }
+    }
+    window.onload = collapse;
+  </SCRIPT>
+</head>
+<body>
+
+<a href="http://hadoop.apache.org/core/"><img class="logoImage" alt="Hadoop" src="images/hadoop-logo.jpg" title="Scalable Computing Platform"></a>
+<h1>Hadoop HDFS Change Log</h1>
+
+<h2><a href="javascript:toggleList('release_0.22.1_-_unreleased_')">Release 0.22.1 - Unreleased
+</a></h2>
+<ul id="release_0.22.1_-_unreleased_">
+  <li><a href="javascript:toggleList('release_0.22.1_-_unreleased_._incompatible_changes_')">  INCOMPATIBLE CHANGES
+</a>&nbsp;&nbsp;&nbsp;(none)
+    <ol id="release_0.22.1_-_unreleased_._incompatible_changes_">
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.22.1_-_unreleased_._new_features_')">  NEW FEATURES
+</a>&nbsp;&nbsp;&nbsp;(none)
+    <ol id="release_0.22.1_-_unreleased_._new_features_">
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.22.1_-_unreleased_._improvements_')">  IMPROVEMENTS
+</a>&nbsp;&nbsp;&nbsp;(none)
+    <ol id="release_0.22.1_-_unreleased_._improvements_">
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.22.1_-_unreleased_._optimizations_')">  OPTIMIZATIONS
+</a>&nbsp;&nbsp;&nbsp;(none)
+    <ol id="release_0.22.1_-_unreleased_._optimizations_">
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.22.1_-_unreleased_._bug_fixes_')">  BUG FIXES
+</a>&nbsp;&nbsp;&nbsp;(none)
+    <ol id="release_0.22.1_-_unreleased_._bug_fixes_">
+    </ol>
+  </li>
+</ul>
+<h2><a href="javascript:toggleList('release_0.22.0_-_2011-11-29_')">Release 0.22.0 - 2011-11-29
+</a></h2>
+<ul id="release_0.22.0_-_2011-11-29_">
+  <li><a href="javascript:toggleList('release_0.22.0_-_2011-11-29_._incompatible_changes_')">  INCOMPATIBLE CHANGES
+</a>&nbsp;&nbsp;&nbsp;(1)
+    <ol id="release_0.22.0_-_2011-11-29_._incompatible_changes_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1825">HDFS-1825</a>. Remove thriftfs contrib.<br />(nigel via eli)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.22.0_-_2011-11-29_._new_features_')">  NEW FEATURES
+</a>&nbsp;&nbsp;&nbsp;(21)
+    <ol id="release_0.22.0_-_2011-11-29_._new_features_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1921">HDFS-1921</a>. saveNamespace can cause NN to be unable to come up on restart.<br />(Matt Foley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-992">HDFS-992</a>. Re-factor block access token implementation to conform to the
+generic Token interface in Common<br />(Kan Zhang and Jitendra Pandey via
+jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-599">HDFS-599</a>. Allow NameNode to have a seprate port for service requests from
+client requests.<br />(Dmytro Molkov via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1004">HDFS-1004</a>. Update NN to support Kerberized SSL from <a href="http://issues.apache.org/jira/browse/HADOOP-6584">HADOOP-6584</a>.<br />(jghoman and Kan Zhang via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1005">HDFS-1005</a>. Fsck security.<br />(borya and Kan Zhang via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1006">HDFS-1006</a>. getImage/putImage http requests should be https for the case
+of security enabled.<br />(borya and jghoman via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1033">HDFS-1033</a>. In secure clusters, NN and SNN should verify that the remote
+principal during image and edits transfer.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1023">HDFS-1023</a>. Allow http server to start as regular principal if https
+principal not defined.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1150">HDFS-1150</a>. Verify datanodes' identities to clients in secure clusters.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1330">HDFS-1330</a>. Make RPCs to DataNodes timeout.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-202">HDFS-202</a>.  HDFS support of listLocatedStatus introduced in <a href="http://issues.apache.org/jira/browse/HADOOP-6870">HADOOP-6870</a>.
+HDFS piggyback block locations to each file status when listing a
+directory.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1361">HDFS-1361</a>. Add -fileStatus operation to NNThroughputBenchmark.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1435">HDFS-1435</a>. Provide an option to store fsimage compressed.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-903">HDFS-903</a>.  Support fsimage validation through MD5 checksum.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1457">HDFS-1457</a>. Provide an option to throttle image transmission between
+pimary and secondary NameNodes.<br />(Yifei Lu and hairong via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1164">HDFS-1164</a>. TestHdfsProxy is failing.<br />(Todd Lipcon via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-811">HDFS-811</a>. Add metrics, failure reporting and additional tests for <a href="http://issues.apache.org/jira/browse/HDFS-457">HDFS-457</a>.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-895">HDFS-895</a>. Allow hflush/sync to occur in parallel with new writes
+to the file.<br />(Todd Lipcon via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-528">HDFS-528</a>. Add ability for safemode to wait for a minimum number of
+live datanodes<br />(Todd Lipcon via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1850">HDFS-1850</a>. DN should transmit absolute failed volume count rather than
+increments to the NN.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-671">HDFS-671</a>. Documentation change for updated configuration keys.<br />(tomwhite via eli)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.22.0_-_2011-11-29_._improvements_')">  IMPROVEMENTS
+</a>&nbsp;&nbsp;&nbsp;(78)
+    <ol id="release_0.22.0_-_2011-11-29_._improvements_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1304">HDFS-1304</a>. Add a new unit test for HftpFileSystem.open(..).<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1096">HDFS-1096</a>. fix for prev. commit.<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1096">HDFS-1096</a>. allow dfsadmin/mradmin refresh of superuser proxy group
+ mappings<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1146">HDFS-1146</a>. Javadoc for getDelegationTokenSecretManager in FSNamesystem<br />(jnp via boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1132">HDFS-1132</a>. Refactor TestFileStatus<br />(Eli Collins via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1163">HDFS-1163</a>. normalize property names for JT/NN kerberos principal
+names in configuration (from HADOOP 6633)<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1003">HDFS-1003</a>. authorization checks for inter-server protocol
+(based on <a href="http://issues.apache.org/jira/browse/HADOOP-6600">HADOOP-6600</a>)<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1061">HDFS-1061</a>. Memory footprint optimization for INodeFile object.<br />(Bharath Mundlapudi via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1079">HDFS-1079</a>. Throw exceptions as specified by the AbstractFileSystem
+in HDFS implemenation and protocols.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1112">HDFS-1112</a>. Edit log buffer should not grow unfoundedly.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1119">HDFS-1119</a>. Introduce a GSet interface to BlocksMap.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1184">HDFS-1184</a>. Replace tabs in code with spaces.<br />(Jeff Ames via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1185">HDFS-1185</a>. Remove duplicate now() functions in DataNode, FSNamesysetm.<br />(Jeff Ames via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1183">HDFS-1183</a>. Remove some duplicate code in NamenodeJspHelper.java.<br />(Jeff Ames via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1190">HDFS-1190</a>.  Remove unused getNamenode() method from DataNode.<br />(Jeff Ames via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1110">HDFS-1110</a>. Reuses objects for commonly used file names in namenode to
+reduce the heap usage.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-752">HDFS-752</a>. Add interfaces classification to to HDFS source code.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-947">HDFS-947</a>. An Hftp read request is redirected to a datanode that has
+the most replicas of the blocks in the file.<br />(Dmytro Molkov via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1272">HDFS-1272</a>. Fixes to take care of the changes in <a href="http://issues.apache.org/jira/browse/HADOOP-6845">HADOOP-6845</a>.<br />(Jitendra Pandey via ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1298">HDFS-1298</a> - Add support in HDFS for new statistics added in FileSystem
+to track the file system operations.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1201">HDFS-1201</a>. The HDFS component for <a href="http://issues.apache.org/jira/browse/HADOOP-6632">HADOOP-6632</a>.<br />(Kan Zhang &amp; Jitendra Pandey via ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1307">HDFS-1307</a> Add start time, end time and total time taken for FSCK to
+FSCK report<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1302">HDFS-1302</a>. The HDFS side of the changes corresponding to <a href="http://issues.apache.org/jira/browse/HADOOP-6861">HADOOP-6861</a>.<br />(Jitendra Pandey &amp; Owen O'Malley via ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1315">HDFS-1315</a>. Add fsck event to audit log and remove other audit log events
+corresponding to FSCK listStatus and open calls.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1178">HDFS-1178</a>. The NameNode servlets should not use RPC to connect to the
+NameNode.<br />(Kan Zhang via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1130">HDFS-1130</a>. Adds dfs.cluster.administrator ACL configuration that can
+be used to control who can view the default hdfs servlets.<br />(ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1297">HDFS-1297</a>. Fix some comments.<br />(Jeff Ames via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-330">HDFS-330</a>.  Datanode Web UIs should provide robots.txt.<br />(Allen Wittenauer via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-881">HDFS-881</a>.  Refactor DataNode Packet header into DataTransferProtocol.<br />(Todd Lipcon via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1036">HDFS-1036</a>. docs for fetchdt
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1318">HDFS-1318</a>. Add JMX interface for read access to namenode and datanode
+web UI information. (Tanping Wang via suresh).
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1356">HDFS-1356</a>.  Provide information as to whether or not security is
+enabled on web interface for NameNode<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1205">HDFS-1205</a>. FSDatasetAsyncDiskService should name its threads.<br />(Todd Lipcon via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1111">HDFS-1111</a>. Introduce getCorruptFileBlocks() for fsck.<br />(Sriram Rao via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1395">HDFS-1395</a>. Add @Override to FSDataset methods that implement
+FSDatasetInterface methods.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1383">HDFS-1383</a>. Improve the error messages when using hftp://.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1093">HDFS-1093</a>. Change the FSNamesystem lock to a read/write lock.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1407">HDFS-1407</a>. Change DataTransferProtocol methods to use Block instead
+of individual elements of Block.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1417">HDFS-1417</a>. Add @Override to SimulatedFSDataset methods that implement
+FSDatasetInterface methods.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1426">HDFS-1426</a>. Remove unused method BlockInfo#listCount.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1456">HDFS-1456</a>. Provide builder for constructing instances of MiniDFSCluster.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1472">HDFS-1472</a>. Allow programmatic access to fsck output.<br />(Ramkumar Vadali via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7007">HADOOP-7007</a>. Update the hudson-test-patch ant target to work with the
+latest test-patch.sh script<br />(gkesavan)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1462">HDFS-1462</a>. Refactor edit log loading to a separate class from edit log writing.<br />(Todd Lipcon via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1485">HDFS-1485</a>. Fix typo in BlockPlacementPolicy.<br />(Jingguo Yao via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1035">HDFS-1035</a>. Generate Eclipse's .classpath file from Ivy config.<br />(nigel)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1408">HDFS-1408</a>. Herriot NN and DN clients should vend statistics.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1491">HDFS-1491</a>  Update Hdfs to match the change of methods from protected to public
+in AbstractFileSystem (Hadoop-6903)<br />(sanjay)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1160">HDFS-1160</a>. Improve some FSDataset warnings and comments.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-556">HDFS-556</a>. Provide info on failed volumes in the web ui.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-697">HDFS-697</a>. Enable asserts for tests by default.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1187">HDFS-1187</a>. Modify fetchdt to allow renewing and canceling token.<br />(Owen O'Malley and Kan Zhang via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1387">HDFS-1387</a>. Update HDFS permissions guide for security.<br />(Todd Lipcon via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-455">HDFS-455</a>. Make NN and DN handle in a intuitive way comma-separated
+configuration strings.<br />(Michele Catasta via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1071">HDFS-1071</a>. savenamespace should write the fsimage to all configured
+fs.name.dir in parallel<br />(Dmytro Molkov via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1055">HDFS-1055</a>. Improve thread naming for DataXceivers.
+(Todd Lipcon and Ramkumar Vadali via eli).
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-718">HDFS-718</a>. Configuration parameter to prevent accidental formatting of
+HDFS filesystem.<br />(Andrew Ryan via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1500">HDFS-1500</a>. TestOfflineImageViewer failing on trunk.<br />(Todd Lipcon
+via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1483">HDFS-1483</a>. DFSClient.getBlockLocations should indicate if corresponding
+blocks are corrupt.<br />(Patrick Kling via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-259">HDFS-259</a>. Remove intentionally corrupt 0.13 directory layout creation.<br />(Todd Lipcon via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1513">HDFS-1513</a>. Fix a number of warnings.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1473">HDFS-1473</a>. Refactor storage management into separate classes than fsimage
+file reading/writing.<br />(Todd Lipcon via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1582">HDFS-1582</a>. Remove auto-generated native build files.<br />(rvs via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1861">HDFS-1861</a>. Rename dfs.datanode.max.xcievers and bump its default value.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1562">HDFS-1562</a>. Add rack policy tests.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1866">HDFS-1866</a>. Document dfs.datanode.max.transfer.threads in hdfs-default.xml<br />(Harsh J Chouraria via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1946">HDFS-1946</a>. HDFS part of <a href="http://issues.apache.org/jira/browse/HADOOP-7291">HADOOP-7291</a>.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1947">HDFS-1947</a>. DFSClient should use mapreduce.task.attempt.id.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1957">HDFS-1957</a>. Add documentation for HFTP.<br />(Ari Rabkin via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1454">HDFS-1454</a>. Update the documentation to reflect that clients don't write
+blocks to local disk before copying to HDFS.<br />(Harsh J Chouraria via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1980">HDFS-1980</a>. Move build/webapps deeper in the build directory heirarchy
+to aid eclipse users.<br />(todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1619">HDFS-1619</a>. Remove AC_TYPE* from the libhdfs.<br />(Roman Shaposhnik via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1948">HDFS-1948</a>  Forward port 'hdfs-1520 lightweight namenode operation to
+trigger lease reccovery'<br />(stack)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1954">HDFS-1954</a>. Improved corrupt files warning on NameNode web UI.<br />(Patrick Hunt via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1409">HDFS-1409</a>. BackupNode registration throwing
+UnsupportedActionException("register") instead of "journal".<br />(Ching-Shen Chen via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-7106">HADOOP-7106</a>. Reorganize project SVN layout to "unsplit" the projects.<br />(todd, nigel)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2054">HDFS-2054</a>  BlockSender.sendChunk() prints ERROR for connection closures
+encountered during transferToFully()<br />(Kihwal Lee via stack)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2343">HDFS-2343</a>. Upgrade to Avro 1.5.3.<br />(Joep Rottinghuis via shv)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.22.0_-_2011-11-29_._optimizations_')">  OPTIMIZATIONS
+</a>&nbsp;&nbsp;&nbsp;(8)
+    <ol id="release_0.22.0_-_2011-11-29_._optimizations_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1140">HDFS-1140</a>. Speedup INode.getPathComponents.<br />(Dmytro Molkov via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1081">HDFS-1081</a>. Performance regression in
+DistributedFileSystem::getFileBlockLocations in secure systems<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1114">HDFS-1114</a>. Implement LightWeightGSet for BlocksMap in order to reduce
+NameNode memory footprint.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1320">HDFS-1320</a>. Add LOG.isDebugEnabled() guard for each LOG.debug(..).<br />(Erik Steffl via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1368">HDFS-1368</a>. Add a block counter to DatanodeDescriptor.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1434">HDFS-1434</a>. Refactor Datanode#startDataNode method into smaller methods.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1602">HDFS-1602</a>. Fix <a href="http://issues.apache.org/jira/browse/HADOOP-4885">HADOOP-4885</a> for it is doesn't work as expected.<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-941">HDFS-941</a>. The DFS client should cache and reuse open sockets to datanodes
+while performing reads.<br />(bc Wong and Todd Lipcon via todd)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.22.0_-_2011-11-29_._bug_fixes_')">  BUG FIXES
+</a>&nbsp;&nbsp;&nbsp;(141)
+    <ol id="release_0.22.0_-_2011-11-29_._bug_fixes_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1039">HDFS-1039</a>. Adding test for  JspHelper.getUGI<br />(jnp via boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1019">HDFS-1019</a>. Incorrect default values for delegation tokens in
+hdfs-default.xml<br />(jnp via boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1039">HDFS-1039</a>.  Service should be set in the token in JspHelper.getUGI<br />(jnp via boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1038">HDFS-1038</a>. FIX. A test missed in a previous commit for this JIRA.<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1038">HDFS-1038</a>. In nn_browsedfscontent.jsp fetch delegation token only
+if security is enabled.<br />(jnp via boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1044">HDFS-1044</a>. Cannot submit mapreduce job from secure client to
+unsecure sever<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1021">HDFS-1021</a>. specify correct server principal for RefreshAuthorizationPolicyProtocol
+and RefreshUserToGroupMappingsProtocol protocols in DFSAdmin (for <a href="http://issues.apache.org/jira/browse/HADOOP-6612">HADOOP-6612</a>)<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-970">HDFS-970</a>. fsync fsimage to disk before closing fsimage file.<br />(Todd Lipcon via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1027">HDFS-1027</a>. Update copyright year to 2010.<br />(Ravi Phulari via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1080">HDFS-1080</a>. SecondaryNameNode image transfer should use the defined http
+address rather than local ip address.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1198">HDFS-1198</a>. Resolving cross-realm principals.<br />(Jitendra Pandey via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1118">HDFS-1118</a>. Fix socketleak on DFSClient.<br />(Zheng Shao via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1192">HDFS-1192</a>. refreshSuperUserGroupsConfiguration should use server side
+configuration for the refresh (for <a href="http://issues.apache.org/jira/browse/HADOOP-6815">HADOOP-6815</a>)<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1036">HDFS-1036</a>. in DelegationTokenFetch dfs.getURI returns no port<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1017">HDFS-1017</a>. browsedfs jsp should call JspHelper.getUGI rather
+than using createRemoteUser()<br />(jnp via boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1250">HDFS-1250</a>. Namenode should reject block reports and block received
+requests from dead datanodes<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1145">HDFS-1145</a>. When NameNode is shutdown it does not try to exit
+safemode anymore.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1202">HDFS-1202</a>. DataBlockScanner throws NPE when updated before
+initialized.<br />(Todd Lipcon via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-882">HDFS-882</a>. Datanode logs the hostname and port its listening on.<br />(Steve Loughran via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1238">HDFS-1238</a>. ant eclipse-files has drifted again,<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1045">HDFS-1045</a>. In secure clusters, re-login is necessary for https
+clients before opening connections.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1289">HDFS-1289</a>. Datanode secure mode is broken.<br />(Kan Zhang via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1007">HDFS-1007</a>. HFTP needs to be updated to use delegation tokens<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1085">HDFS-1085</a>. HFTP read may fail silently on the client side if there is an
+exception on the server side.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1308">HDFS-1308</a>. job conf key for the services name of DelegationToken for HFTP
+url is constructed incorrectly in HFTPFileSystem<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1319">HDFS-1319</a>. Fix location of re-login for secondary namenode from <a href="http://issues.apache.org/jira/browse/HDFS-999">HDFS-999</a>.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1317">HDFS-1317</a>. Remove the FILEPATH_PATTERN from hdfsproxy.AuthorizationFilter.<br />(Rohini Palaniswamy via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-912">HDFS-912</a>. sed in build.xml on Solaris fails.<br />(Allen Wittenauer via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1296">HDFS-1296</a>. using delegation token over hftp for long running
+clients<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1334">HDFS-1334</a>. open in HftpFileSystem does not add delegation tokens to the url.<br />(Jitendra Pandey via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1301">HDFS-1301</a>.  TestHDFSProxy need to use server side conf for ProxyUser
+stuff.<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1340">HDFS-1340</a>. When security is turned off, there is a potential XSS attack.
+This patch fixes it by removing delegationtoken string from the URL,
+before returning a response to the client.<br />(Jitendra Pandey via ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1347">HDFS-1347</a>.  TestDelegationToken uses mortbay.log for logging<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1157">HDFS-1157</a>. Modifications introduced by <a href="http://issues.apache.org/jira/browse/HDFS-1150">HDFS-1150</a> are breaking aspect's
+bindings<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1349">HDFS-1349</a>. Remove empty java files.<br />(Eli Collins)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1340">HDFS-1340</a>. A null delegation token is appended to the url if security
+is disabled when browsing filesystem.<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1352">HDFS-1352</a>. Fix jsvc.location.<br />(Eli Collins via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1284">HDFS-1284</a>. TestBlockToken fails.<br />(Kan Zhang via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1355">HDFS-1355</a>. ant veryclean (clean-cache) doesn't clean enough.<br />(Luke Lu via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1353">HDFS-1353</a>. Remove most of getBlockLocation optimization.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1369">HDFS-1369</a>. Invalid javadoc reference in FSDatasetMBean.java<br />(Eli Collins)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-829">HDFS-829</a>. hdfsJniHelper.c: #include &lt;error.h&gt; is not portable.<br />(Allen Wittenauer via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1310">HDFS-1310</a>. The ClientDatanodeProtocol proxy should be stopped in
+DFSInputStream.readBlockLength(..).<br />(sam rash via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1357">HDFS-1357</a>. HFTP traffic served by DataNode shouldn't use service port
+on NameNode.<br />(Kan Zhang via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-96">HDFS-96</a>. HDFS supports blocks larger than 2 GB.<br />(Patrick Kling via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1433">HDFS-1433</a>. Fix test failures - TestPread and TestFileLimit.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1364">HDFS-1364</a>. Makes long running HFTP-based applications do relogins
+if necessary.<br />(Jitendra Pandey via ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1399">HDFS-1399</a>. Distinct minicluster services (e.g. NN and JT) overwrite each
+other's service policies.<br />(Aaron T. Myers via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1440">HDFS-1440</a>. Fix TestComputeInvalidateWork failure.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1498">HDFS-1498</a>. FSDirectory#unprotectedConcat calls setModificationTime
+on a file.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1466">HDFS-1466</a>. TestFcHdfsSymlink relies on /tmp/test not existing.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-874">HDFS-874</a>. TestHDFSFileContextMainOperations fails on weirdly
+configured DNS hosts.<br />(Todd Lipcon via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1507">HDFS-1507</a>. TestAbandonBlock should abandon a block.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1487">HDFS-1487</a>. FSDirectory.removeBlock() should update diskspace count
+of the block owner node (Zhong Wang via eli).
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1001">HDFS-1001</a>. DataXceiver and BlockReader disagree on when to send/recv
+CHECKSUM_OK.<br />(bc Wong via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1167">HDFS-1167</a>. New property for local conf directory in system-test-hdfs.xml
+file.<br />(Vinay Thota via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1467">HDFS-1467</a>. Append pipeline never succeeds with more than one replica.<br />(Todd Lipcon via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1503">HDFS-1503</a>. TestSaveNamespace fails.<br />(Todd Lipcon via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1524">HDFS-1524</a>. Image loader should make sure to read every byte in image file.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1523">HDFS-1523</a>. TestLargeBlock is failing on trunk.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1502">HDFS-1502</a>. TestBlockRecovery triggers NPE in assert.<br />(hairong via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1532">HDFS-1532</a>. Exclude Findbugs warning in FSImageFormat$Saver.<br />(Todd Lipcon
+via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1527">HDFS-1527</a>. SocketOutputStream.transferToFully fails for blocks &gt;= 2GB on
+32 bit JVM.<br />(Patrick Kling via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1531">HDFS-1531</a>. Clean up stack traces due to duplicate MXBean registration.<br />(Todd Lipcon via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-613">HDFS-613</a>. TestBalancer and TestBlockTokenWithDFS fail Balancer assert.<br />(Todd Lipcon via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1511">HDFS-1511</a>. 98 Release Audit warnings on trunk and branch-0.22.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1560">HDFS-1560</a>. dfs.data.dir permissions should default to 700.<br />(Todd Lipcon via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1550">HDFS-1550</a>. NPE when listing a file with no location.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1542">HDFS-1542</a>. Add test for <a href="http://issues.apache.org/jira/browse/HADOOP-7082">HADOOP-7082</a>, a deadlock writing Configuration to
+HDFS.<br />(todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1504">HDFS-1504</a>. FSImageSaver should catch all exceptions, not just IOE.<br />(todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-884">HDFS-884</a>. DataNode throws IOException if all data directories are
+unavailable.<br />(Steve Loughran and shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1572">HDFS-1572</a>. Checkpointer should trigger checkpoint with specified period.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1561">HDFS-1561</a>. BackupNode listens on the default host.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1591">HDFS-1591</a>. HDFS part of <a href="http://issues.apache.org/jira/browse/HADOOP-6642">HADOOP-6642</a>.<br />(Chris Douglas, Po Cheung via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-900">HDFS-900</a>. Corrupt replicas are not processed correctly in block report<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1529">HDFS-1529</a>. Incorrect handling of interrupts in waitForAckedSeqno can cause
+deadlock<br />(todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1597">HDFS-1597</a>. Batched edit log syncs can reset synctxid and throw assertions<br />(todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1618">HDFS-1618</a>. configure files that are generated as part of the released
+tarball need to have executable bit set<br />(Roman Shaposhnik via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-981">HDFS-981</a>. test-contrib fails due to test-cactus failure<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1625">HDFS-1625</a>. Ignore disk space values in TestDataNodeMXBean.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1781">HDFS-1781</a>. Fix the path for jsvc in bin/hdfs.<br />(John George via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1782">HDFS-1782</a>. Fix an NPE in FSNamesystem.startFileInternal(..).<br />(John George via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1821">HDFS-1821</a>. Fix username resolution in NameNode.createSymlink(..) and
+FSDirectory.addSymlink(..).<br />(John George via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1806">HDFS-1806</a>. TestBlockReport.blockReport_08() and _09() are timing-dependent
+and likely to fail on fast servers.<br />(Matt Foley via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1845">HDFS-1845</a>. Symlink comes up as directory after namenode restart.<br />(John George via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1666">HDFS-1666</a>. Disable failing hdfsproxy test TestAuthorizationFilter<br />(todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1823">HDFS-1823</a>. start-dfs.sh script fails if HADOOP_HOME is not set.<br />(tomwhite via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1822">HDFS-1822</a>. Handle editlog opcode conflict with 0.20.203 during upgrade,
+by throwing an error to indicate the editlog needs to be empty.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1909">HDFS-1909</a>. TestHDFSCLI fails due to typo in expected output.<br />(tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1544">HDFS-1544</a>. Ivy resolve force mode should be turned off by default.<br />(Luke Lu via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1615">HDFS-1615</a>. seek() on closed DFS input stream throws NullPointerException<br />(Scott Carey via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1897">HDFS-1897</a>. Documentation refers to removed option dfs.network.script<br />(Andrew Whang via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1621">HDFS-1621</a>. Fix references to hadoop-common-${version} in build.xml<br />(Jolly Chen via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1891">HDFS-1891</a>. Disable IPV6 for junit tests to fix TestBackupNode failure.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1505">HDFS-1505</a>. saveNamespace appears to succeed even if all directories fail
+to save.<br />(Aaron T. Myers via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1925">HDFS-1925</a>. SafeModeInfo should use the correct constant instead of a
+hard-coded value for its default.<br />(Joey Echeverria via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1575">HDFS-1575</a>. Viewing block from web UI is broken.<br />(Aaron T. Myers via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1932">HDFS-1932</a>. Ensure that HDFS configuration deprecations are set up in every
+spot that HDFS configurations are loaded.<br />(Jolly Chen via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1978">HDFS-1978</a>. All but first option in LIBHDFS_OPTS is ignored.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1965">HDFS-1965</a>. IPCs done using block token-based tickets can't reuse
+connections<br />(todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1964">HDFS-1964</a>. Fix incorrect HTML unescaping in DatanodeJspHelper<br />(Aaron T. Myers via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1997">HDFS-1997</a>. Image transfer process misreports client side exceptions.<br />(todd via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2000">HDFS-2000</a>. Missing deprecation for io.bytes.per.checksum.<br />(Aaron T. Myers vie eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-977">HDFS-977</a>. DataNode.createInterDataNodeProtocolProxy() guards a log
+at the wrong level.<br />(Harsh J Chouraria via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1936">HDFS-1936</a>. Layout version change from <a href="http://issues.apache.org/jira/browse/HDFS-1822">HDFS-1822</a> causes upgrade failure.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1969">HDFS-1969</a>. Running rollback on new-version namenode destroys the
+namespace.<br />(todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2039">HDFS-2039</a>. TestNameNodeMetrics uses a bad test root path, preventing it
+from running inside Eclipse.<br />(todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-988">HDFS-988</a>. saveNamespace race can corrupt the edits log.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2071">HDFS-2071</a>. Use of isConnected() in DataXceiver is invalid.<br />(Kihwal Lee
+via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1952">HDFS-1952</a>. FSEditLog.open() appears to succeed even if all EDITS
+directories fail.<br />(Andrew Wang via mattf)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1981">HDFS-1981</a>. NameNode does not saveNamespace() when editsNew is empty.<br />(Uma Maheswara Rao G via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2189">HDFS-2189</a>. Add guava-r09 dependency to ivy/hadoop-hdfs-template.xml<br />(Plamen Jeliazkov &amp; Joep Rottinghuis via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2211">HDFS-2211</a>. Build does not pass along properties to contrib builds<br />(Joep
+Rottinghuis via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2214">HDFS-2214</a>. Generated POMs hardcode dependency on hadoop-common version
+0.22.0-SNAPSHOT<br />(Joep Rottinghuis via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2258">HDFS-2258</a>. Reset lease limits to default values in TestLeaseRecovery2.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2232">HDFS-2232</a>. Generalize regular expressions in TestHDFSCLI.<br />(Plamen Jeliazkov via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2297">HDFS-2297</a>. ant should pass jvmargs to findbugs.<br />(Joep Rottinghuis via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2315">HDFS-2315</a>. Fix build-contrib to work with ant older than 1.8.<br />(Joep Rottinghuis via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2281">HDFS-2281</a>. NPE in checkpoint during processIOError().<br />(Uma Maheswara Rao G via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2280">HDFS-2280</a>. BackupNode fails with MD5 checksum Exception.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2285">HDFS-2285</a>. BackupNode should reject requests to modify namespace.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2271">HDFS-2271</a>. startJournalSpool should invoke processIOError.<br />(Uma Maheswara Rao G via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2341">HDFS-2341</a>. Contribs not building.<br />(Joep Rottinghuis via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2290">HDFS-2290</a>. Block with corrupt replica is not getting replicated.<br />(Benoy Antony via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1943">HDFS-1943</a>. fail to start datanode while start-dfs.sh is executed by root
+user<br />(Wei Yongjun via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2388">HDFS-2388</a>. Remove ivy dependency on different version of slf4j in avro.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2383">HDFS-2383</a>. Remove TestDfsOverAvroRpc for 0.22 branch.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1762">HDFS-1762</a>. Allow TestHDFSCLI to be run against a cluster<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2012">HDFS-2012</a>. Balancer incorrectly treats nodes whose utilization equals
+avgUtilization.<br />(Uma Maheswara Rao G via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2286">HDFS-2286</a>. DataXceiverServer logs AsynchronousCloseException at shutdown<br />(Todd Lipcon and Uma Maheswara Rao G via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2451">HDFS-2451</a>. TestNodeCount.testNodeCount failes with NPE<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2452">HDFS-2452</a>. OutOfMemoryError in DataXceiverServer takes down the DataNode<br />(Uma Maheswara Rao via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2491">HDFS-2491</a>. TestBalancer can fail when datanode utilization and
+avgUtilization is exactly same.<br />(Uma Maheswara Rao G via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2002">HDFS-2002</a>. Incorrect computation of needed blocks in getTurnOffTip().<br />(Plamen Jeliazkov via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2513">HDFS-2513</a>. Bump jetty to 6.1.26<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2573">HDFS-2573</a>. TestFiDataXceiverServer is failing, not testing OOME<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2514">HDFS-2514</a>. Link resolution bug for intermediate symlinks with
+relative targets.<br />(eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1786">HDFS-1786</a>. Some cli test cases expect a "null" message<br />(Uma Maheswara Rao G via todd)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1855">HDFS-1855</a>. TestDatanodeBlockScanner.testBlockCorruptionRecoveryPolicy()
+part 2 fails in two different ways.<br />(Matt Foley via eli)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2346">HDFS-2346</a>. TestHost2NodesMap &amp; TestReplicasMap will fail depending upon
+execution order of test methods<br />(Laxman, Uma Maheswara Rao G via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-2287">HDFS-2287</a>. TestParallelRead has a small off-by-one bug.<br />(todd via shv)</li>
+    </ol>
+  </li>
+</ul>
+<h2><a href="javascript:toggleList('older')">Older Releases</a></h2>
+<ul id="older">
+<h3><a href="javascript:toggleList('release_0.21.1_-_unreleased_')">Release 0.21.1 - Unreleased
+</a></h3>
+<ul id="release_0.21.1_-_unreleased_">
+  <li><a href="javascript:toggleList('release_0.21.1_-_unreleased_._improvements_')">  IMPROVEMENTS
+</a>&nbsp;&nbsp;&nbsp;(1)
+    <ol id="release_0.21.1_-_unreleased_._improvements_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1411">HDFS-1411</a>. Correct backup node startup command in hdfs user guide.<br />(Ching-Shen Chen via shv)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.21.1_-_unreleased_._bug_fixes_')">  BUG FIXES
+</a>&nbsp;&nbsp;&nbsp;(17)
+    <ol id="release_0.21.1_-_unreleased_._bug_fixes_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1363">HDFS-1363</a>. Eliminate second synchronized sections in appendFile().<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1413">HDFS-1413</a>. Fix broken links to HDFS Wiki.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1420">HDFS-1420</a>. Clover build doesn't generate per-test coverage<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1444">HDFS-1444</a>. Test related code of build.xml is error-prone and needs to be
+re-aligned.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1343">HDFS-1343</a>. Instrumented build should be concentrated in one build area<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1452">HDFS-1452</a>. ant compile-contrib is broken<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1474">HDFS-1474</a>. ant binary-system is broken<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1292">HDFS-1292</a>. Allow artifacts to be published to the staging Apache Nexus
+Maven Repository.<br />(Giridharan Kesavan via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1206">HDFS-1206</a>. TestFiHFlush fails intermittently.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1548">HDFS-1548</a>. Fault-injection tests are executed multiple times if invoked
+with run-test-hdfs-fault-inject target<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1552">HDFS-1552</a>. Remove java5 dependencies from build.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-996">HDFS-996</a>. JUnit tests should never depend on anything in conf<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1612">HDFS-1612</a>. Update HDFS design documentation for append, quota, symlink,
+block placement and checkpoint/backup node features.<br />(Joe Crobak
+via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1189">HDFS-1189</a>. Quota counts missed between clear quota and set quota.<br />(John George via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1665">HDFS-1665</a>. Balancer misuses dfs.heartbeat.interval as milliseconds.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1728">HDFS-1728</a>. SecondaryNameNode.checkpointSize is in bytes but not in MB.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1596">HDFS-1596</a>. Replace fs.checkpoint.* with dfs.namenode.checkpoint.*
+in documentations.<br />(Harsh J Chouraria via szetszwo)</li>
+    </ol>
+  </li>
+</ul>
+<h3><a href="javascript:toggleList('release_0.21.0_-_2010-08-13_')">Release 0.21.0 - 2010-08-13
+</a></h3>
+<ul id="release_0.21.0_-_2010-08-13_">
+  <li><a href="javascript:toggleList('release_0.21.0_-_2010-08-13_._incompatible_changes_')">  INCOMPATIBLE CHANGES
+</a>&nbsp;&nbsp;&nbsp;(15)
+    <ol id="release_0.21.0_-_2010-08-13_._incompatible_changes_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-538">HDFS-538</a>. Per the contract elucidated in <a href="http://issues.apache.org/jira/browse/HADOOP-6201">HADOOP-6201</a>, throw
+FileNotFoundException from FileSystem::listStatus rather than returning
+null.<br />(Jakob Homan via cdouglas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-602">HDFS-602</a>. DistributedFileSystem mkdirs throws FileAlreadyExistsException
+instead of FileNotFoundException.<br />(Boris Shkolnik via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-544">HDFS-544</a>. Add a "rbw" subdir to DataNode data directory.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-576">HDFS-576</a>. Block report includes under-construction replicas.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-636">HDFS-636</a>. SafeMode counts complete blocks only.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-644">HDFS-644</a>. Lease recovery, concurrency support.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-570">HDFS-570</a>. Get last block length from a data-node when opening a file
+being written to. (Tsz Wo (Nicholas), SZE via shv)
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-657">HDFS-657</a>. Remove unused legacy data-node protocol methods.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-658">HDFS-658</a>. Block recovery for primary data-node.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-660">HDFS-660</a>. Remove deprecated methods from InterDatanodeProtocol.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-512">HDFS-512</a>. Block.equals() and compareTo() compare blocks based
+only on block Ids, ignoring generation stamps.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-873">HDFS-873</a>. Configuration specifies data-node storage directories as URIs.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-905">HDFS-905</a>. Use the new UserGroupInformation from <a href="http://issues.apache.org/jira/browse/HDFS-6299">HDFS-6299</a>.<br />(jghoman via omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-984">HDFS-984</a>. Persistent delegation tokens.<br />(Jitendra Pandey via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1016">HDFS-1016</a>. HDFS side change for <a href="http://issues.apache.org/jira/browse/HADOOP-6569">HADOOP-6569</a>. This jira changes the
+error message on the screen when cat a directory or a
+non-existent file.<br />(hairong)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.21.0_-_2010-08-13_._new_features_')">  NEW FEATURES
+</a>&nbsp;&nbsp;&nbsp;(38)
+    <ol id="release_0.21.0_-_2010-08-13_._new_features_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1134">HDFS-1134</a>. Large-scale Automated Framework.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-436">HDFS-436</a>. Introduce AspectJ framework for HDFS code and tests.<br />(Konstantin Boudnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-447">HDFS-447</a>. Add LDAP lookup to hdfsproxy.<br />(Zhiyong Zhang via cdouglas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-459">HDFS-459</a>. Introduce Job History Log Analyzer.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-461">HDFS-461</a>. Tool to analyze file size distribution in HDFS.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-492">HDFS-492</a>. Add two JSON JSP pages to the Namenode for providing corrupt
+blocks/replicas information.<br />(Bill Zeller via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-578">HDFS-578</a>. Add support for new FileSystem method for clients to get server
+defaults.<br />(Kan Zhang via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-595">HDFS-595</a>. umask settings in configuration may now use octal or symbolic
+instead of decimal.<br />(Jakob Homan via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-6234">HADOOP-6234</a>. Updated hadoop-core and test jars to propagate new option
+dfs.umaskmode in configuration.<br />(Jakob Homan via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-235">HDFS-235</a>. Add support for byte ranges in HftpFileSystem to serve
+range of bytes from a file.<br />(Bill Zeller via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-385">HDFS-385</a>. Add support for an experimental API that allows a module external
+to HDFS to specify how HDFS blocks should be placed.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-4952">HADOOP-4952</a>. Update hadoop-core and test jars to propagate new FileContext
+file system application interface. (Sanjay Radia via suresh).
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-567">HDFS-567</a>. Add block forensics contrib tool to print history of corrupt and
+missing blocks from the HDFS logs.
+(Bill Zeller, Jitendra Nath Pandey via suresh).
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-610">HDFS-610</a>. Support o.a.h.fs.FileContext.<br />(Sanjay Radia via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-536">HDFS-536</a>. Support hflush at DFSClient.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-517">HDFS-517</a>. Introduce BlockInfoUnderConstruction to reflect block replica
+states while writing.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-565">HDFS-565</a>. Introduce block committing logic during new block allocation
+and file close.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-537">HDFS-537</a>. DataNode exposes a replica's meta info to BlockReceiver for the
+support of dfs writes/hflush. It also updates a replica's bytes received,
+bytes on disk, and bytes acked after receiving a packet.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-585">HDFS-585</a>. Datanode should serve up to visible length of a replica for read
+requests.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-604">HDFS-604</a>. Block report processing for append.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-619">HDFS-619</a>. Support replica recovery initialization in datanode for the new
+append design.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-592">HDFS-592</a>. Allow clients to fetch a new generation stamp from NameNode for
+pipeline recovery.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-624">HDFS-624</a>. Support a new algorithm for pipeline recovery and pipeline setup
+for append.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-627">HDFS-627</a>. Support replica update in data-node.
+(Tsz Wo (Nicholas), SZE and Hairong Kuang via shv)
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-642">HDFS-642</a>. Support pipeline close and close error recovery.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-631">HDFS-631</a>. Rename configuration keys towards API standardization and
+backward compatibility.<br />(Jitendra Nath Pandey via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-669">HDFS-669</a>. Add unit tests framework (Mockito)<br />(cos, Eli Collins)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-731">HDFS-731</a>. Support new Syncable interface in HDFS.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-702">HDFS-702</a>. Add HDFS implementation of AbstractFileSystem.<br />(Sanjay Radio via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-758">HDFS-758</a>. Add decommissioning status page to Namenode Web UI.<br />(Jitendra Nath Pandey via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-814">HDFS-814</a>. Add an api to get the visible length of a DFSDataInputStream.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-654">HDFS-654</a>. Add support new atomic rename functionality in HDFS for
+supporting rename in FileContext.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-222">HDFS-222</a>. Support for concatenating of files into a single file
+without copying.<br />(Boris Shkolnik via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-933">HDFS-933</a>. Adds Delegation token based authentication in the NameNode.<br />(Kan Zhang via ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-935">HDFS-935</a>. Adds a real user component in Delegation token.<br />(Jitendra Nath Pandey via ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-245">HDFS-245</a>. Adds a symlink implementation to HDFS. This complements the new
+symlink feature added in <a href="http://issues.apache.org/jira/browse/HADOOP-6421">HADOOP-6421</a><br />(Eli Collins via Sanjay Radia)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1009">HDFS-1009</a>. Support Kerberos authorization in HDFSProxy.<br />(Srikanth
+Sundarrajan via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1091">HDFS-1091</a>. Implement listStatus that returns an iterator of FileStatus.<br />(hairong)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.21.0_-_2010-08-13_._improvements_')">  IMPROVEMENTS
+</a>&nbsp;&nbsp;&nbsp;(137)
+    <ol id="release_0.21.0_-_2010-08-13_._improvements_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-381">HDFS-381</a>. Remove blocks from DataNode maps when corresponding file
+is deleted.<br />(Suresh Srinivas via rangadi)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-377">HDFS-377</a>. Separate codes which implement DataTransferProtocol.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-396">HDFS-396</a>. NameNode image and edits directories are specified as URIs.<br />(Luca Telloli via rangadi)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-444">HDFS-444</a>. Allow to change probability levels dynamically in the fault
+injection framework.<br />(Konstantin Boudnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-352">HDFS-352</a>. Documentation for saveNamespace command.<br />(Ravi Phulari via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-6106">HADOOP-6106</a>. Updated hadoop-core and test jars from hudson trunk
+build #12.<br />(Giridharan Kesavan)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-204">HDFS-204</a>. Add a new metrics FilesInGetListingOps to the Namenode.<br />(Jitendra Nath Pandey via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-278">HDFS-278</a>. HDFS Outputstream close does not hang forever.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-443">HDFS-443</a>. Add a new metrics numExpiredHeartbeats to the Namenode.<br />(Jitendra Nath Pandey via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-475">HDFS-475</a>. Add new ant targets for fault injection jars and tests.<br />(Konstantin Boudnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-458">HDFS-458</a>. Create a new ant target, run-commit-test.<br />(Jakob Homan
+via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-493">HDFS-493</a>. Change build.xml so that the fault-injected tests are executed
+only by the run-test-*-fault-inject targets.<br />(Konstantin Boudnik via
+szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-446">HDFS-446</a>. Improvements to Offline Image Viewer.<br />(Jakob Homan via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-6160">HADOOP-6160</a>. Fix releaseaudit target to run on specific directories.<br />(gkesavan)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-501">HDFS-501</a>. Use enum to define the constants in DataTransferProtocol.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-508">HDFS-508</a>. Factor out BlockInfo from BlocksMap.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-510">HDFS-510</a>. Rename DatanodeBlockInfo to be ReplicaInfo.<br />(Jakob Homan &amp; Hairong Kuang via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-500">HDFS-500</a>. Deprecate NameNode methods deprecated in NameNodeProtocol.<br />(Jakob Homan via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-514">HDFS-514</a>. Change DFSClient.namenode from public to private.<br />(Bill Zeller
+via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-496">HDFS-496</a>. Use PureJavaCrc32 in HDFS.<br />(Todd Lipcon via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-511">HDFS-511</a>. Remove redundant block searches in BlockManager.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-504">HDFS-504</a>. Update the modification time of a file when the file
+is closed.<br />(Chun Zhang via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-498">HDFS-498</a>. Add development guide and documentation for the fault injection
+framework.<br />(Konstantin Boudnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-524">HDFS-524</a>. Further DataTransferProtocol code refactoring.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-529">HDFS-529</a>. Use BlockInfo instead of Block to avoid redundant block searches
+in BlockManager.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-530">HDFS-530</a>. Refactor TestFileAppend* to remove code duplication.<br />(Konstantin Boudnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-451">HDFS-451</a>. Add fault injection tests for DataTransferProtocol.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-409">HDFS-409</a>. Add more access token tests.<br />(Kan Zhang via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-546">HDFS-546</a>. DatanodeDescriptor iterates blocks as BlockInfo.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-457">HDFS-457</a>. Do not shutdown datanode if some, but not all, volumes fail.<br />(Boris Shkolnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-548">HDFS-548</a>. TestFsck takes nearly 10 minutes to run.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-539">HDFS-539</a>. Refactor fault injeciton pipeline test util for future reuse.<br />(Konstantin Boudnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-552">HDFS-552</a>. Change TestFiDataTransferProtocol to junit 4 and add a few new
+tests.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-563">HDFS-563</a>. Simplify the codes in FSNamesystem.getBlockLocations(..).<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-581">HDFS-581</a>. Introduce an iterator over blocks in the block report array.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-549">HDFS-549</a>. Add a new target, run-with-fault-inject-testcaseonly, which
+allows an execution of non-FI tests in FI-enable environment.<br />(Konstantin
+Boudnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-173">HDFS-173</a>. Namenode will not block until a large directory deletion
+completes. It allows other operations when the deletion is in progress.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-551">HDFS-551</a>. Create new functional test for a block report.<br />(Konstantin
+Boudnik via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-288">HDFS-288</a>. Redundant computation in hashCode() implementation.<br />(szetszwo via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-412">HDFS-412</a>. Hadoop JMX usage makes Nagios monitoring impossible.<br />(Brian Bockelman via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-472">HDFS-472</a>. Update hdfsproxy documentation. Adds a setup guide and design
+document.<br />(Zhiyong Zhang via cdouglas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-617">HDFS-617</a>. Support non-recursive create().<br />(Kan Zhang via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-618">HDFS-618</a>. Support non-recursive mkdir().<br />(Kan Zhang via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-574">HDFS-574</a>. Split the documentation between the subprojects.<br />(Corinne Chandel via omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-598">HDFS-598</a>. Eclipse launch task for HDFS.<br />(Eli Collins via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-641">HDFS-641</a>. Move all of the components that depend on map/reduce to
+map/reduce.<br />(omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-509">HDFS-509</a>. Redesign DataNode volumeMap to include all types of Replicas.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-562">HDFS-562</a>. Add a test for NameNode.getBlockLocations(..) to check read from
+un-closed file.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-543">HDFS-543</a>. Break FSDatasetInterface#writToBlock() into writeToRemporary,
+writeToRBW, ad append.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-603">HDFS-603</a>. Add a new interface, Replica, which is going to replace the use
+of Block in datanode.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-589">HDFS-589</a>. Change block write protocol to support pipeline recovery.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-652">HDFS-652</a>. Replace BlockInfo.isUnderConstruction() with isComplete()<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-648">HDFS-648</a>. Change some methods in AppendTestUtil to public.<br />(Konstantin
+Boudnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-662">HDFS-662</a>. Unnecessary info message from DFSClient.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-518">HDFS-518</a>. Create new tests for Append's hflush.<br />(Konstantin Boudnik
+via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-688">HDFS-688</a>. Add configuration resources to DFSAdmin.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-29">HDFS-29</a>. Validate the consistency of the lengths of replica and its file
+in replica recovery.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-680">HDFS-680</a>. Add new access method to a copy of a block's replica.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-704">HDFS-704</a>. Unify build property names to facilitate cross-projects
+modifications<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-705">HDFS-705</a>. Create an adapter to access some of package-private methods of
+DataNode from tests<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-710">HDFS-710</a>. Add actions with constraints to the pipeline fault injection
+tests and change SleepAction to support uniform random sleeping over an
+interval.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-713">HDFS-713</a>. Need to properly check the type of the test class from an aspect<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-716">HDFS-716</a>. Define a pointcut for pipeline close and add a few fault
+injection tests to simulate out of memory problem.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-719">HDFS-719</a>. Add 6 fault injection tests for pipeline close to simulate slow
+datanodes and disk errors.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-616">HDFS-616</a>. Create functional tests for new design of the block report.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-584">HDFS-584</a>. Fail the fault-inject build if any advices are mis-bound.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-730">HDFS-730</a>. Add 4 fault injection tests to simulate non-responsive datanode
+and out-of-memory problem for pipeline close ack.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-728">HDFS-728</a>. Create a comprehensive functional test for append.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-736">HDFS-736</a>. commitBlockSynchronization() updates block GS and length
+in-place.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-5107">HADOOP-5107</a>. Use Maven ant tasks to publish the subproject jars.<br />(Giridharan Kesavan via omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-521">HDFS-521</a>. Create new tests for pipeline<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-764">HDFS-764</a>. Places the Block Access token implementation in hdfs project.<br />(Kan Zhang via ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-787">HDFS-787</a>. Upgrade some libraries to be consistent with common and
+mapreduce.<br />(omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-519">HDFS-519</a>. Create new tests for lease recovery<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-804">HDFS-804</a>. New unit tests for concurrent lease recovery<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-813">HDFS-813</a>. Enable the append test in TestReadWhileWriting.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-145">HDFS-145</a>. Cleanup inconsistent block length handling code in
+FSNameSystem#addStoredBlock.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-127">HDFS-127</a>. Reset failure count in DFSClient for each block acquiring
+operation.<br />(Igor Bolotin via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-520">HDFS-520</a>. Create new tests for block recovery.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1067">HDFS-1067</a>. Create block recovery tests that handle errors.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1107">HDFS-1107</a>. Turn on append by default.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-968">HDFS-968</a>. Use StringBuilder instead of StringBuffer for better
+performance.<br />(Kay Kay via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-703">HDFS-703</a>. Replace current fault injection implementation with one
+from<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-754">HDFS-754</a>. Reduce ivy console output to observable level<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-832">HDFS-832</a>. HDFS side of <a href="http://issues.apache.org/jira/browse/HADOOP-6222">HADOOP-6222</a>.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-840">HDFS-840</a>. Change tests to use FileContext test helper introduced in
+<a href="http://issues.apache.org/jira/browse/HADOOP-6394">HADOOP-6394</a>.<br />(Jitendra Nath Pandey via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-685">HDFS-685</a>. Use the user-to-groups mapping service in the NameNode.<br />(boryas, acmurthy)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-755">HDFS-755</a>. Read multiple checksum chunks at once in DFSInputStream.<br />(Todd Lipcon via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-786">HDFS-786</a>. Implement getContentSummary in HftpFileSystem.
+(Tsz Wo (Nicholas), SZE via cdouglas)
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-587">HDFS-587</a>. Add support for specifying queue name in mapreduce tests.<br />(Erik Steffl via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-902">HDFS-902</a> Move contrib/raid to MapReduce.<br />(Eli Collins via omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-800">HDFS-800</a>. The last block of a file under construction may change to the
+COMPLETE state in response to getAdditionalBlock or completeFileInternal.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-899">HDFS-899</a>. Delegation Token Implementation
+ and corresponding changes in Namenode and DFS Api to issue,
+renew and cancel delegation tokens.<br />(jnp via boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-844">HDFS-844</a>. Log the filename when file locking fails.<br />(tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-914">HDFS-914</a>. Refactor DFSOutputStream and DFSInputStream out of DFSClient.<br />(Todd Lipcon via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-949">HDFS-949</a>. Move DelegationToken into Common so that it can be used by
+MapReduce.<br />(omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-930">HDFS-930</a>. Better error message for DATA_TRANSFER_VERSION mismatched.<br />(Kay Kay via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-986">HDFS-986</a>. Delegation token renewing and cancelling should provide
+meaningful exceptions when there are failures instead of returning
+false.<br />(omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-6579">HADOOP-6579</a>. Upgrade the commons-codec library to 1.4.<br />(omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-991">HDFS-991</a>. Allow authentication to the web ui via a delegation token.<br />(omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-994">HDFS-994</a>. Allow fetching of delegation token from NameNode for hftp.<br />(Jakob Homan via acmurthy)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-998">HDFS-998</a>. Quote blocks streamed through jsps.<br />(cdouglas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-729">HDFS-729</a>. NameNode API to list files that have missing blocks.<br />(Rodrigo Schmidt via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-850">HDFS-850</a>. The WebUI display more details about namenode memory usage.<br />(Dmytro Molkov via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-826">HDFS-826</a>. The DFSOutputStream has a API that returns the number of
+active datanode(s) in the current pipeline.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-985">HDFS-985</a>. HDFS should issue multiple RPCs for listing a large
+directory.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1043">HDFS-1043</a>. NNThroughputBenchmark modifications to support benchmarking of
+server-side user group resolution.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-892">HDFS-892</a>. Optionally use Avro reflection for Namenode RPC.  This
+is not a complete implementation yet, but rather a starting point.<br />(cutting)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-854">HDFS-854</a>. Datanode should scan devices in parallel to generate
+block report.<br />(Dmytro Molkov via jhoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1032">HDFS-1032</a>. fsck has an option to list corrupt files.<br />(Andre Oriai via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1024">HDFS-1024</a>. SecondaryNameNode verifies size of fsimage and edits file.<br />(Dmytro Molkov via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1011">HDFS-1011</a>. hdfsproxy: Improve log messages by restoring the previous
+thread name.<br />(Srikanth Sundarrajan via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-997">HDFS-997</a>. Allow datanode storage directory permissions to be configurable.<br />(Luke Lu via cdouglas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1012">HDFS-1012</a>. hdfsproxy: Support for fully qualified HDFS path in addition to
+simple unqualified path.<br />(Srikanth Sundarrajan via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-993">HDFS-993</a>. Namenode should issue a delegation token only for kerberos
+authenticated clients.<br />(jnp via boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1087">HDFS-1087</a>. Modify audit log to use a StringBuilder rather than a Formatter.<br />(cdouglas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1083">HDFS-1083</a>. Update TestHDFSCLI not to expect exception class name
+in error messages.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1099">HDFS-1099</a>. Add test for umask backward compatibility.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1092">HDFS-1092</a>. Use logging rather than System.err in MiniDFSCluster.<br />(Kay Kay via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1047">HDFS-1047</a>. Install/deploy source jars to Maven repo.<br />(Patrick Angeles via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-666">HDFS-666</a>. Unit test for FsShell -text.<br />(cdouglas via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1054">HDFS-1054</a>. Remove unnecessary sleep after failure in nextBlockOutputStream.<br />(Todd Lipcon via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-921">HDFS-921</a>. Convert TestDFSClientRetries::testNotYetReplicatedErrors
+to Mockito.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1100">HDFS-1100</a>. Override unwrapException in TestFcHdfsSymlink to test
+symlink API conformance. (Eli Collins via suresh).
+</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1089">HDFS-1089</a>. Remove uses of FileContext#isFile, isDirectory, and exists.<br />(Eli Collins via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1028">HDFS-1028</a>. Efficient splitting of path components reduces the time
+to load in fsimage by 20%.<br />(Dmytro Molkov via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1109">HDFS-1109</a>. HFTP supports filenames that contains the character "+".<br />(Dmytro Molkov via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-853">HDFS-853</a>. The HDFS webUI displays the balanced-ness of the cluster.<br />(Dmytro Molkov via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1126">HDFS-1126</a>. Change HDFS to depend on Hadoop 'common' artifacts instead
+of 'core'.<br />(tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-995">HDFS-995</a>.  Replace usage of FileStatus#isDir().<br />(Eli Collins via
+tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1161">HDFS-1161</a>.  Make DN minimum valid volumes configurable.<br />(Eli Collins via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1181">HDFS-1181</a>. Move configuration and script files post split.<br />(tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1170">HDFS-1170</a>.  Add more assertions to TestLargeDirectoryDelete.<br />(Steve Loughran via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1199">HDFS-1199</a>. Extract a subset of tests for smoke (DOA) validation.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1174">HDFS-1174</a>. New properties for suspend and resume process.<br />(Vinay Thota via
+cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1277">HDFS-1277</a>. [Herriot] New property for multi user list.<br />(Vinay Thota via
+cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-806">HDFS-806</a>. Add new unit tests to the 10-mins 'run-commit-test' target<br />(cos)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.21.0_-_2010-08-13_._optimizations_')">  OPTIMIZATIONS
+</a>&nbsp;&nbsp;&nbsp;(1)
+    <ol id="release_0.21.0_-_2010-08-13_._optimizations_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-946">HDFS-946</a>. NameNode should not return full path name when lisitng a
+diretory or getting the status of a file.<br />(hairong)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.21.0_-_2010-08-13_._bug_fixes_')">  BUG FIXES
+</a>&nbsp;&nbsp;&nbsp;(145)
+    <ol id="release_0.21.0_-_2010-08-13_._bug_fixes_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-76">HDFS-76</a>. Better error message to users when commands fail because of
+lack of quota. Allow quota to be set even if the limit is lower than
+current consumption.<br />(Boris Shkolnik via rangadi)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-4687">HADOOP-4687</a>. HDFS is split from Hadoop Core. It is a subproject under
+Hadoop<br />(Owen O'Malley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-6096">HADOOP-6096</a>. Fix Eclipse project and classpath files following project
+split.<br />(tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-195">HDFS-195</a>. Handle expired tokens when write pipeline is reestablished.<br />(Kan Zhang via rangadi)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-181">HDFS-181</a>. Validate src path in FSNamesystem.getFileInfo(..).<br />(Todd
+Lipcon via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-441">HDFS-441</a>. Remove TestFTPFileSystem.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-440">HDFS-440</a>. Fix javadoc broken links in DFSClient.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-480">HDFS-480</a>. Fix a typo in the jar name in build.xml.<br />(Konstantin Shvachko via gkesavan)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-438">HDFS-438</a>. Check for NULL before invoking GenericArgumentParser in
+DataNode.<br />(Raghu Angadi)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-415">HDFS-415</a>. BlockReceiver hangs in case of certain runtime exceptions.<br />(Konstantin Boudnik via rangadi)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-462">HDFS-462</a>. loadFSImage should close edits file.<br />(Jakob Homan via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-489">HDFS-489</a>. Update TestHDFSCLI for the -skipTrash option in rm.<br />(Jakob Homan
+via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-445">HDFS-445</a>. pread() does not pick up changes to block locations.<br />(Kan Zhang via rangadi)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-463">HDFS-463</a>. CreateEditLog utility broken after <a href="http://issues.apache.org/jira/browse/HDFS-396">HDFS-396</a> (URI for
+FSImage).<br />(Suresh Srinivas via rangadi)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-484">HDFS-484</a>. Fix bin-package and package target to package jar files.<br />(gkesavan)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-490">HDFS-490</a>. Eliminate the deprecated warnings introduced by H-5438.<br />(He Yongqiang via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-119">HDFS-119</a>. Fix a bug in logSync(), which causes NameNode block forever.<br />(Suresh Srinivas via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-534">HDFS-534</a>. Include avro in ivy.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-532">HDFS-532</a>. Allow applications to know that a read request failed
+because block is missing.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-561">HDFS-561</a>. Fix write pipeline READ_TIMEOUT in DataTransferProtocol.<br />(Kan Zhang via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-553">HDFS-553</a>. BlockSender reports wrong failed position in ChecksumException.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-568">HDFS-568</a>. Set mapred.job.tracker.retire.jobs to false in
+src/test/mapred-site.xml for mapreduce tests to run.<br />(Amareshwari
+Sriramadasu via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-15">HDFS-15</a>. All replicas end up on 1 rack.<br />(Jitendra Nath Pandey via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-586">HDFS-586</a>. TestBlocksWithNotEnoughRacks sometimes fails.<br />(Jitendra Nath Pandey via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HADOOP-6243">HADOOP-6243</a>. Fixed a NullPointerException in handling deprecated keys.<br />(Sreekanth Ramakrishnan via yhemanth)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-605">HDFS-605</a>. Do not run fault injection tests in the run-test-hdfs-with-mr
+target.<br />(Konstantin Boudnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-606">HDFS-606</a>. Fix ConcurrentModificationException in invalidateCorruptReplicas()<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-601">HDFS-601</a>. TestBlockReport obtains data directories directly from
+MiniHDFSCluster.<br />(Konstantin Boudnik via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-614">HDFS-614</a>. TestDatanodeBlockScanner obtains data directories directly from
+MiniHDFSCluster.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-612">HDFS-612</a>. Remove the use of org.mortbay.log.Log in FSDataset.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-622">HDFS-622</a>. checkMinReplication should count live nodes only.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-629">HDFS-629</a>. Remove ReplicationTargetChooser.java along with fixing
+import warnings generated by Eclipse.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-637">HDFS-637</a>. DataNode sends a Success ack when block write fails.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-640">HDFS-640</a>. Fixed TestHDFSFileContextMainOperations.java build failure.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-547">HDFS-547</a>. TestHDFSFileSystemContract#testOutputStreamClosedTwice
+sometimes fails with CloseByInterruptException.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-588">HDFS-588</a>. Fix TestFiDataTransferProtocol and TestAppend2 failures.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-550">HDFS-550</a>. DataNode restarts may introduce corrupt/duplicated/lost replicas
+when handling detached replicas.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-659">HDFS-659</a>. If the the last block is not complete, update its length with
+one of its replica's length stored in datanode.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-649">HDFS-649</a>. Check null pointers for DataTransferTest.<br />(Konstantin Boudnik
+via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-661">HDFS-661</a>. DataNode upgrade fails on non-existant current directory.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-597">HDFS-597</a>. Mofication introduced by <a href="http://issues.apache.org/jira/browse/HDFS-537">HDFS-537</a> breakes an advice binding in
+FSDatasetAspects.<br />(Konstantin Boudnik via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-665">HDFS-665</a>. TestFileAppend2 sometimes hangs.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-676">HDFS-676</a>. Fix NPE in FSDataset.updateReplicaUnderRecovery()<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-673">HDFS-673</a>. BlockReceiver#PacketResponder should not remove a packet from
+the ack queue before its ack is sent.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-682">HDFS-682</a>. Fix bugs in TestBlockUnderConstruction.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-668">HDFS-668</a>. TestFileAppend3#TC7 sometimes hangs.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-679">HDFS-679</a>. Appending to a partial chunk incorrectly assumes the
+first packet fills up the partial chunk.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-722">HDFS-722</a>. Fix callCreateBlockWriteStream pointcut in FSDatasetAspects.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-690">HDFS-690</a>. TestAppend2#testComplexAppend failed on "Too many open files".<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-725">HDFS-725</a>. Support the build error fix for <a href="http://issues.apache.org/jira/browse/HADOOP-6327">HADOOP-6327</a>.<br />(Sanjay Radia via
+szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-625">HDFS-625</a>. Fix NullPointerException thrown from ListPathServlet.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-735">HDFS-735</a>. TestReadWhileWriting has wrong line termination symbols<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-691">HDFS-691</a>. Fix an overflow error in DFSClient.DFSInputStream.available().<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-733">HDFS-733</a>. TestBlockReport fails intermittently.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-774">HDFS-774</a>. Intermittent race condition in TestFiPipelines<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-741">HDFS-741</a>. TestHFlush test doesn't seek() past previously written part of
+the file<br />(cos, szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-706">HDFS-706</a>. Intermittent failures in TestFiHFlush<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-646">HDFS-646</a>. Fix test-patch failure by adding test-contrib ant target.<br />(gkesavan)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-791">HDFS-791</a>. Build is broken after <a href="http://issues.apache.org/jira/browse/HDFS-787">HDFS-787</a> patch has been applied<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-792">HDFS-792</a>. TestHDFSCLI is failing.<br />(Todd Lipcon via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-781">HDFS-781</a>. Namenode metrics PendingDeletionBlocks is not decremented.<br />(Suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-192">HDFS-192</a>. Fix TestBackupNode failures.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-797">HDFS-797</a>. TestHDFSCLI much slower after <a href="http://issues.apache.org/jira/browse/HDFS-265">HDFS-265</a> merge.<br />(Todd Lipcon via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-824">HDFS-824</a>. Stop lease checker in TestReadWhileWriting.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-823">HDFS-823</a>. CheckPointer should use addInternalServlet for image-fetching
+servlet<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-456">HDFS-456</a>. Fix URI generation for windows file paths.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-812">HDFS-812</a>. FSNamesystem#internalReleaseLease throws NullPointerException on
+a single-block file's lease recovery.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-724">HDFS-724</a>. Pipeline hangs if one of the block receiver is not responsive.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-564">HDFS-564</a>. Adding pipeline tests 17-35.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-849">HDFS-849</a>. TestFiDataTransferProtocol2#pipeline_Fi_18 sometimes fails.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-762">HDFS-762</a>. Balancer causes Null Pointer Exception.<br />(Cristian Ivascu via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-868">HDFS-868</a>. Fix link to Hadoop Upgrade Wiki.<br />(Chris A. Mattmann via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-880">HDFS-880</a>. TestNNLeaseRecovery fails on windows<br />(cos, shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-699">HDFS-699</a>. Primary datanode should compare replicas' on disk lengths.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-897">HDFS-897</a>. Fix a bug related to generation stamp comparison in
+ReplicasMap.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-793">HDFS-793</a>. Data node should receive the whole packet ack message before it
+constructs and sends its own ack message for the packet.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-101">HDFS-101</a>. DFS write pipeline: DFSClient sometimes does not detect second
+datanode failure.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-822">HDFS-822</a>. Appends to already-finalized blocks can rename across volumes.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1046">HDFS-1046</a>. Fix Tomcat version in hdfsproxy/build.xml.<br />(Srikanth
+Sundarrajan via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1072">HDFS-1072</a>. Fix TestReadWhileWriting failure.<br />(Erik Steffl via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-913">HDFS-913</a>. Rename fault injection test TestRename.java to TestFiRename.java
+to include it in tests run by ant target run-test-hdfs-fault-inject.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-695">HDFS-695</a>. RaidNode should read in configuration from hdfs-site.xml.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-726">HDFS-726</a>. Eclipse .classpath template has outdated jar files and is
+missing some new ones.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-750">HDFS-750</a>. Fix build failure due to TestRename.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-712">HDFS-712</a>. Move libhdfs from mapreduce subproject to hdfs subproject.<br />(Eli Collins via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-757">HDFS-757</a>. Enable Unit test for HDFS Raid.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-611">HDFS-611</a>. Prevent DataNode heartbeat times from increasing even when
+the DataNode has many blocks to delete.<br />(Zheng Shao via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-751">HDFS-751</a>. Fix TestCrcCorruption to pick up the correct datablocks to
+corrupt.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-763">HDFS-763</a>. Fix slightly misleading report from DataBlockScanner
+about corrupted scans.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-727">HDFS-727</a>. bug setting block size hdfsOpenFile<br />(Eli Collins via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-756">HDFS-756</a>. libhdfs unit tests do not run.<br />(Eli Collins via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-783">HDFS-783</a>. libhdfs tests brakes code coverage runs with Clover<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-785">HDFS-785</a>. Add Apache license to several namenode unit tests.<br />(Ravi Phulari via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-802">HDFS-802</a>. Update Eclipse configuration to match changes to Ivy
+configuration<br />(Edwin Chan via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-423">HDFS-423</a>. Unbreak FUSE build and fuse_dfs_wrapper.sh<br />(Eli Collins via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-825">HDFS-825</a>. Build fails to pull latest hadoop-core-* artifacts<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-94">HDFS-94</a>. The Heap Size printed in the NameNode WebUI is accurate.<br />(Dmytro Molkov via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-767">HDFS-767</a>. An improved retry policy when the DFSClient is unable to fetch a
+block from the datanode.<br />(Ning Zhang via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-775">HDFS-775</a>. FSDataset calls getCapacity() twice.<br />(stevel)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-885">HDFS-885</a>. Datanode toString() NPEs on null dnRegistration.<br />(stevel)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-877">HDFS-877</a>. Client-driven block verification not functioning.<br />(Todd
+Lipcon via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-630">HDFS-630</a>. In DFSOutputStream.nextBlockOutputStream(), the client can
+exclude specific datanodes when locating the next block.<br />(Cosmin Lehene via Stack)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-922">HDFS-922</a>. Remove unnecessary semicolon added by <a href="http://issues.apache.org/jira/browse/HDFS-877">HDFS-877</a> that causes
+problems for Eclipse compilation.<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-927">HDFS-927</a>  DFSInputStream retries too many times for new block locations<br />(Todd Lipcon via Stack)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-938">HDFS-938</a>. Replace calls to UGI.getUserName() with UGI.getShortUserName()<br />(jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-894">HDFS-894</a>. DatanodeID.ipcPort is not updated when existing node
+re-registers.<br />(Todd Lipcon via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-965">HDFS-965</a>. Split TestDelegationToken in to two parts and fix configuration
+to allow proxy users in the test.<br />(Jitendra Pandey via omalley)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-999">HDFS-999</a>. Secondary namenode should login using kerberos if security is
+configured<br />(boryas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-856">HDFS-856</a>. Hardcoded replication level for new files in fuse-dfs.<br />(Brian Bockelman via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-857">HDFS-857</a>. Incorrect type for fuse-dfs capacity can cause "df" to return
+negative values on 32-bit machines.<br />(Brian Bockelman via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-858">HDFS-858</a>. Incorrect return codes for fuse-dfs.<br />(Brian Bockelman via
+tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-859">HDFS-859</a>. fuse-dfs utime behavior causes issues with tar.<br />(Brian Bockelman via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-861">HDFS-861</a>. fuse-dfs does not support O_RDWR.<br />(Brian Bockelman via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-961">HDFS-961</a>. dfs_readdir incorrectly parses paths.<br />(Eli Collins via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1015">HDFS-1015</a>. Fix intermittent failure in TestSecurityTokenEditLog.<br />(Jitendra Nath Pandey via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-939">HDFS-939</a>. libhdfs test is broken.<br />(Eli Collins via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1074">HDFS-1074</a>. hdfsproxy: Fix bugs in TestProxyUtil.<br />(Srikanth Sundarrajan
+via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-481">HDFS-481</a>. hdfsproxy: Bug Fixes + HdfsProxy to use proxy user to
+impresonate the real user.<br />(Srikanth Sundarrajan via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-482">HDFS-482</a>. Move HsftpFileSystem's ssl.client.do.not.authenticate.server
+configuration setting to ssl-client.xml.<br />(Srikanth Sundarrajan via
+szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1010">HDFS-1010</a>. hdfsproxy: Retrieve groups from UnixUserGroupInformation
+instead of LdapEntry.<br />(Srikanth Sundarrajan via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-466">HDFS-466</a>. hdfs_write infinite loop when dfs fails and cannot write
+files &gt; 2 GB.<br />(Pete Wyckoff via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-651">HDFS-651</a>. HDFS Docs - fix listing of docs in the doc menu.<br />(Corinne Chandel via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1014">HDFS-1014</a>. Error in reading delegation tokens from edit logs.<br />(Jitendra Nath Pandey via jhoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1088">HDFS-1088</a>. Prevent renaming a symbolik link to its target.<br />(Eli Collins via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-966">HDFS-966</a>. NameNode does not recovers lease when it is in safemode.<br />(dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-833">HDFS-833</a>. Datanode shutdown should log problems with Storage.unlockAll()<br />(Steve Loughran via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1101">HDFS-1101</a>. TestDiskError.testLocalDirs() fails.<br />(cdouglas via jghoman)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1031">HDFS-1031</a>. Enhance the webUi to list a few of the corrupted files in HDFS.<br />(Andre Orian via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1078">HDFS-1078</a>. Create static and dynamic versions of libhdfs.<br />(Sam Rash via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1104">HDFS-1104</a>. Fsck triggers full GC on NameNode.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1141">HDFS-1141</a>. Closing a file is successful only if the client still has a
+valid lease.<br />(Todd Lipcon via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1138">HDFS-1138</a>. Prevent erroneous updation of modification time of a directory
+when fsimage loads.<br />(Dmytro Molkov via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1000">HDFS-1000</a>. Updates libhdfs to the new API for UGI<br />(ddas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-609">HDFS-609</a>. Create a file with the append flag does not work in HDFS.<br />(tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1255">HDFS-1255</a>. Fix failing test-libhdfs.sh test.<br />(tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1256">HDFS-1256</a>. libhdfs is missing from the tarball.<br />(tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1057">HDFS-1057</a>. Concurrent readers hit ChecksumExceptions if following a
+writer to very end of file.<br />(sam rash via hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1212">HDFS-1212</a>. Harmonize HDFS JAR library versions with Common.<br />(tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1159">HDFS-1159</a>. clean-cache target removes wrong ivy cache<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1193">HDFS-1193</a>. -mvn-system-deploy target is broken which inturn fails the
+mvn-deploy task leading to unstable mapreduce build<br />(Giridharan
+Kesavan via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1299">HDFS-1299</a>. 'compile-fault-inject' never should be called directly.<br />(cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1311">HDFS-1311</a>. Running tests with 'testcase' cause triple execution of the
+same test case<br />(Cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1267">HDFS-1267</a>. fuse-dfs does not compile.<br />(Devaraj Das via tomwhite)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1598">HDFS-1598</a>.  Directory listing on hftp:// does not show .*.crc files.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1750">HDFS-1750</a>. ListPathsServlet should not use HdfsFileStatus.getLocalName()
+to get file name since it may return an empty string.<br />(szetszwo)</li>
+    </ol>
+  </li>
+</ul>
+<h3><a href="javascript:toggleList('release_0.20.3_-_2011-1-5_')">Release 0.20.3 - 2011-1-5
+</a></h3>
+<ul id="release_0.20.3_-_2011-1-5_">
+  <li><a href="javascript:toggleList('release_0.20.3_-_2011-1-5_._improvements_')">  IMPROVEMENTS
+</a>&nbsp;&nbsp;&nbsp;(none)
+    <ol id="release_0.20.3_-_2011-1-5_._improvements_">
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.20.3_-_2011-1-5_._bug_fixes_')">  BUG FIXES
+</a>&nbsp;&nbsp;&nbsp;(6)
+    <ol id="release_0.20.3_-_2011-1-5_._bug_fixes_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-955">HDFS-955</a>. New implementation of saveNamespace() to avoid loss of edits
+when name-node fails during saving.<br />(shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1041">HDFS-1041</a>. DFSClient.getFileChecksum(..) should retry if connection to
+the first datanode fails.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-909">HDFS-909</a>. Wait until edits syncing is finishes before purging edits.<br />(Todd Lipcon via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1258">HDFS-1258</a>. Clearing namespace quota on "/" corrupts fs image.<br />(Aaron T. Myers via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-132">HDFS-132</a>. Fix namenode to not report files deleted metrics for deletions
+done while replaying edits during startup.<br />(suresh &amp; shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1406">HDFS-1406</a>. TestCLI fails on Ubuntu with default /etc/hosts.<br />(cos)</li>
+    </ol>
+  </li>
+</ul>
+<h3><a href="javascript:toggleList('release_0.20.2_-_2009-09-01_')">Release 0.20.2 - 2009-09-01
+</a></h3>
+<ul id="release_0.20.2_-_2009-09-01_">
+  <li><a href="javascript:toggleList('release_0.20.2_-_2009-09-01_._improvements_')">  IMPROVEMENTS
+</a>&nbsp;&nbsp;&nbsp;(3)
+    <ol id="release_0.20.2_-_2009-09-01_._improvements_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-737">HDFS-737</a>. Add full path name of the file to the block information and
+summary of total number of files, blocks, live and deadnodes to
+metasave output.<br />(Jitendra Nath Pandey via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-919">HDFS-919</a>. Create test to validate the BlocksVerified metric<br />(Gary Murry
+via cos)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-907">HDFS-907</a>. Add tests for getBlockLocations and totalLoad metrics.<br />(Ravi Phulari via cos)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.20.2_-_2009-09-01_._bug_fixes_')">  BUG FIXES
+</a>&nbsp;&nbsp;&nbsp;(10)
+    <ol id="release_0.20.2_-_2009-09-01_._bug_fixes_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-686">HDFS-686</a>. NullPointerException is thrown while merging edit log and image.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-677">HDFS-677</a>. Rename failure when both source and destination quota exceeds
+results in deletion of source.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-709">HDFS-709</a>. Fix TestDFSShell failure due to rename bug introduced by
+<a href="http://issues.apache.org/jira/browse/HDFS-677">HDFS-677</a>.<br />(suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-579">HDFS-579</a>. Fix DfsTask to follow the semantics of 0.19, regarding non-zero
+return values as failures.<br />(Christian Kunz via cdouglas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-723">HDFS-723</a>. Fix deadlock in DFSClient#DFSOutputStream.<br />(hairong)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-596">HDFS-596</a>. Fix memory leak in hdfsFreeFileInfo() for libhdfs.<br />(Zhang Bingjun via dhruba)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-185">HDFS-185</a>. Disallow chown, chgrp, chmod, setQuota, and setSpaceQuota when
+name-node is in safemode.<br />(Ravi Phulari via shv)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-187">HDFS-187</a>. Initialize secondary namenode http address in TestStartup.<br />(Todd Lipcon via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-464">HDFS-464</a>. Fix memory leaks in libhdfs.<br />(Christian Kunz via suresh)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-1377">HDFS-1377</a>. Quota bug for partial blocks allows quotas to be violated.<br />(eli)</li>
+    </ol>
+  </li>
+</ul>
+<h3><a href="javascript:toggleList('release_0.20.1_-_2009-09-01_')">Release 0.20.1 - 2009-09-01
+</a></h3>
+<ul id="release_0.20.1_-_2009-09-01_">
+  <li><a href="javascript:toggleList('release_0.20.1_-_2009-09-01_._improvements_')">  IMPROVEMENTS
+</a>&nbsp;&nbsp;&nbsp;(1)
+    <ol id="release_0.20.1_-_2009-09-01_._improvements_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-438">HDFS-438</a>. Improve help message for space quota command.<br />(Raghu Angadi)</li>
+    </ol>
+  </li>
+  <li><a href="javascript:toggleList('release_0.20.1_-_2009-09-01_._bug_fixes_')">  BUG FIXES
+</a>&nbsp;&nbsp;&nbsp;(4)
+    <ol id="release_0.20.1_-_2009-09-01_._bug_fixes_">
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-167">HDFS-167</a>. Fix a bug in DFSClient that caused infinite retries on write.<br />(Bill Zeller via szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-527">HDFS-527</a>. Remove/deprecate unnecessary DFSClient constructors.<br />(szetszwo)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-525">HDFS-525</a>. The SimpleDateFormat object in ListPathsServlet is not thread
+safe.<br />(Suresh Srinivas and cdouglas)</li>
+      <li><a href="http://issues.apache.org/jira/browse/HDFS-761">HDFS-761</a>. Fix failure to process rename operation from edits log due to
+quota verification.<br />(suresh)</li>
+    </ol>
+  </li>
+</ul>
+</ul>
+</body>
+</html>

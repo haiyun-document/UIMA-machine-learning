@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.9">
+<meta name="Forrest-skin-name" content="pelt">
+<title>Hadoop Archive Guide</title>
+<link type="text/css" href="skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="skin/print.css" rel="stylesheet">
+<link type="text/css" href="skin/profile.css" rel="stylesheet">
+<script src="skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://hadoop.apache.org/">Hadoop</a> &gt; <a href="http://hadoop.apache.org/core/">Core</a><script src="skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<!--+
+    |header
+    +-->
+<div class="header">
+<!--+
+    |start group logo
+    +-->
+<div class="grouplogo">
+<a href="http://hadoop.apache.org/"><img class="logoImage" alt="Hadoop" src="images/hadoop-logo.jpg" title="Apache Hadoop"></a>
+</div>
+<!--+
+    |end group logo
+    +-->
+<!--+
+    |start Project Logo
+    +-->
+<div class="projectlogo">
+<a href="http://hadoop.apache.org/core/"><img class="logoImage" alt="Hadoop" src="images/mapreduce-logo.jpg" title="Scalable Computing Platform"></a>
+</div>
+<!--+
+    |end Project Logo
+    +-->
+<!--+
+    |start Search
+    +-->
+<div class="searchbox">
+<form action="http://www.google.com/search" method="get" class="roundtopsmall">
+<input value="hadoop.apache.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="25" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                    <input name="Search" value="Search" type="submit">
+</form>
+</div>
+<!--+
+    |end search
+    +-->
+<!--+
+    |start Tabs
+    +-->
+<ul id="tabs">
+<li>
+<a class="unselected" href="http://hadoop.apache.org/mapreduce/">Project</a>
+</li>
+<li>
+<a class="unselected" href="http://wiki.apache.org/hadoop/MapReduce">Wiki</a>
+</li>
+<li class="current">
+<a class="selected" href="index.html">MapReduce 0.22 Documentation</a>
+</li>
+</ul>
+<!--+
+    |end Tabs
+    +-->
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<!--+
+    |start Subtabs
+    +-->
+<div id="level2tabs"></div>
+<!--+
+    |end Endtabs
+    +-->
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+
+             &nbsp;
+           </div>
+<!--+
+    |start Menu, mainarea
+    +-->
+<!--+
+    |start Menu
+    +-->
+<div id="menu">
+<div onclick="SwitchMenu('menu_1.1', 'skin/')" id="menu_1.1Title" class="menutitle">Getting Started</div>
+<div id="menu_1.1" class="menuitemgroup">
+<div class="menuitem">
+<a href="index.html">Overview</a>
+</div>
+<div class="menuitem">
+<a href="mapred_tutorial.html">MapReduce Tutorial</a>
+</div>
+<div class="menuitem">
+<a href="streaming.html">Hadoop Streaming</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_selected_1.2', 'skin/')" id="menu_selected_1.2Title" class="menutitle" style="background-image: url('skin/images/chapter_open.gif');">Guides</div>
+<div id="menu_selected_1.2" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="distcp.html">DistCp</a>
+</div>
+<div class="menuitem">
+<a href="vaidya.html">Vaidya</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Hadoop Archives</div>
+</div>
+<div class="menuitem">
+<a href="gridmix.html">Gridmix</a>
+</div>
+<div class="menuitem">
+<a href="rumen.html">Rumen</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_1.3', 'skin/')" id="menu_1.3Title" class="menutitle">Schedulers</div>
+<div id="menu_1.3" class="menuitemgroup">
+<div class="menuitem">
+<a href="capacity_scheduler.html">Capacity Scheduler</a>
+</div>
+<div class="menuitem">
+<a href="fair_scheduler.html">Fair Scheduler</a>
+</div>
+<div class="menuitem">
+<a href="dynamic_scheduler.html">Dynamic Priority Scheduler</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_1.4', 'skin/')" id="menu_1.4Title" class="menutitle">Miscellaneous</div>
+<div id="menu_1.4" class="menuitemgroup">
+<div class="menuitem">
+<a href="api/index.html">API Docs</a>
+</div>
+<div class="menuitem">
+<a href="jdiff/changes.html">API Changes</a>
+</div>
+<div class="menuitem">
+<a href="http://wiki.apache.org/hadoop/MapReduce">Wiki</a>
+</div>
+<div class="menuitem">
+<a href="http://wiki.apache.org/hadoop/MapReduce/FAQ">FAQ</a>
+</div>
+<div class="menuitem">
+<a href="releasenotes.html">Release Notes</a>
+</div>
+<div class="menuitem">
+<a href="changes.html">Change Log</a>
+</div>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<!--+
+  |alternative credits
+  +-->
+<div id="credit2"></div>
+</div>
+<!--+
+    |end Menu
+    +-->
+<!--+
+    |start content
+    +-->
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="hadoop_archives.pdf"><img alt="PDF -icon" src="skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Hadoop Archive Guide</h1>
+<div id="front-matter">
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#What+are+Hadoop+archives%3F"> What are Hadoop archives?</a>
+</li>
+<li>
+<a href="#How+to+create+an+archive%3F"> How to create an archive?</a>
+</li>
+<li>
+<a href="#How+to+look+up+files+in+archives%3F"> How to look up files in archives? </a>
+</li>
+<li>
+<a href="#Example+on+creating+and+looking+up+archives"> Example on creating and looking up archives </a>
+<ul class="minitoc">
+<li>
+<a href="#Looking+up+files+and+understanding+the+-p+option"> Looking up files and understanding the -p option </a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Using+Hadoop+Archive+with+Map+Reduce"> Using Hadoop Archive with Map Reduce </a>
+</li>
+<li>
+<a href="#File+Replication+and+Permissions+of+Hadoop+Archive"> File Replication and Permissions of Hadoop Archive </a>
+</li>
+<li>
+<a href="#Creating+different+block+size+and+part+size+Hadoop+Archive"> Creating different block size and part size Hadoop Archive </a>
+</li>
+<li>
+<a href="#Limitations+of+Hadoop+Archive"> Limitations of Hadoop Archive </a>
+</li>
+<li>
+<a href="#Internals+of+Hadoop+Archive">Internals of Hadoop Archive </a>
+</li>
+</ul>
+</div>
+</div>
+		
+<a name="What+are+Hadoop+archives%3F"></a>
+<h2 class="h3"> What are Hadoop archives?</h2>
+<div class="section">
+<p> Hadoop archives are special format archives. The main use case of
+				using archives is to reduce the namespace of the NameNode. Hadoop
+				Archives collapses a set of files into a smaller number of files and
+				provides a very efficient and easy interface to access these
+				collapsed files. A Hadoop archive maps to a HDFS directory. A Hadoop
+				archive always has a *.har extension.</p>
+</div>
+		
+<a name="How+to+create+an+archive%3F"></a>
+<h2 class="h3"> How to create an archive?</h2>
+<div class="section">
+<p>
+				
+<span class="codefrag">Usage: hadoop archive -archiveName name -p &lt;parent&gt; &lt;src&gt;* &lt;dest&gt;</span>
+        
+</p>
+<p>
+        -archiveName is the name of the archive you would like to create. 
+        An example would be foo.har. The name should have a *.har extension. 
+       	The parent argument is to specify the relative path to which the files 
+       	should be
+       	archived to. Example would be :
+        </p>
+<p>
+<span class="codefrag"> -p /foo/bar a/b/c e/f/g </span>
+</p>
+<p>
+        Here /foo/bar is the parent path and a/b/c, e/f/g are relative paths to 
+        parent. 
+        Note that this is a Map/Reduce job that creates the archives. You would
+        need a map reduce cluster to run this. For a detailed example the later 
+        sections. </p>
+<p> If you just want to archive a single directory /foo/bar then you 
+        can just use </p>
+<p>
+<span class="codefrag"> hadoop archive -archiveName zoo.har -p /foo/bar /outputdir 
+        </span>
+</p>
+</div>
+        
+        
+<a name="How+to+look+up+files+in+archives%3F"></a>
+<h2 class="h3"> How to look up files in archives? </h2>
+<div class="section">
+<p>
+        The archive exposes itself as a file system layer. So all the fs shell
+        commands in the archives work but with a different URI. Also, note that
+        archives are immutable. So, rename's, deletes and creates return
+        an error. URI for Hadoop Archives is 
+        </p>
+<p>
+<span class="codefrag">har://scheme-hostname:port/archivepath/fileinarchive</span>
+        
+</p>
+<p>
+        If no scheme is provided it assumes the underlying filesystem. 
+        In that case the URI would look like </p>
+<p>
+<span class="codefrag">har:///archivepath/fileinarchive</span>
+</p>
+</div>
+
+ 		
+<a name="Example+on+creating+and+looking+up+archives"></a>
+<h2 class="h3"> Example on creating and looking up archives </h2>
+<div class="section">
+<p>
+<span class="codefrag">hadoop archive -archiveName foo.har -p /user/hadoop dir1 dir2
+         /user/zoo </span>
+</p>
+<p>
+         The above example is creating an archive using /user/hadoop as the 
+         relative archive directory.
+         The directories /user/hadoop/dir1 and /user/hadoop/dir2 will be 
+        archived in the following file system directory -- /user/zoo/foo.har. 
+        Archiving does not delete the input files. If you want to delete 
+        the input files after creating the archives (to reduce namespace), you
+        will have to do it on your own. 
+        </p>
+<a name="Looking+up+files+and+understanding+the+-p+option"></a>
+<h3 class="h4"> Looking up files and understanding the -p option </h3>
+<p> Looking up files in hadoop archives is as easy as doing an ls on the 
+		 filesystem. After you have archived the directories /user/hadoop/dir1 and
+		  /user/hadoop/dir2 as in the exmaple above, to see all the files in the 
+		  archives you can just run: </p>
+<p>
+<span class="codefrag">hadoop dfs -lsr har:///user/zoo/foo.har/</span>
+</p>
+<p> To understand the significance of the -p argument, lets go through the 
+		 above example again. If you just do
+		 an ls (not lsr) on the hadoop archive using </p>
+<p>
+<span class="codefrag">hadoop dfs -ls har:///user/zoo/foo.har</span>
+</p>
+<p>The output should be:</p>
+<pre class="code">
+har:///user/zoo/foo.har/dir1
+har:///user/zoo/foo.har/dir2
+		 </pre>
+<p> As you can recall the archives were created with the following command </p>
+<p>
+<span class="codefrag">hadoop archive -archiveName foo.har -p /user/hadoop dir1 dir2
+         /user/zoo </span>
+</p>
+<p> If we were to change the command to: </p>
+<p>
+<span class="codefrag">hadoop archive -archiveName foo.har -p /user/  
+        hadoop/dir1 hadoop/dir2 /user/zoo </span>
+</p>
+<p> then a ls on the hadoop archive using </p>
+<p>
+<span class="codefrag">hadoop dfs -ls har:///user/zoo/foo.har</span>
+</p>
+<p>would give you</p>
+<pre class="code">
+har:///user/zoo/foo.har/hadoop/dir1
+har:///user/zoo/foo.har/hadoop/dir2
+		</pre>
+<p>
+		Notice that the archived files have been archived relative to 
+		/user/ rather than /user/hadoop.
+		</p>
+</div>
+		
+		
+<a name="Using+Hadoop+Archive+with+Map+Reduce"></a>
+<h2 class="h3"> Using Hadoop Archive with Map Reduce </h2>
+<div class="section">
+<p>Using Hadoop Archive in Map Reduce is as easy as specifying a
+		 different input filesystem than the default file system.
+		If you have a hadoop archive stored in HDFS in /user/zoo/foo.har 
+		then for using this archive for Map Reduce input, all
+		you need to specify the input directory as har:///user/zoo/foo.har. 
+		Since Hadoop Archives is exposed as a file system Map Reduce will be able
+		 to use all the logical input files in Hadoop Archives as input.</p>
+</div>
+        
+        
+<a name="File+Replication+and+Permissions+of+Hadoop+Archive"></a>
+<h2 class="h3"> File Replication and Permissions of Hadoop Archive </h2>
+<div class="section">
+<p>
+       	Hadoop Archive currently does not store the file information metadata 
+       	that the files had before they were archived. The file permissions of 
+       	Hadoop Archive created is the default permissions that a user creates 
+       	file with. The file replication of data files in Hadoop Archive is set to
+       	 3 and the metadata information files have a replication factor of 5. You 
+       	 can increase this by increasing the replication factor of files under the har 
+       	 file directory.
+       	On restoration of hadoop archive files using something like:
+       	</p>
+<p>
+<span class="codefrag">
+       	distcp har:///path_to_har dest_path
+       	</span>
+</p>
+<p>
+       	the restored files will not have the permissions/replication of the original 
+       	files that were archived. 
+        </p>
+</div> 
+        
+        
+<a name="Creating+different+block+size+and+part+size+Hadoop+Archive"></a>
+<h2 class="h3"> Creating different block size and part size Hadoop Archive </h2>
+<div class="section">
+<p>
+        You can create different hadoop block size and part size using the following 
+        options:
+        </p>
+<p>
+<span class="codefrag">
+        bin/hadoop archive -Dhar.block.size=512 -Dhar.partfile.size=1024 -archiveName ...
+        </span>
+</p>
+<p> 
+        The above example allows you to set a block size of 512 bytes for part files
+         and part file size of 1K. These numbers are only as examples. Using such low 
+         number for block size and part file size is not advisable at all!
+        </p>
+</div>
+       
+        
+<a name="Limitations+of+Hadoop+Archive"></a>
+<h2 class="h3"> Limitations of Hadoop Archive </h2>
+<div class="section">
+<p>
+        Currently Hadoop archive do not support input paths with spaces in it. It 
+        throws out an exception in such a case. You can create archives with names 
+        in which space can be replaced by a valid character.
+        Below is an example:
+        </p>
+<p>
+        
+<span class="codefrag">
+        bin/hadoop archive -Dhar.space.replacement.enable=true -Dhar.space.replacement="_" 
+        -archiveName ......
+        </span>
+        
+</p>
+<p> The above example replaces space with "_" in the archived file names.
+	    </p>
+</div>
+        
+        
+<a name="Internals+of+Hadoop+Archive"></a>
+<h2 class="h3">Internals of Hadoop Archive </h2>
+<div class="section">
+<p>
+        A Hadoop Archive directory contains metadata (in the form 
+        of _index and _masterindex) and data (part-*) files. The _index file contains
+        the name of the files that are part of the archive and the location
+        within the part files. The _masterindex file stores offsets into the _index 
+        file to make it easier to seek into the _index file for faster lookups.
+        </p>
+</div>
+        
+  
+</div>
+<!--+
+    |end content
+    +-->
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<!--+
+    |start bottomstrip
+    +-->
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2009 <a href="http://www.apache.org/licenses/">The Apache Software Foundation.</a>
+</div>
+<!--+
+    |end bottomstrip
+    +-->
+</div>
+</body>
+</html>

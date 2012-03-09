@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;NavicastSP&apos;" deleteContents="false" description="Delete resource &apos;NavicastSP&apos;" element1="/NavicastSP" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1316975089481"/>
+</session>

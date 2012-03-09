@@ -1,0 +1,116 @@
+2012-02-18 18:37:13,790 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2012-02-18 18:37:13,951 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 4104 bytes.
+2012-02-18 18:37:13,953 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 4 bytes.
+2012-02-18 18:37:13,969 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: defaultReplication = 1
+2012-02-18 18:37:13,969 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: maxReplication = 512
+2012-02-18 18:37:13,969 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: minReplication = 1
+2012-02-18 18:37:13,969 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: maxReplicationStreams = 2
+2012-02-18 18:37:13,969 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: shouldCheckForEnoughRacks = false
+2012-02-18 18:37:13,969 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2012-02-18 18:37:13,972 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.83375 MB
+2012-02-18 18:37:13,973 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2012-02-18 18:37:13,973 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2012-02-18 18:37:14,233 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=Ray
+2012-02-18 18:37:14,233 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2012-02-18 18:37:14,234 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2012-02-18 18:37:14,234 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isBlockTokenEnabled=false blockKeyUpdateInterval=0 min(s), blockTokenLifetime=0 min(s)
+2012-02-18 18:37:14,241 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2012-02-18 18:37:14,264 INFO org.apache.hadoop.hdfs.server.common.Storage: Loading image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 18:37:14,264 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 41
+2012-02-18 18:37:14,269 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2012-02-18 18:37:14,270 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 4104 loaded in 0 seconds.
+2012-02-18 18:37:14,270 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /tmp/hadoop-Ray/dfs/namesecondary/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2012-02-18 18:37:14,271 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2012-02-18 18:37:14,272 INFO org.apache.hadoop.hdfs.server.common.Storage: Saving image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 18:37:14,275 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 4104 saved in 0 seconds.
+2012-02-18 18:37:14,287 INFO org.apache.hadoop.hdfs.server.common.Storage: Saving image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 18:37:14,290 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 4104 saved in 0 seconds.
+2012-02-18 18:37:14,312 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL localhost:50070putimage=1&port=50090&machine=0.0.0.0&token=-33:1014621752:0:1329557833000:1329478173469:e48749ee1e624f4646578653649b25dd&newChecksum=e48749ee1e624f4646578653649b25dd
+2012-02-18 18:37:14,368 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 4104
+2012-02-18 19:57:20,276 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2012-02-18 19:57:20,305 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 4104 bytes.
+2012-02-18 19:57:20,308 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 4 bytes.
+2012-02-18 19:57:20,308 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: defaultReplication = 1
+2012-02-18 19:57:20,308 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: maxReplication = 512
+2012-02-18 19:57:20,308 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: minReplication = 1
+2012-02-18 19:57:20,308 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: maxReplicationStreams = 2
+2012-02-18 19:57:20,308 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: shouldCheckForEnoughRacks = false
+2012-02-18 19:57:20,308 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2012-02-18 19:57:20,308 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.83375 MB
+2012-02-18 19:57:20,308 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2012-02-18 19:57:20,308 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2012-02-18 19:57:20,345 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=Ray
+2012-02-18 19:57:20,348 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2012-02-18 19:57:20,348 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2012-02-18 19:57:20,349 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isBlockTokenEnabled=false blockKeyUpdateInterval=0 min(s), blockTokenLifetime=0 min(s)
+2012-02-18 19:57:20,350 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2012-02-18 19:57:20,351 INFO org.apache.hadoop.hdfs.server.common.Storage: Loading image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 19:57:20,351 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 41
+2012-02-18 19:57:20,357 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2012-02-18 19:57:20,357 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 4104 loaded in 0 seconds.
+2012-02-18 19:57:20,357 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /tmp/hadoop-Ray/dfs/namesecondary/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2012-02-18 19:57:20,357 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2012-02-18 19:57:20,359 INFO org.apache.hadoop.hdfs.server.common.Storage: Saving image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 19:57:20,371 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 4104 saved in 0 seconds.
+2012-02-18 19:57:20,373 INFO org.apache.hadoop.hdfs.server.common.Storage: Saving image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 19:57:20,376 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 4104 saved in 0 seconds.
+2012-02-18 19:57:20,379 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL localhost:50070putimage=1&port=50090&machine=0.0.0.0&token=-33:1014621752:0:1329562640000:1329557834364:e48749ee1e624f4646578653649b25dd&newChecksum=e48749ee1e624f4646578653649b25dd
+2012-02-18 19:57:20,408 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 4104
+2012-02-18 21:24:35,788 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2012-02-18 21:24:35,820 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 4104 bytes.
+2012-02-18 21:24:35,825 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 280 bytes.
+2012-02-18 21:24:35,825 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: defaultReplication = 1
+2012-02-18 21:24:35,825 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: maxReplication = 512
+2012-02-18 21:24:35,825 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: minReplication = 1
+2012-02-18 21:24:35,825 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: maxReplicationStreams = 2
+2012-02-18 21:24:35,825 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: shouldCheckForEnoughRacks = false
+2012-02-18 21:24:35,825 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2012-02-18 21:24:35,826 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.83375 MB
+2012-02-18 21:24:35,826 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2012-02-18 21:24:35,826 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2012-02-18 21:24:35,913 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=Ray
+2012-02-18 21:24:35,913 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2012-02-18 21:24:35,913 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2012-02-18 21:24:35,914 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isBlockTokenEnabled=false blockKeyUpdateInterval=0 min(s), blockTokenLifetime=0 min(s)
+2012-02-18 21:24:35,915 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2012-02-18 21:24:35,915 INFO org.apache.hadoop.hdfs.server.common.Storage: Loading image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 21:24:35,915 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 41
+2012-02-18 21:24:35,920 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2012-02-18 21:24:35,920 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 4104 loaded in 0 seconds.
+2012-02-18 21:24:35,921 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /tmp/hadoop-Ray/dfs/namesecondary/current/edits of size 280 edits # 4 loaded in 0 seconds.
+2012-02-18 21:24:35,921 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2012-02-18 21:24:35,928 INFO org.apache.hadoop.hdfs.server.common.Storage: Saving image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 21:24:35,931 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 3624 saved in 0 seconds.
+2012-02-18 21:24:35,934 INFO org.apache.hadoop.hdfs.server.common.Storage: Saving image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 21:24:35,937 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 3624 saved in 0 seconds.
+2012-02-18 21:24:35,939 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL localhost:50070putimage=1&port=50090&machine=0.0.0.0&token=-33:1014621752:0:1329567875000:1329562640405:e48749ee1e624f4646578653649b25dd&newChecksum=dc1528791668f878c285c0b152a203a7
+2012-02-18 21:24:35,996 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 3624
+2012-02-18 22:28:15,773 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2012-02-18 22:28:15,803 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file fsimage size 3624 bytes.
+2012-02-18 22:28:15,806 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Downloaded file edits size 4 bytes.
+2012-02-18 22:28:15,807 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: defaultReplication = 1
+2012-02-18 22:28:15,807 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: maxReplication = 512
+2012-02-18 22:28:15,807 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: minReplication = 1
+2012-02-18 22:28:15,807 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: maxReplicationStreams = 2
+2012-02-18 22:28:15,807 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: shouldCheckForEnoughRacks = false
+2012-02-18 22:28:15,807 INFO org.apache.hadoop.hdfs.util.GSet: VM type       = 64-bit
+2012-02-18 22:28:15,807 INFO org.apache.hadoop.hdfs.util.GSet: 2% max memory = 19.83375 MB
+2012-02-18 22:28:15,807 INFO org.apache.hadoop.hdfs.util.GSet: capacity      = 2^21 = 2097152 entries
+2012-02-18 22:28:15,807 INFO org.apache.hadoop.hdfs.util.GSet: recommended=2097152, actual=2097152
+2012-02-18 22:28:15,884 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: fsOwner=Ray
+2012-02-18 22:28:15,885 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: supergroup=supergroup
+2012-02-18 22:28:15,887 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isPermissionEnabled=true
+2012-02-18 22:28:15,890 INFO org.apache.hadoop.hdfs.server.namenode.FSNamesystem: isBlockTokenEnabled=false blockKeyUpdateInterval=0 min(s), blockTokenLifetime=0 min(s)
+2012-02-18 22:28:15,891 INFO org.apache.hadoop.hdfs.server.namenode.NameNode: Caching file names occuring more than 10 times 
+2012-02-18 22:28:15,891 INFO org.apache.hadoop.hdfs.server.common.Storage: Loading image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 22:28:15,891 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files = 37
+2012-02-18 22:28:15,894 INFO org.apache.hadoop.hdfs.server.common.Storage: Number of files under construction = 0
+2012-02-18 22:28:15,894 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 3624 loaded in 0 seconds.
+2012-02-18 22:28:15,894 INFO org.apache.hadoop.hdfs.server.common.Storage: Edits file /tmp/hadoop-Ray/dfs/namesecondary/current/edits of size 4 edits # 0 loaded in 0 seconds.
+2012-02-18 22:28:15,894 INFO org.apache.hadoop.hdfs.server.namenode.FSEditLog: Number of transactions: 0 Total time for transactions(ms): 0Number of transactions batched in Syncs: 0 Number of syncs: 0 SyncTimes(ms): 0 
+2012-02-18 22:28:15,896 INFO org.apache.hadoop.hdfs.server.common.Storage: Saving image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 22:28:15,898 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 3624 saved in 0 seconds.
+2012-02-18 22:28:15,901 INFO org.apache.hadoop.hdfs.server.common.Storage: Saving image file /tmp/hadoop-Ray/dfs/namesecondary/current/fsimage using no compression
+2012-02-18 22:28:15,903 INFO org.apache.hadoop.hdfs.server.common.Storage: Image file of size 3624 saved in 0 seconds.
+2012-02-18 22:28:15,906 INFO org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Posted URL localhost:50070putimage=1&port=50090&machine=0.0.0.0&token=-33:1014621752:0:1329571695000:1329567875992:dc1528791668f878c285c0b152a203a7&newChecksum=dc1528791668f878c285c0b152a203a7
+2012-02-18 22:28:15,927 WARN org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode: Checkpoint done. New Image Size: 3624

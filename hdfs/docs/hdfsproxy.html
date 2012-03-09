@@ -1,0 +1,1188 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.9">
+<meta name="Forrest-skin-name" content="pelt">
+<title> HDFS Proxy Guide</title>
+<link type="text/css" href="skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="skin/print.css" rel="stylesheet">
+<link type="text/css" href="skin/profile.css" rel="stylesheet">
+<script src="skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://hadoop.apache.org/">Hadoop</a> &gt; <a href="http://hadoop.apache.org/core/">Core</a><script src="skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<!--+
+    |header
+    +-->
+<div class="header">
+<!--+
+    |start group logo
+    +-->
+<div class="grouplogo">
+<a href="http://hadoop.apache.org/"><img class="logoImage" alt="Hadoop" src="images/hadoop-logo.jpg" title="Apache Hadoop"></a>
+</div>
+<!--+
+    |end group logo
+    +-->
+<!--+
+    |start Project Logo
+    +-->
+<div class="projectlogo">
+<a href="http://hadoop.apache.org/hdfs/"><img class="logoImage" alt="Hadoop" src="images/hdfs-logo.jpg" title="Scalable Computing Platform"></a>
+</div>
+<!--+
+    |end Project Logo
+    +-->
+<!--+
+    |start Search
+    +-->
+<div class="searchbox">
+<form action="http://www.google.com/search" method="get" class="roundtopsmall">
+<input value="hadoop.apache.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="25" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                    <input name="Search" value="Search" type="submit">
+</form>
+</div>
+<!--+
+    |end search
+    +-->
+<!--+
+    |start Tabs
+    +-->
+<ul id="tabs">
+<li>
+<a class="unselected" href="http://hadoop.apache.org/hdfs/">Project</a>
+</li>
+<li>
+<a class="unselected" href="http://wiki.apache.org/hadoop/HDFS">Wiki</a>
+</li>
+<li class="current">
+<a class="selected" href="index.html">HDFS 0.22 Documentation</a>
+</li>
+</ul>
+<!--+
+    |end Tabs
+    +-->
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<!--+
+    |start Subtabs
+    +-->
+<div id="level2tabs"></div>
+<!--+
+    |end Endtabs
+    +-->
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+
+             &nbsp;
+           </div>
+<!--+
+    |start Menu, mainarea
+    +-->
+<!--+
+    |start Menu
+    +-->
+<div id="menu">
+<div onclick="SwitchMenu('menu_1.1', 'skin/')" id="menu_1.1Title" class="menutitle">Getting Started</div>
+<div id="menu_1.1" class="menuitemgroup">
+<div class="menuitem">
+<a href="hdfs_user_guide.html">HDFS Users </a>
+</div>
+<div class="menuitem">
+<a href="hdfs_design.html">HDFS Architecture</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_selected_1.2', 'skin/')" id="menu_selected_1.2Title" class="menutitle" style="background-image: url('skin/images/chapter_open.gif');">Guides</div>
+<div id="menu_selected_1.2" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="hdfs_permissions_guide.html">Permissions</a>
+</div>
+<div class="menuitem">
+<a href="hdfs_quota_admin_guide.html">Quotas</a>
+</div>
+<div class="menuitem">
+<a href="SLG_user_guide.html">Synthetic Load Generator</a>
+</div>
+<div class="menuitem">
+<a href="hdfs_imageviewer.html">Offline Image Viewer</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">HDFS Proxy</div>
+</div>
+<div class="menuitem">
+<a href="hftp.html">HFTP</a>
+</div>
+<div class="menuitem">
+<a href="faultinject_framework.html">Fault Injection</a>
+</div>
+<div class="menuitem">
+<a href="libhdfs.html">C API libhdfs</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_1.3', 'skin/')" id="menu_1.3Title" class="menutitle">Miscellaneous</div>
+<div id="menu_1.3" class="menuitemgroup">
+<div class="menuitem">
+<a href="api/index.html">API Docs</a>
+</div>
+<div class="menuitem">
+<a href="jdiff/changes.html">API Changes</a>
+</div>
+<div class="menuitem">
+<a href="http://wiki.apache.org/hadoop/HDFS">Wiki</a>
+</div>
+<div class="menuitem">
+<a href="http://wiki.apache.org/hadoop/HDFS/FAQ">FAQ</a>
+</div>
+<div class="menuitem">
+<a href="releasenotes.html">Release Notes</a>
+</div>
+<div class="menuitem">
+<a href="changes.html">Change Log</a>
+</div>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<!--+
+  |alternative credits
+  +-->
+<div id="credit2"></div>
+</div>
+<!--+
+    |end Menu
+    +-->
+<!--+
+    |start content
+    +-->
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="hdfsproxy.pdf"><img alt="PDF -icon" src="skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1> HDFS Proxy Guide</h1>
+<div id="front-matter">
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Introduction"> Introduction </a>
+</li>
+<li>
+<a href="#Goals+and+Use+Cases"> Goals and Use Cases </a>
+<ul class="minitoc">
+<li>
+<a href="#Data+Transfer+from+HDFS+clusters"> Data Transfer from HDFS clusters </a>
+</li>
+<li>
+<a href="#Cross-version+Data+Transfer"> Cross-version Data Transfer </a>
+</li>
+<li>
+<a href="#User+Access+Control"> User Access Control </a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Comparison+with+NameNode%27s+H%28S%29FTP+Interface"> Comparison with NameNode's H(S)FTP Interface </a>
+<ul class="minitoc">
+<li>
+<a href="#Advantages+of+Proxy+Over+NameNode+HTTP%28S%29+server">Advantages of Proxy Over NameNode HTTP(S) server</a>
+</li>
+<li>
+<a href="#Disadvantages+of+Using+Proxy+Instead+of+Getting+Data+Directly+from+H%28S%29FTP+Interface%3A+Slower+in+speed.+This+is+due+to">Disadvantages of Using Proxy Instead of Getting Data Directly from H(S)FTP Interface: Slower in speed. This is due to</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Design"> Design </a>
+<ul class="minitoc">
+<li>
+<a href="#Design+Overview"> Design Overview </a>
+</li>
+<li>
+<a href="#Filter+Module%3A+Proxy+Authentication+and+Access+Control"> Filter Module: Proxy Authentication and Access Control </a>
+<ul class="minitoc">
+<li>
+<a href="#SSL+certificate-based+proxyFilter">SSL certificate-based proxyFilter</a>
+</li>
+<li>
+<a href="#LDAP-based+LdapIpDirFilter">LDAP-based LdapIpDirFilter</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Delegation+Module%3A+HDFS+Cross-version+Data+Transfer"> Delegation Module: HDFS Cross-version Data Transfer </a>
+</li>
+<li>
+<a href="#Servlets%3A+Where+Data+transfer+Occurs"> Servlets: Where Data transfer Occurs</a>
+</li>
+<li>
+<a href="#Load+Balancing+and+Identifying+Requests+through+Domain+Names"> Load Balancing and Identifying Requests through Domain Names </a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Jetty-based+Installation+and+Configuration"> Jetty-based Installation and Configuration </a>
+<ul class="minitoc">
+<li>
+<a href="#Supporting+Features"> Supporting Features </a>
+</li>
+<li>
+<a href="#Configuration+Files"> Configuration Files </a>
+</li>
+<li>
+<a href="#Build+Process"> Build Process </a>
+</li>
+<li>
+<a href="#Server+Start+up+and+Shutdown"> Server Start up and Shutdown</a>
+</li>
+<li>
+<a href="#Verification"> Verification </a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Tomcat-based+Installation+and+Configuration"> Tomcat-based Installation and Configuration </a>
+<ul class="minitoc">
+<li>
+<a href="#Supporting+Features-N10314"> Supporting Features </a>
+</li>
+<li>
+<a href="#Source+Cluster+Related+Configuration"> Source Cluster Related Configuration </a>
+</li>
+<li>
+<a href="#SSL+Related+Configuration"> SSL Related Configuration </a>
+</li>
+<li>
+<a href="#LDAP+Related+Configuration"> LDAP Related Configuration </a>
+</li>
+<li>
+<a href="#Tomcat+Server+Related+Configuration"> Tomcat Server Related Configuration </a>
+</li>
+<li>
+<a href="#Build+and+Deployment+Process"> Build and Deployment Process </a>
+<ul class="minitoc">
+<li>
+<a href="#Build+forwarding+war+%28ROOT.war%29"> Build forwarding war (ROOT.war) </a>
+</li>
+<li>
+<a href="#Build+cluster+client+war+%28client.war%29"> Build cluster client war (client.war) </a>
+</li>
+<li>
+<a href="#Handle+Multiple+Source+Clusters"> Handle Multiple Source Clusters </a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Server+Start+up+and+Shutdown-N10566"> Server Start up and Shutdown</a>
+</li>
+<li>
+<a href="#Verification-N10584"> Verification </a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Hadoop+Client+Configuration"> Hadoop Client Configuration </a>
+</li>
+</ul>
+</div>
+</div>
+    
+<a name="Introduction"></a>
+<h2 class="h3"> Introduction </h2>
+<div class="section">
+<p> HDFS Proxy is a proxy server through which a hadoop client (through HSFTP) or a standard
+        HTTPS client (wget, curl, etc) can talk to a hadoop server and more importantly pull data from
+        the sever. It put an access control layer in front of hadoop namenode server and
+        extends its functionalities to allow hadoop cross-version data transfer. </p>
+</div>
+
+    
+<a name="Goals+and+Use+Cases"></a>
+<h2 class="h3"> Goals and Use Cases </h2>
+<div class="section">
+<a name="Data+Transfer+from+HDFS+clusters"></a>
+<h3 class="h4"> Data Transfer from HDFS clusters </h3>
+<ul>
+          
+<li>User uses HSFTP protocol (hadoop distcp/fs, etc) to access HDFS proxy to copy out data stored on one or more HDFS clusters.</li>
+          
+<li>User uses HTTPS protocol (curl, wget, etc) to access HDFS proxy to copy out data stored on one or more HDFS clusters </li>
+        
+</ul>
+<a name="Cross-version+Data+Transfer"></a>
+<h3 class="h4"> Cross-version Data Transfer </h3>
+<p>There are multiple HDFS clusters and possibly in different hadoop versions, each holding
+          different data. A client need to access these data in a standard way without worrying about
+          version compatibility issues. </p>
+<a name="User+Access+Control"></a>
+<h3 class="h4"> User Access Control </h3>
+<ul>
+          
+<li>User Access Control through SSL certificates</li>
+          
+<li>User Access Control through LDAP (Lightweight Directory Access Protocol) server</li>
+        
+</ul>
+</div>
+    
+    
+<a name="Comparison+with+NameNode%27s+H%28S%29FTP+Interface"></a>
+<h2 class="h3"> Comparison with NameNode's H(S)FTP Interface </h2>
+<div class="section">
+<p>NameNode has a http listener started at <span class="codefrag">dfs.namenode.http-address</span> with default port 50070 when NameNode is started and it provided a HFTP interface for the client. Also it could have a https listener started at <span class="codefrag">dfs.namenode.https-address</span> if <span class="codefrag">dfs.https.enable</span> is defined as true (by default, <span class="codefrag">dfs.https.enable</span> is not defined) to provide a HSFTP interface for client.</p>
+<a name="Advantages+of+Proxy+Over+NameNode+HTTP%28S%29+server"></a>
+<h3 class="h4">Advantages of Proxy Over NameNode HTTP(S) server</h3>
+<ol>
+          
+<li>We can centralize access control layer to the proxy part so that NameNode server can lower its burden. In this sense, HDFS proxy plays a filtering role to control data access to NameNode and DataNodes. It is especially useful if the HDFS system has some sensitive data in it. 
+          </li>
+          
+<li> After modulizing HDFS proxy into a standalone package, we can decouple the complexity of HDFS system and expand the proxy functionalities without worring about affecting other HDFS system features.
+          </li>
+        
+</ol>
+<a name="Disadvantages+of+Using+Proxy+Instead+of+Getting+Data+Directly+from+H%28S%29FTP+Interface%3A+Slower+in+speed.+This+is+due+to"></a>
+<h3 class="h4">Disadvantages of Using Proxy Instead of Getting Data Directly from H(S)FTP Interface: Slower in speed. This is due to</h3>
+<ol>
+          
+<li>HDFS proxy need to first copy data from source cluster, then transfer the data out to the client.</li>
+          
+<li> Unlike H(S)FTP interface, where file status listing, etc., is through NameNode server, and real data transfer is redirected to the real DataNode server, all data transfer under HDFS proxy is through the proxy server.</li>
+        
+</ol>
+</div>
+    
+    
+<a name="Design"></a>
+<h2 class="h3"> Design </h2>
+<div class="section">
+<a name="Design+Overview"></a>
+<h3 class="h4"> Design Overview </h3>
+<div style="text-align: center;">
+<img class="figure" alt="HDFS Proxy Architecture" src="images/hdfsproxy-overview.jpg"></div>
+<p>As shown in the above figure, in the client-side, proxy server will accept requests from HSFTP client and HTTPS client. The requests will pass through a filter module (containing one or more filters) for access control checking. Then the requests will go through a delegation module, whose responsibility is to direct the requests to the right client version for accessing the source cluster. After that, the delegated client will talk to the source cluster server through RPC protocol using servlets. </p>
+<a name="Filter+Module%3A+Proxy+Authentication+and+Access+Control"></a>
+<h3 class="h4"> Filter Module: Proxy Authentication and Access Control </h3>
+<div style="text-align: center;">
+<img class="figure" alt="HDFS Proxy Filters" src="images/hdfsproxy-server.jpg"></div>
+<p> To realize proxy authentication and access control, we used a servlet filter. The filter module is very
+          flexible, it can be installed or disabled by simply changing the corresponding items in deployment
+          descriptor file (web.xml). We implemented two filters in the proxy code: ProxyFilter and LdapIpDirFilter. The process of how each filter works is listed as below.</p>
+<a name="SSL+certificate-based+proxyFilter"></a>
+<h4>SSL certificate-based proxyFilter</h4>
+<ol>
+            
+<li>A user will use a pre-issued SSL certificate to access the proxy.</li>
+            
+<li>The proxy server will authenticate the user certificate.</li>
+            
+<li>The user&rsquo;s authenticated identity (extracted from the user&rsquo;s SSL certificate) is used to check access to data on the proxy.</li>
+            
+<li>User access information is stored in two configuration files, user-certs.xml and user-permissions.xml.</li>
+            
+<li>The proxy will forward the user&rsquo;s authenticated identity to HDFS clusters for HDFS file permission checking</li>
+          
+</ol>
+<a name="LDAP-based+LdapIpDirFilter"></a>
+<h4>LDAP-based LdapIpDirFilter</h4>
+<ol>
+            
+<li>A standalone LDAP server need to be set-up to store user information as entries, and each entry contains userId, user group, IP address(es), allowable HDFS directories, etc.</li>
+            
+<li>An LDAP entry may contain multiple IP addresses with the same userId and group attribute to realize headless account.</li>
+            
+<li>Upon receiving a request, the proxy server will extract the user's Ip adress from the request header, query the LDAP server with the IP address to get the direcotry permission information, then compare that with the user request path to make a allow/deny decision.</li>
+          
+</ol>
+<p>SSL-based proxyFilter provides strong PKI authentication and encryption, proxy server can create a self-signed CA using OpenSSL and use that CA to sign and issue certificates to clients. </p>
+<p>Managing access information through configuration files is a convenient way to start and easy to set-up for a small user group. However, to scale to a large user group and to handle account management operations such as add, delete, and change access, a separate package or a different mechanism like LDAP server is needed.</p>
+<p>The schema for the entry attributes in the LDAP server should match what is used in the proxy. The schema that is currently used in proxy is configurable through hdfsproxy-default.xml, but the attributes should always contain IP address (default as uniqueMember), userId (default as uid), user group (default as userClass), and alloable HDFS directories (default as documentLocation).</p>
+<p>Users can also write their own filters to plug in the filter chain to realize extended functionalities.</p>
+<a name="Delegation+Module%3A+HDFS+Cross-version+Data+Transfer"></a>
+<h3 class="h4"> Delegation Module: HDFS Cross-version Data Transfer </h3>
+<div style="text-align: center;">
+<img class="figure" alt="HDFS Proxy Forwarding" src="images/hdfsproxy-forward.jpg"></div>
+<p>As shown in the Figure, the delegation module contains two parts: </p>
+<ol>
+          
+<li>A Forwarding war, which plays the role of identifying the requests and directing the requests to the right HDFS client RPC version. </li>
+          
+<li>Several RPC client versions necessary to talk to all the HDFS source cluster servers. </li>
+        
+</ol>
+<p>All servlets are packaged in the WAR files.</p>
+<p>Strictly speaking, HDFS proxy does not by itself solve HDFS cross-version communication problem. However, through wrapping all the RPC client versions and delegating the client requests to the right version of RPC clients, HDFS proxy functions as if it can talk to multiple source clusters in different hadoop versions.</p>
+<p>Packaging the servlets in the WAR files has several advantages:</p>
+<ol>
+          
+<li>It reduces the complexity of writing our own ClassLoaders for different RPC clients. Servlet
+          container (Tomcat) already uses separate ClassLoaders for different WAR files.</li>
+          
+<li>Packaging is done by the Servlet container (Tomcat). For each client WAR file, its Servlets
+          only need to worry about its own version of source HDFS clusters.</li>
+        
+</ol>
+<p>Note that the inter-communication between servlets in the forwarding war and that in the specific client version war can only be through built-in data types such as int, String, etc, as such data types are loaded first through common classloader. </p>
+<a name="Servlets%3A+Where+Data+transfer+Occurs"></a>
+<h3 class="h4"> Servlets: Where Data transfer Occurs</h3>
+<p>Proxy server functionality is implemented using servlets deployed under servlet container. Specifically, there are 3 proxy servlets <span class="codefrag">ProxyListPathsServlet</span>, <span class="codefrag">ProxyFileDataServlet</span>, and <span class="codefrag">ProxyStreamFile</span>. Together, they implement the same H(S)FTP interface as the original <span class="codefrag">ListPathsServlet</span>, <span class="codefrag">FileDataServlet</span>, and <span class="codefrag">StreamFile</span> servlets do on an HDFS cluster. In fact, the proxy servlets are subclasses of the original servlets with minor changes like retrieving client UGI from the proxy server, etc. All these three servlets are put into the client war files.</p>
+<p>The forwarding proxy, which was implemented through <span class="codefrag">ProxyForwardServlet</span>, is put in a separate web application (ROOT.war). All client requests should be sent to the forwarding proxy. The forwarding proxy does not implement any functionality by itself. Instead, it simply forwards client requests to the right web applications with the right servlet paths.</p>
+<p>Forwarding servlets forward requests to servlets in the right web applications through servlet cross-context communication by setting <span class="codefrag">crossContext="true"</span> in servlet container's configuration file</p>
+<p>Proxy server will install a servlet, <span class="codefrag">ProxyFileForward</span>, which is a subclass of <span class="codefrag">ProxyForwardServlet</span>, on path /file, which exposes a simple HTTPS GET interface (internally delegates the work to <span class="codefrag">ProxyStreamFile</span> servlet via forwarding mechanism discussed above). This interface supports standard HTTP clients like curl, wget, etc. HTTPS client requests on the wire should look like <span class="codefrag">https://proxy_address/file/file_path</span>
+</p>
+<a name="Load+Balancing+and+Identifying+Requests+through+Domain+Names"></a>
+<h3 class="h4"> Load Balancing and Identifying Requests through Domain Names </h3>
+<div style="text-align: center;">
+<img class="figure" alt="Request Identification" src="images/request-identify.jpg"></div>
+<p>The delegation module relies on the forwarding WAR to be able to identify the requests so that it can direct the requests to the right HDFS client RPC versions. Identifying the requests through Domain Name, which can be extracted from the request header, is a straightforward way. Note that Domain Name can have many alias through CNAME. By exploiting such a feature, we can create a Domain Name, then create many alias of this domain name, and finally make these alias correspond to different client RPC request versions. As the same time, we may need many servers to do load balancing. We can make all these servers (with different IP addresses) point to the same Domain Name in a Round-robin fashion. By doing this, we can realize default load-balancing if we have multiple through proxy servers running in the back-end.</p>
+</div>
+    
+    
+<a name="Jetty-based+Installation+and+Configuration"></a>
+<h2 class="h3"> Jetty-based Installation and Configuration </h2>
+<div class="section">
+<p>With Jetty-based installation, only part of proxy features are supported.</p>
+<a name="Supporting+Features"></a>
+<h3 class="h4"> Supporting Features </h3>
+<ul>
+          
+<li>Single Hadoop source cluster data transfer</li>
+          
+<li>Single Hadoop version data transfer</li>
+          
+<li>Authenticate users via user SSL certificates with <span class="codefrag">ProxyFilter</span> installed</li>
+          
+<li>Enforce access control based on configuration files.</li>
+        
+</ul>
+<a name="Configuration+Files"></a>
+<h3 class="h4"> Configuration Files </h3>
+<ol>
+          
+<li>
+            
+<strong>hdfsproxy-default.xml</strong>
+            
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+              
+<tr>
+                
+<th colspan="1" rowspan="1">Name</th>
+                <th colspan="1" rowspan="1">Description</th>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">hdfsproxy.https.address</td>
+                <td colspan="1" rowspan="1">the SSL port that hdfsproxy listens on. </td>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">hdfsproxy.hosts</td>
+                <td colspan="1" rowspan="1">location of hdfsproxy-hosts file. </td>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">hdfsproxy.dfs.namenode.address</td>
+                <td colspan="1" rowspan="1">namenode address of the HDFS cluster being proxied. </td>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">hdfsproxy.https.server.keystore.resource</td>
+                <td colspan="1" rowspan="1">location of the resource from which ssl server keystore information will be extracted. </td>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">hdfsproxy.user.permissions.file.location</td>
+                <td colspan="1" rowspan="1">location of the user permissions file. </td>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">hdfsproxy.user.certs.file.location</td>
+                <td colspan="1" rowspan="1">location of the user certs file. </td>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">hdfsproxy.ugi.cache.ugi.lifetime</td>
+                <td colspan="1" rowspan="1"> The lifetime (in minutes) of a cached ugi. </td>
+              
+</tr>
+            
+</table>     
+          
+</li>              
+          
+<li>     
+            
+<strong>ssl-server.xml</strong>
+            
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+              
+<tr>
+                
+<th colspan="1" rowspan="1">Name</th>
+                <th colspan="1" rowspan="1">Description</th>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">ssl.server.truststore.location</td>
+                <td colspan="1" rowspan="1">location of the truststore. </td>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">ssl.server.truststore.password</td>
+                <td colspan="1" rowspan="1">truststore password. </td>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">ssl.server.keystore.location</td>
+                <td colspan="1" rowspan="1">location of the keystore. </td>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">ssl.server.keystore.password</td>
+                <td colspan="1" rowspan="1">keystore password. </td>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="1" rowspan="1">ssl.server.keystore.keypassword</td>
+                <td colspan="1" rowspan="1">key password. </td>
+              
+</tr>
+            
+</table>
+          
+</li>
+          
+<li>     
+            
+<strong>user-certs.xml</strong>
+            
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+              
+<tr>
+                
+<th colspan="1" rowspan="1">Name</th>
+                <th colspan="1" rowspan="1">Description</th>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="2" rowspan="1">This file defines the mappings from username to comma seperated list of certificate serial numbers that the user is allowed to use. One mapping per user. Wildcard characters, such as "*" and "?", are not recognized. Any leading or trailing whitespaces are stripped/ignored. In order for a user to be able to do "clearUgiCache" and "reloadPermFiles" command, the certification serial number he use must also belong to the user "Admin". 
+                </td>
+              
+</tr>
+            
+</table>
+          
+</li>
+          
+<li>
+            
+<strong>user-permissions.xml</strong>
+            
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+              
+<tr>
+                
+<th colspan="1" rowspan="1">Name</th>
+                <th colspan="1" rowspan="1">Description</th>
+              
+</tr>
+              
+<tr>
+                
+<td colspan="2" rowspan="1">This file defines the mappings from user name to comma seperated list of directories/files that the user is allowed to access. One mapping per user. Wildcard characters, such as "*" and "?", are not recognized. For example, to match "/output" directory, one can use "/output" or "/output/", but not "/output/*". Note that any leading or trailing whitespaces are stripped/ignored for the name field. 
+                </td>
+              
+</tr>
+            
+</table>
+          
+</li> 
+        
+</ol>
+<a name="Build+Process"></a>
+<h3 class="h4"> Build Process </h3>
+<p>Under <span class="codefrag">$HADOOP_HDFS_HOME</span> do the following <br>
+          
+<span class="codefrag"> $ ant clean tar</span> 
+<br>
+          
+<span class="codefrag"> $ cd src/contrib/hdfsproxy/</span> 
+<br>
+          
+<span class="codefrag"> $ ant clean tar</span> 
+<br>
+          The <span class="codefrag">hdfsproxy-*.tar.gz</span> file will be generated under <span class="codefrag">$HADOOP_HDFS_HOME/build/contrib/hdfsproxy/</span>. Use this tar ball to proceed for the server start-up/shutdown process after necessary configuration. 
+        </p>
+<a name="Server+Start+up+and+Shutdown"></a>
+<h3 class="h4"> Server Start up and Shutdown</h3>
+<p> Starting up a Jetty-based HDFS Proxy server is similar to starting up an HDFS cluster. Simply run <span class="codefrag">hdfsproxy</span> shell command. The main configuration file is <span class="codefrag">hdfsproxy-default.xml</span>, which should be on the classpath. <span class="codefrag">hdfsproxy-env.sh</span> can be used to set up environmental variables. In particular, <span class="codefrag">JAVA_HOME</span> should be set. As listed above, additional configuration files include <span class="codefrag">user-certs.xml</span>, <span class="codefrag">user-permissions.xml</span> and <span class="codefrag">ssl-server.xml</span>, which are used to specify allowed user certs, allowed directories/files, and ssl keystore information for the proxy, respectively. The location of these files can be specified in <span class="codefrag">hdfsproxy-default.xml</span>. Environmental variable <span class="codefrag">HDFSPROXY_CONF_DIR</span> can be used to point to the directory where these configuration files are located. The configuration files (<span class="codefrag">hadoop-site.xml</span>, or <span class="codefrag">core-site.xml</span> and <span class="codefrag">hdfs-site.xml</span>) of the proxied HDFS cluster should also be available on the classpath .
+        </p>
+<p> Mirroring those used in HDFS, a few shell scripts are provided to start and stop a group of proxy servers. The hosts to run hdfsproxy on are specified in <span class="codefrag">hdfsproxy-hosts</span> file, one host per line. All hdfsproxy servers are stateless and run independently from each other.  </p>
+<p>
+          To start a group of proxy servers, do <br>
+          
+<span class="codefrag"> $ start-hdfsproxy.sh </span> 
+        
+</p>
+<p>
+          To stop a group of proxy servers, do <br>
+          
+<span class="codefrag"> $ stop-hdfsproxy.sh </span> 
+        
+</p>
+<p> 
+          To trigger reloading of <span class="codefrag">user-certs.xml</span> and <span class="codefrag">user-permissions.xml</span> files on all proxy servers listed in the <span class="codefrag">hdfsproxy-hosts</span> file, do <br>       
+        
+<span class="codefrag"> $ hdfsproxy -reloadPermFiles </span> 
+        
+</p>
+<p>To clear the UGI caches on all proxy servers, do <br>
+          
+<span class="codefrag"> $ hdfsproxy -clearUgiCache </span> 
+        
+</p>
+<a name="Verification"></a>
+<h3 class="h4"> Verification </h3>
+<p> Use HSFTP client <br>
+          
+<span class="codefrag">bin/hadoop fs -ls "hsftp://proxy.address:port/"</span>
+        
+</p>
+</div>      
+    
+    
+<a name="Tomcat-based+Installation+and+Configuration"></a>
+<h2 class="h3"> Tomcat-based Installation and Configuration </h2>
+<div class="section">
+<p>With tomcat-based installation, all HDFS Proxy features are supported</p>
+<a name="Supporting+Features-N10314"></a>
+<h3 class="h4"> Supporting Features </h3>
+<ul>
+            
+<li>Multiple Hadoop source cluster data transfer</li>
+            
+<li>Multiple Hadoop version data transfer</li>
+            
+<li>Authenticate users via user SSL certificates with <span class="codefrag">ProxyFilter</span> installed</li>
+            
+<li>Authentication and authorization via LDAP with <span class="codefrag">LdapIpDirFilter</span> installed</li>
+            
+<li>Access control based on configuration files if <span class="codefrag">ProxyFilter</span> is installed.</li>
+            
+<li>Access control based on LDAP entries if <span class="codefrag">LdapIpDirFilter</span> is installed.</li>
+            
+<li>Standard HTTPS Get Support for file transfer</li>
+          
+</ul>
+<a name="Source+Cluster+Related+Configuration"></a>
+<h3 class="h4"> Source Cluster Related Configuration </h3>
+<ol>
+            
+<li>
+              
+<strong>hdfsproxy-default.xml</strong>
+              
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+                
+<tr>
+                  
+<th colspan="1" rowspan="1">Name</th>
+                  <th colspan="1" rowspan="1">Description</th>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="1" rowspan="1">fs.defaultFS</td>
+                  <td colspan="1" rowspan="1">Source Cluster NameNode address</td>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="1" rowspan="1">dfs.blocksize</td>
+                  <td colspan="1" rowspan="1">The block size for file tranfers</td>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="1" rowspan="1">io.file.buffer.size</td>
+                  <td colspan="1" rowspan="1"> The size of buffer for use in sequence files. The size of this buffer should probably be a multiple of hardware page size (4096 on Intel x86), and it determines how much data is buffered during read and write operations </td>
+                
+</tr>
+              
+</table>   
+            
+</li>
+          
+</ol>
+<a name="SSL+Related+Configuration"></a>
+<h3 class="h4"> SSL Related Configuration </h3>
+<ol>
+            
+<li>
+              
+<strong>hdfsproxy-default.xml</strong>
+              
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+                
+<tr>
+                  
+<th colspan="1" rowspan="1">Name</th>
+                  <th colspan="1" rowspan="1">Description</th>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="1" rowspan="1">hdfsproxy.user.permissions.file.location</td>
+                  <td colspan="1" rowspan="1">location of the user permissions file. </td>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="1" rowspan="1">hdfsproxy.user.certs.file.location</td>
+                  <td colspan="1" rowspan="1">location of the user certs file. </td>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="1" rowspan="1">hdfsproxy.ugi.cache.ugi.lifetime</td>
+                  <td colspan="1" rowspan="1"> The lifetime (in minutes) of a cached ugi. </td>
+                
+</tr>
+              
+</table>     
+            
+</li>              
+            
+<li>     
+              
+<strong>user-certs.xml</strong>
+              
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+                
+<tr>
+                  
+<th colspan="1" rowspan="1">Name</th>
+                  <th colspan="1" rowspan="1">Description</th>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="2" rowspan="1">This file defines the mappings from username to comma seperated list of certificate serial numbers that the user is allowed to use. One mapping per user. Wildcard characters, such as "*" and "?", are not recognized. Any leading or trailing whitespaces are stripped/ignored. In order for a user to be able to do "clearUgiCache" and "reloadPermFiles" command, the certification serial number he use must also belong to the user "Admin". 
+                  </td>
+                
+</tr>
+              
+</table>
+            
+</li>
+            
+<li>
+              
+<strong>user-permissions.xml</strong>
+              
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+                
+<tr>
+                  
+<th colspan="1" rowspan="1">Name</th>
+                  <th colspan="1" rowspan="1">Description</th>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="2" rowspan="1">This file defines the mappings from user name to comma seperated list of directories/files that the user is allowed to access. One mapping per user. Wildcard characters, such as "*" and "?", are not recognized. For example, to match "/output" directory, one can use "/output" or "/output/", but not "/output/*". Note that any leading or trailing whitespaces are stripped/ignored for the name field. 
+                  </td>
+                
+</tr>
+              
+</table>
+            
+</li> 
+          
+</ol>
+<a name="LDAP+Related+Configuration"></a>
+<h3 class="h4"> LDAP Related Configuration </h3>
+<ol>
+            
+<li>
+              
+<strong>hdfsproxy-default.xml</strong>
+              
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+                
+<tr>
+                  
+<th colspan="1" rowspan="1">Name</th>
+                  <th colspan="1" rowspan="1">Description</th>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="1" rowspan="1">hdfsproxy.ldap.initial.context.factory</td>
+                  <td colspan="1" rowspan="1">LDAP context factory. </td>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="1" rowspan="1">hdfsproxy.ldap.provider.url</td>
+                  <td colspan="1" rowspan="1">LDAP server address. </td>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="1" rowspan="1">hdfsproxy.ldap.role.base</td>
+                  <td colspan="1" rowspan="1">LDAP role base. </td>
+                
+</tr>
+              
+</table>     
+            
+</li>              
+          
+</ol>
+<a name="Tomcat+Server+Related+Configuration"></a>
+<h3 class="h4"> Tomcat Server Related Configuration </h3>
+<ol>
+            
+<li>
+              
+<strong>tomcat-forward-web.xml</strong>
+              
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+                
+<tr>
+                  
+<th colspan="1" rowspan="1">Name</th>
+                  <th colspan="1" rowspan="1">Description</th>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="2" rowspan="1">This deployment descritor file defines how servlets and filters are installed in the forwarding war (ROOT.war). The default filter installed is <span class="codefrag">LdapIpDirFilter</span>, you can change to <span class="codefrag">ProxyFilter</span> with <span class="codefrag">org.apache.hadoop.hdfsproxy.ProxyFilter</span> as you <span class="codefrag">filter-class</span>. </td>
+                
+</tr>
+              
+</table>     
+            
+</li>
+            
+<li>
+              
+<strong>tomcat-web.xml</strong>
+              
+<table class="ForrestTable" cellspacing="1" cellpadding="4">                
+                
+<tr>
+                  
+<th colspan="1" rowspan="1">Name</th>
+                  <th colspan="1" rowspan="1">Description</th>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="2" rowspan="1">This deployment descritor file defines how servlets and filters are installed in the client war. The default filter installed is <span class="codefrag">LdapIpDirFilter</span>, you can change to <span class="codefrag">ProxyFilter</span> with <span class="codefrag">org.apache.hadoop.hdfsproxy.ProxyFilter</span> as you <span class="codefrag">filter-class</span>. </td>
+                
+</tr>
+              
+</table>     
+            
+</li>
+            
+<li>
+              
+<strong>$TOMCAT_HOME/conf/server.xml</strong>
+              
+<table class="ForrestTable" cellspacing="1" cellpadding="4">                
+                
+<tr>
+                  
+<th colspan="1" rowspan="1">Name</th>
+                  <th colspan="1" rowspan="1">Description</th>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="2" rowspan="1"> You need to change Tomcat's server.xml file under $TOMCAT_HOME/conf as detailed in <a href="http://tomcat.apache.org/tomcat-6.0-doc/ssl-howto.html">tomcat 6 ssl-howto</a>. Set <span class="codefrag">clientAuth="true"</span> if you need to authenticate client. 
+                  </td>
+                
+</tr>
+              
+</table>     
+            
+</li>
+            
+<li>
+              
+<strong>$TOMCAT_HOME/conf/context.xml</strong>
+              
+<table class="ForrestTable" cellspacing="1" cellpadding="4">                
+                
+<tr>
+                  
+<th colspan="1" rowspan="1">Name</th>
+                  <th colspan="1" rowspan="1">Description</th>
+                
+</tr>
+                
+<tr>
+                  
+<td colspan="2" rowspan="1"> You need to change Tomcat's context.xml file under $TOMCAT_HOME/conf by adding <span class="codefrag">crossContext="true"</span> after <span class="codefrag">Context</span>.
+                  </td>
+                
+</tr>
+              
+</table>     
+            
+</li>
+          
+</ol>
+<a name="Build+and+Deployment+Process"></a>
+<h3 class="h4"> Build and Deployment Process </h3>
+<a name="Build+forwarding+war+%28ROOT.war%29"></a>
+<h4> Build forwarding war (ROOT.war) </h4>
+<p>Suppose hdfsproxy-default.xml has been properly configured and it is under ${user.home}/proxy-root-conf dir. Under <span class="codefrag">$HADOOP_HDFS_HOME</span> do the following <br>
+              
+<span class="codefrag"> $ export HDFSPROXY_CONF_DIR=${user.home}/proxy-root-conf</span> 
+<br>
+              
+<span class="codefrag"> $ ant clean tar</span> 
+<br>
+              
+<span class="codefrag"> $ cd src/contrib/hdfsproxy/</span> 
+<br>
+              
+<span class="codefrag"> $ ant clean forward</span> 
+<br>
+              The <span class="codefrag">hdfsproxy-forward-*.war</span> file will be generated under <span class="codefrag">$HADOOP_HDFS_HOME/build/contrib/hdfsproxy/</span>. Copy this war file to tomcat's webapps directory and rename it at ROOT.war (if ROOT dir already exists, remove it first) for deployment. 
+            </p>
+<a name="Build+cluster+client+war+%28client.war%29"></a>
+<h4> Build cluster client war (client.war) </h4>
+<p>Suppose hdfsproxy-default.xml has been properly configured and it is under ${user.home}/proxy-client-conf dir. Under <span class="codefrag">$HADOOP_HDFS_HOME</span> do the following <br>
+              
+<span class="codefrag"> $ export HDFSPROXY_CONF_DIR=${user.home}/proxy-client-conf</span> 
+<br>
+              
+<span class="codefrag"> $ ant clean tar</span> 
+<br>
+              
+<span class="codefrag"> $ cd src/contrib/hdfsproxy/</span> 
+<br>
+              
+<span class="codefrag"> $ ant clean war</span> 
+<br>
+              The <span class="codefrag">hdfsproxy-*.war</span> file will be generated under <span class="codefrag">$HADOOP_HDFS_HOME/build/contrib/hdfsproxy/</span>. Copy this war file to tomcat's webapps directory and rename it properly for deployment. 
+            </p>
+<a name="Handle+Multiple+Source+Clusters"></a>
+<h4> Handle Multiple Source Clusters </h4>
+<p> To proxy for multiple source clusters, you need to do the following:</p>
+<ol>
+              
+<li>Build multiple client war with different names and different hdfsproxy-default.xml configurations</li>
+              
+<li>Make multiple alias using CNAME of the same Domain Name</li>
+              
+<li>Make sure the first part of the alias match the corresponding client war file name. For example, you have two source clusters, sc1 and sc2, and you made two alias of the same domain name, proxy1.apache.org and proxy2.apache.org, then you need to name the client war file as proxy1.war and proxy2.war respectively for your deployment.</li>
+            
+</ol>
+<a name="Server+Start+up+and+Shutdown-N10566"></a>
+<h3 class="h4"> Server Start up and Shutdown</h3>
+<p> Starting up and shutting down Tomcat-based HDFS Proxy server is no more than starting up and shutting down tomcat server with tomcat's bin/startup.sh and bin/shutdown.sh script.</p>
+<p> If you need to authenticate client certs, you need either set <span class="codefrag">truststoreFile</span> and <span class="codefrag">truststorePass</span> following <a href="http://tomcat.apache.org/tomcat-6.0-doc/ssl-howto.html">tomcat 6 ssl-howto</a> in the configuration stage or give the truststore location by doing the following <br>
+            
+<span class="codefrag">export JAVA_OPTS="-Djavax.net.ssl.trustStore=${user.home}/truststore-location -Djavax.net.ssl.trustStorePassword=trustpass"</span> 
+<br>
+            before you start-up tomcat.
+          </p>
+<a name="Verification-N10584"></a>
+<h3 class="h4"> Verification </h3>
+<p>HTTPS client <br>
+            
+<span class="codefrag">curl -k "https://proxy.address:port/file/file-path"</span> 
+<br>
+            
+<span class="codefrag">wget --no-check-certificate "https://proxy.address:port/file/file-path"</span>
+          
+</p>
+<p>HADOOP client <br>
+            
+<span class="codefrag">bin/hadoop fs -ls "hsftp://proxy.address:port/"</span>
+          
+</p>
+</div>    
+    
+    
+<a name="Hadoop+Client+Configuration"></a>
+<h2 class="h3"> Hadoop Client Configuration </h2>
+<div class="section">
+<ul>
+        
+<li>
+          
+<strong>ssl-client.xml</strong>
+          
+<table class="ForrestTable" cellspacing="1" cellpadding="4">            
+            
+<tr>
+              
+<th colspan="1" rowspan="1">Name</th>
+              <th colspan="1" rowspan="1">Description</th>
+            
+</tr>
+            
+<tr>
+              
+<td colspan="1" rowspan="1">ssl.client.do.not.authenticate.server</td>
+              <td colspan="1" rowspan="1">if true, trust all server certificates, like curl's -k option</td>
+            
+</tr>
+            
+<tr>
+              
+<td colspan="1" rowspan="1">ssl.client.truststore.location</td>
+              <td colspan="1" rowspan="1">Location of truststore</td>
+            
+</tr>
+            
+<tr>
+              
+<td colspan="1" rowspan="1">ssl.client.truststore.password</td>
+              <td colspan="1" rowspan="1"> truststore password </td>
+            
+</tr>
+            
+<tr>
+              
+<td colspan="1" rowspan="1">ssl.client.truststore.type</td>
+              <td colspan="1" rowspan="1"> truststore type </td>
+            
+</tr>
+            
+<tr>
+              
+<td colspan="1" rowspan="1">ssl.client.keystore.location</td>
+              <td colspan="1" rowspan="1"> Location of keystore </td>
+            
+</tr>
+            
+<tr>
+              
+<td colspan="1" rowspan="1">ssl.client.keystore.password</td>
+              <td colspan="1" rowspan="1"> keystore password </td>
+            
+</tr>
+            
+<tr>
+              
+<td colspan="1" rowspan="1">ssl.client.keystore.type</td>
+              <td colspan="1" rowspan="1"> keystore type </td>
+            
+</tr>
+            
+<tr>
+              
+<td colspan="1" rowspan="1">ssl.client.keystore.keypassword</td>
+              <td colspan="1" rowspan="1"> keystore key password </td>
+            
+</tr>
+            
+<tr>
+              
+<td colspan="1" rowspan="1">ssl.expiration.warn.days</td>
+              <td colspan="1" rowspan="1"> server certificate expiration war days threshold, 0 means no warning should be issued </td>
+            
+</tr>
+          
+</table>   
+        
+</li>
+      
+</ul>
+</div>
+
+
+
+  
+</div>
+<!--+
+    |end content
+    +-->
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<!--+
+    |start bottomstrip
+    +-->
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2010 <a href="http://www.apache.org/licenses/">The Apache Software Foundation.</a>
+</div>
+<!--+
+    |end bottomstrip
+    +-->
+</div>
+</body>
+</html>

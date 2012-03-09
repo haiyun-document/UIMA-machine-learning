@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/Users/Ray/Documents/hadoop-0.22.0/hadoop-common-0.22.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Ray/Documents/hadoop-0.22.0/hadoop-mapred-0.22.0.jar"/>
+	<classpathentry kind="lib" path="/Users/Ray/Documents/hadoop-0.22.0/lib/commons-cli-1.2.jar"/>
+	<classpathentry kind="lib" path="/Users/Ray/Documents/hadoop-0.22.0/colt.jar"/>
+	<classpathentry kind="lib" path="/Users/Ray/Documents/hadoop-0.22.0/CRF.jar"/>
+	<classpathentry kind="lib" path="/Users/Ray/Documents/hadoop-0.22.0/LBFGS.jar"/>
+	<classpathentry kind="lib" path="/Users/Ray/Documents/hadoop-0.22.0/trove.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,377 @@
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.BackupNode Class
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.BackupStorage Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.BlockListAsLongs.BlockReportIterator Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.BlockManager Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.BlockMissingException Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicy Class
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicy.NotEnoughReplicasException Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.BlockPlacementPolicyDefault Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.BlockReader Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand.RecoveringBlock Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.CancelDelegationTokenServlet Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.CheckpointCommand Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.ContentSummaryServlet Class
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DatanodeJspHelper Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DataNodeMXBean Interface
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.DataTransferProtocol.BlockConstructionStage Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.DataTransferProtocol.Op Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.DataTransferProtocol.PacketHeader Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.DataTransferProtocol.PipelineAck Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.DataTransferProtocol.Receiver Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.DataTransferProtocol.Sender Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.DataTransferProtocol.Status Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.tools.DelegationTokenFetcher Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DeprecatedUTF8 Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient.DFSDataInputStream Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSConfigKeys Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSInputStream Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSUtil.ErrorSimulator Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.DirectoryListing Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DirectoryScanner Class
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.DSQuotaExceededException Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSClusterStats Interface
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSEditLogLoader Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSImageSerialization Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSInodeInfo Interface
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.GetDelegationTokenServlet Class
+NO DOC BLOCK: org.apache.hadoop.hdfs.tools.HDFSConcat Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.HdfsConfiguration Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.common.HdfsConstants.BlockUCState Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.common.HdfsConstants.NamenodeRole Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.common.HdfsConstants.ReplicaState Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.HdfsFileStatus Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.HdfsLocatedFileStatus Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.HsftpFileSystem.DummyTrustManager Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.INodeSymlink Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.tools.JMXGet Class
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.common.JspHelper Class
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.KeyUpdateCommand Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.LayoutVersion Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.LayoutVersion.Feature Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeActivityMBean Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeCommand Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNodeMXBean Interface
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocols Interface
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NodeRegistration Interface
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.NSQuotaExceededException Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.RecoveryInProgressException Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.RenewDelegationTokenServlet Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.Replica Interface
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.ReplicaInfo Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.ReplicaNotFoundException Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.ReplicaRecoveryInfo Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter.SecureResources Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.ServerCommand Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.UnregisteredNodeException Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.UnresolvedPathException Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.UnsupportedActionException Class
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.BlockListAsLongs Constructor (java.util.List, java.util.List)
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.BlockListAsLongs Constructor (void)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.CheckpointSignature Constructor (void)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor Constructor (org.apache.hadoop.hdfs.protocol.DatanodeID, java.lang.String, java.lang.String, long, long, long, int, int)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor Constructor (org.apache.hadoop.hdfs.protocol.DatanodeID, long, long, long, int, int)
+NO DOC BLOCK: org.apache.hadoop.hdfs.tools.DFSck Constructor (org.apache.hadoop.conf.Configuration, java.io.PrintStream)
+NO DOC BLOCK: org.apache.hadoop.hdfs.DistributedFileSystem.DiskStatus Constructor (org.apache.hadoop.fs.FsStatus)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.LocatedBlocks Constructor (long, boolean, java.util.List, org.apache.hadoop.hdfs.protocol.LocatedBlock, boolean)
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.LocatedBlocks Constructor (void)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Constructor (org.apache.hadoop.conf.Configuration, org.apache.hadoop.hdfs.server.common.HdfsConstants.NamenodeRole)
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.QuotaExceededException Constructor (long, long)
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.QuotaExceededException Constructor (void)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.SafeModeException Constructor (void)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDataset Method adjustCrcChannelPosition(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.BlockWriteStreams, int)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method adjustCrcChannelPosition(org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface.BlockWriteStreams, int)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.FSDataset Method append(org.apache.hadoop.hdfs.protocol.Block, long, long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method append(org.apache.hadoop.hdfs.protocol.Block, long, long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSUtil Method byteArray2String(byte[][])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSUtil Method bytes2byteArray(byte[], byte)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSUtil Method bytes2byteArray(byte[], int, byte)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSUtil Method bytes2String(byte[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method cancelDelegationToken(org.apache.hadoop.security.token.Token)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method cancelDelegationToken(org.apache.hadoop.security.token.Token)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method cancelDelegationToken(org.apache.hadoop.security.token.Token)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method cancelDelegationToken(org.apache.hadoop.security.token.Token)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method cancelDelegationToken(org.apache.hadoop.security.token.Token)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDataset Method checkAndUpdate(long, java.io.File, java.io.File, org.apache.hadoop.hdfs.server.datanode.FSDataset.FSVolume)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DataNode Method checkDiskError(java.lang.Exception)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DataNode Method checkDiskError()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method concat(java.lang.String, java.lang.String[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method concat(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.Path[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method concat(java.lang.String, java.lang.String[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method concat(java.lang.String, java.lang.String[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method concat(java.lang.String, java.lang.String[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method create(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, java.util.EnumSet, boolean, short, long, org.apache.hadoop.util.Progressable, int)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method create(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, java.util.EnumSet, short, long, org.apache.hadoop.util.Progressable, int)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DataNode Method createDataNode(java.lang.String[], org.apache.hadoop.conf.Configuration, org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter.SecureResources)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method createNonRecursive(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.permission.FsPermission, java.util.EnumSet, int, short, long, org.apache.hadoop.util.Progressable)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.FSDataset Method createRbw(org.apache.hadoop.hdfs.protocol.Block)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method createRbw(org.apache.hadoop.hdfs.protocol.Block)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method createSymlink(java.lang.String, java.lang.String, boolean)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method createSymlink(java.lang.String, java.lang.String, org.apache.hadoop.fs.permission.FsPermission, boolean)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method createSymlink(java.lang.String, java.lang.String, org.apache.hadoop.fs.permission.PermissionStatus, boolean)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method createSymlink(java.lang.String, java.lang.String, org.apache.hadoop.fs.permission.FsPermission, boolean)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.FSDataset Method createTemporary(org.apache.hadoop.hdfs.protocol.Block)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method createTemporary(org.apache.hadoop.hdfs.protocol.Block)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode Method doWork()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method endCheckpoint(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, org.apache.hadoop.hdfs.server.namenode.CheckpointSignature)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Method endCheckpoint(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, org.apache.hadoop.hdfs.server.namenode.CheckpointSignature)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method errorReport(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, int, java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Method errorReport(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, int, java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.common.Util Method fileAsURI(java.io.File)
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.Block Method filename2id(java.lang.String)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration Method getAddress()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getBlockCapacity()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.Block Method getBlockId(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method getBlockKeys()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Method getBlockKeys()
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.BlockListAsLongs Method getBlockListAsLongs()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.BlockListAsLongs Method getBlockReportIterator()
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.LocatedBlock Method getBlockToken()
+NO DOC BLOCK: org.apache.hadoop.hdfs.HftpFileSystem Method getCanonicalServiceName()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.HftpFileSystem Method getContentSummary(org.apache.hadoop.fs.Path)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getCorruptReplicaBlocks()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DataNode Method getDatanodeRegistration()
+NO DOC BLOCK: org.apache.hadoop.hdfs.HftpFileSystem Method getDateFormat()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getDeadNodes()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getDecommissioningNodes()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getDecomNodes()
+NO DOC BLOCK: org.apache.hadoop.hdfs.DistributedFileSystem Method getDefaultPort()
+NO DOC BLOCK: org.apache.hadoop.hdfs.HftpFileSystem Method getDefaultPort()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method getDelegationToken(org.apache.hadoop.io.Text)
+NO DOC BLOCK: org.apache.hadoop.hdfs.DistributedFileSystem Method getDelegationToken(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method getDelegationToken(org.apache.hadoop.io.Text)
+NO DOC BLOCK: org.apache.hadoop.hdfs.HftpFileSystem Method getDelegationToken(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method getDelegationToken(org.apache.hadoop.io.Text)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getDelegationToken(org.apache.hadoop.io.Text)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method getDelegationToken(org.apache.hadoop.io.Text)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getDelegationTokenSecretManager()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getExcessBlocks()
+NO DOC BLOCK: org.apache.hadoop.hdfs.DistributedFileSystem Method getFileBlockLocations(org.apache.hadoop.fs.Path, long, long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method getFileChecksum(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method getFileLinkInfo(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method getFileLinkInfo(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method getFileLinkInfo(java.lang.String)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getFree()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSImage Method getFSNamesystem()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.Block Method getGenerationStamp(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method getHostPortString(java.net.InetSocketAddress)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode Method getHttpAddress(org.apache.hadoop.conf.Configuration)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DataNode Method getHttpPort()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method getHttpServerAddress(org.apache.hadoop.conf.Configuration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DataNode Method getInfoAddr(org.apache.hadoop.conf.Configuration)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DataNode Method getInfoPort()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method getInfoServer(org.apache.hadoop.conf.Configuration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.LocatedBlocks Method getLastLocatedBlock()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method getLinkTarget(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method getLinkTarget(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method getLinkTarget(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getLiveNodes()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method getNamenode()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DataNode Method getNamenodeAddress()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DataNode Method getNameNodeAddrForClient()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getNonDfsUsedSpace()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getNumDeadDataNodes()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMBean Method getNumDeadDataNodes()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDataset Method getNumFailedVolumes()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.metrics.FSDatasetMBean Method getNumFailedVolumes()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getNumLiveDataNodes()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMBean Method getNumLiveDataNodes()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSEditLog Method getOutputStreamIterator(org.apache.hadoop.hdfs.server.namenode.JournalStream.JournalType)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getPendingDeletionBlocks()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getPercentRemaining()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getPercentUsed()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDataset Method getReplica(long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method getReplica(long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientDatanodeProtocol Method getReplicaVisibleLength(org.apache.hadoop.hdfs.protocol.Block)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DataNode Method getReplicaVisibleLength(org.apache.hadoop.hdfs.protocol.Block)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.FSDataset Method getReplicaVisibleLength(org.apache.hadoop.hdfs.protocol.Block)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method getReplicaVisibleLength(org.apache.hadoop.hdfs.protocol.Block)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSImage Method getRestoreFailedStorage()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method getRole()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DataNode Method getRpcPort()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method getRpcServerAddress(org.apache.hadoop.conf.Configuration)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getSafemode()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method getServerDefaults()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method getServerDefaults()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method getServerDefaults()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method getServerDefaults()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method getServiceAddress(org.apache.hadoop.conf.Configuration, boolean)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method getServiceRpcServerAddress(org.apache.hadoop.conf.Configuration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method getStatus(org.apache.hadoop.fs.Path)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getStorageDirs(org.apache.hadoop.conf.Configuration, java.lang.String)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DataNode Method getStreamingAddr(org.apache.hadoop.conf.Configuration)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getThreads()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getTotal()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getTotalBlocks()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getTotalFiles()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getUsed()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DataNode Method getVersion()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method getVersion()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor Method getVolumeFailures()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DataNode Method getVolumeInfo()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDataset Method hasEnoughResource()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method hasEnoughResource()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method initialize(org.apache.hadoop.conf.Configuration)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DataNode Method initReplicaRecovery(org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand.RecoveringBlock)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.FSDataset Method initReplicaRecovery(org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand.RecoveringBlock)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method initReplicaRecovery(org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand.RecoveringBlock)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.InterDatanodeProtocol Method initReplicaRecovery(org.apache.hadoop.hdfs.server.protocol.BlockRecoveryCommand.RecoveringBlock)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DataNode Method instantiateDataNode(java.lang.String[], org.apache.hadoop.conf.Configuration, org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter.SecureResources)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.common.Storage Method is203LayoutVersion(int)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.LocatedBlocks Method isLastBlockComplete()
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.Block Method isMetaFilename(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.common.Storage Method isPreUpgradableLayout(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DataStorage Method isPreUpgradableLayout(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSImage Method isPreUpgradableLayout(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method isUpgradeFinalized()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.GetImageServlet Method isValidRequestor(java.lang.String, org.apache.hadoop.conf.Configuration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.BlockListAsLongs Method iterator()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method journal(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, int, int, byte[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Method journal(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration, int, int, byte[])
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method journalSize(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Method journalSize(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method listCorruptFileBlocks(java.lang.String, java.lang.String)
+NO DOC BLOCK: org.apache.hadoop.hdfs.DistributedFileSystem Method listLocatedStatus(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.PathFilter)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method listPaths(java.lang.String, byte[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method listPaths(java.lang.String, byte[], boolean)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.common.Storage Method listStorageDirectories()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method loadNamesystem(org.apache.hadoop.conf.Configuration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSUtil Method locatedBlocks2Locations(org.apache.hadoop.hdfs.protocol.LocatedBlocks)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method logUpdateMasterKey(org.apache.hadoop.security.token.delegation.DelegationKey)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method mkdir(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.permission.FsPermission)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSImage Method moveCurrent(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSImage Method moveLastCheckpoint(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method numCorruptReplicas(org.apache.hadoop.hdfs.protocol.Block)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method open(java.lang.String, int, boolean, org.apache.hadoop.fs.FileSystem.Statistics)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method open(java.lang.String, int, boolean)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method primitiveCreate(java.lang.String, org.apache.hadoop.fs.permission.FsPermission, java.util.EnumSet, boolean, short, long, org.apache.hadoop.util.Progressable, int, int)
+NO DOC BLOCK: org.apache.hadoop.hdfs.DistributedFileSystem Method primitiveCreate(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.permission.FsPermission, java.util.EnumSet, int, short, long, org.apache.hadoop.util.Progressable, int)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method primitiveMkdir(java.lang.String, org.apache.hadoop.fs.permission.FsPermission)
+NO DOC BLOCK: org.apache.hadoop.hdfs.DistributedFileSystem Method primitiveMkdir(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.permission.FsPermission)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.tools.DFSAdmin Method printTopology()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.DatanodeInfo Method read(java.io.DataInput)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.LocatedBlock Method read(java.io.DataInput)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.common.StorageInfo Method readFields(java.io.DataInput)
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.Block Method readId(java.io.DataInput)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.FSDataset Method recoverAppend(org.apache.hadoop.hdfs.protocol.Block, long, long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method recoverAppend(org.apache.hadoop.hdfs.protocol.Block, long, long)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.FSDataset Method recoverClose(org.apache.hadoop.hdfs.protocol.Block, long, long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method recoverClose(org.apache.hadoop.hdfs.protocol.Block, long, long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method recoverLease(org.apache.hadoop.fs.Path)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method recoverLease(java.lang.String, java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method recoverLease(java.lang.String, java.lang.String)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.FSDataset Method recoverRbw(org.apache.hadoop.hdfs.protocol.Block, long, long, long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method recoverRbw(org.apache.hadoop.hdfs.protocol.Block, long, long, long)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method refreshSuperUserGroupsConfiguration()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.tools.DFSAdmin Method refreshSuperUserGroupsConfiguration()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method refreshUserToGroupsMappings()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.tools.DFSAdmin Method refreshUserToGroupsMappings()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Method register(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method registerDatanode(org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol Method registerDatanode(org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method rename(java.lang.String, java.lang.String, org.apache.hadoop.fs.Options.Rename[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method rename(org.apache.hadoop.fs.Path, org.apache.hadoop.fs.Path, org.apache.hadoop.fs.Options.Rename[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method rename(java.lang.String, java.lang.String, org.apache.hadoop.fs.Options.Rename[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method rename(java.lang.String, java.lang.String, org.apache.hadoop.fs.Options.Rename[])
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method renewDelegationToken(org.apache.hadoop.security.token.Token)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method renewDelegationToken(org.apache.hadoop.security.token.Token)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method renewDelegationToken(org.apache.hadoop.security.token.Token)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSNamesystem Method renewDelegationToken(org.apache.hadoop.security.token.Token)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method renewDelegationToken(org.apache.hadoop.security.token.Token)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DistributedFileSystem Method restoreFailedStorage(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method restoreFailedStorage(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method restoreFailedStorage(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.tools.DFSAdmin Method restoreFaileStorage(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSImage Method saveCurrent(org.apache.hadoop.hdfs.server.common.Storage.StorageDirectory)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.DataNode Method secureMain(java.lang.String[], org.apache.hadoop.hdfs.server.datanode.SecureDataNodeStarter.SecureResources)
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.LocatedBlock Method setBlockToken(org.apache.hadoop.security.token.Token)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSEditLog Method setBufferCapacity(int)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method setHttpServerAddress(org.apache.hadoop.conf.Configuration)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSImage Method setImageDigest(org.apache.hadoop.io.MD5Hash)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSImage Method setRestoreFailedStorage(boolean)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method setRpcServerAddress(org.apache.hadoop.conf.Configuration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method setRpcServiceServerAddress(org.apache.hadoop.conf.Configuration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method setServiceAddress(org.apache.hadoop.conf.Configuration, java.lang.String)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method startCheckpoint(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Method startCheckpoint(org.apache.hadoop.hdfs.server.protocol.NamenodeRegistration)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSUtil Method string2Bytes(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.common.Util Method stringAsURI(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.common.Util Method stringCollectionAsURIs(java.util.Collection)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.DFSClient Method stringifyToken(org.apache.hadoop.security.token.Token)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.common.HdfsConstants.StartupOption Method toNodeRole()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.LocatedBlock Method toString()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.LocatedBlocks Method toString()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.SecondaryNameNode Method toString()
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDataset Method unlinkBlock(org.apache.hadoop.hdfs.protocol.Block, int)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method updateBlockForPipeline(org.apache.hadoop.hdfs.protocol.Block, java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Method updateBlockForPipeline(org.apache.hadoop.hdfs.protocol.Block, java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.ClientProtocol Method updatePipeline(java.lang.String, org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.DatanodeID[])
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Method updatePipeline(java.lang.String, org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.Block, org.apache.hadoop.hdfs.protocol.DatanodeID[])
+NO DOC BLOCK: org.apache.hadoop.hdfs.HftpFileSystem Method updateQuery(java.lang.String)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.DataNode Method updateReplicaUnderRecovery(org.apache.hadoop.hdfs.protocol.Block, long, long)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.FSDataset Method updateReplicaUnderRecovery(org.apache.hadoop.hdfs.protocol.Block, long, long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.datanode.FSDatasetInterface Method updateReplicaUnderRecovery(org.apache.hadoop.hdfs.protocol.Block, long, long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.InterDatanodeProtocol Method updateReplicaUnderRecovery(org.apache.hadoop.hdfs.protocol.Block, long, long)
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Method versionRequest()
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.common.StorageInfo Method write(java.io.DataOutput)
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.Block Method writeId(java.io.DataOutput)
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Field ACT_CHECKPOINT
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Field ACT_SHUTDOWN
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Field ACT_UNKNOWN
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.common.HdfsConstants.StartupOption Field BACKUP
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.Block Field BLOCK_FILE_PREFIX
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.Block Field blockFilePattern
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.common.HdfsConstants.StartupOption Field CHECKPOINT
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.FSImage Field ckptState
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.StreamFile Field CONTENT_LENGTH
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.QuotaExceededException Field count
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.FSConstants Field DEFAULT_BYTES_PER_CHECKSUM
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.FSConstants Field DEFAULT_FILE_BUFFER_SIZE
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.FSConstants Field DEFAULT_REPLICATION_FACTOR
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.FSConstants Field DEFAULT_WRITE_PACKET_SIZE
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.common.HdfsConstants Field DN_KEEPALIVE_TIMEOUT
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol Field DNA_ACCESSKEYUPDATE
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSImage Field editLog
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.DatanodeRegistration Field exportedKeys
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Field FATAL
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.DatanodeProtocol Field FATAL_DISK_ERROR
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.common.GenerationStamp Field GRANDFATHER_GENERATION_STAMP
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.FSConstants Field HDFS_URI_SCHEME
+NO DOC BLOCK: org.apache.hadoop.hdfs.HftpFileSystem Field HFTP_DATE_FORMAT
+NO DOC BLOCK: org.apache.hadoop.hdfs.HftpFileSystem Field HFTP_SERVICE_NAME_KEY
+NO DOC BLOCK: org.apache.hadoop.hdfs.HftpFileSystem Field HFTP_TIMEZONE
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Field httpAddress
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Field httpServer
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSImage Field imageDigest
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Field JA_CHECKPOINT_TIME
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Field JA_IS_ALIVE
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Field JA_JOURNAL
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Field JA_JSPOOL_START
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.common.Storage Field LAYOUT_VERSIONS_203
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.Block Field METADATA_EXTENSION
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.Block Field metaFilePattern
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSImage Field namesystem
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.DatanodeDescriptor Field needKeyUpdate
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.FSImage Field newImageDigest
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Field nodeRegistration
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.protocol.NamenodeProtocol Field NOTIFY
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics Field numcreateSymlinkOps
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.metrics.FSNamesystemMetrics Field numExpiredHeartbeats
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics Field numFileInfoOps
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics Field numFilesDeleted
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics Field numFilesInGetListingOps
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.metrics.NameNodeMetrics Field numgetLinkTargetOps
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.protocol.DataTransferProtocol Field OP_STATUS_ERROR_ACCESS_TOKEN
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.QuotaExceededException Field pathName
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.QuotaExceededException Field quota
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.common.HdfsConstants Field READ_TIMEOUT_EXTENSION
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.namenode.NameNode Field role
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Field rpcAddress
+NO DOC BLOCK: org.apache.hadoop.hdfs.protocol.QuotaExceededException Field serialVersionUID
+NO DOC BLOCK: org.apache.hadoop.hdfs.DFSClient Field SERVER_DEFAULTS_VALIDITY_PERIOD
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Field serviceRPCAddress
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Field serviceRpcServer
+MISSING @SINCE TAG: org.apache.hadoop.hdfs.server.namenode.NameNode Field stopRequested
+NO DOC BLOCK: org.apache.hadoop.hdfs.server.datanode.metrics.DataNodeMetrics Field volumeFailures

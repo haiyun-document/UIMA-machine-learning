@@ -1,0 +1,8 @@
+2012-02-18 20:12:32,248 INFO org.apache.hadoop.mapred.UserLogCleaner: Deleting user log path /Users/Ray/Documents/hadoop-0.22.0/bin/../logs/userlogs/job_201202150031_0004
+2012-02-18 20:12:32,313 INFO org.apache.hadoop.mapred.UserLogCleaner: Deleting user log path /Users/Ray/Documents/hadoop-0.22.0/bin/../logs/userlogs/job_201202171739_0002
+2012-02-18 20:12:32,316 INFO org.apache.hadoop.mapred.UserLogCleaner: Deleting user log path /Users/Ray/Documents/hadoop-0.22.0/bin/../logs/userlogs/job_201202150031_0005
+2012-02-18 20:12:32,318 INFO org.apache.hadoop.mapred.UserLogCleaner: Deleting user log path /Users/Ray/Documents/hadoop-0.22.0/bin/../logs/userlogs/job_201202171739_0001
+2012-02-18 20:12:32,322 INFO org.apache.hadoop.mapred.UserLogCleaner: Deleting user log path /Users/Ray/Documents/hadoop-0.22.0/bin/../logs/userlogs/job_201202150031_0001
+2012-02-18 20:12:32,329 INFO org.apache.hadoop.mapred.UserLogCleaner: Deleting user log path /Users/Ray/Documents/hadoop-0.22.0/bin/../logs/userlogs/job_201202171739_0005
+2012-02-18 20:12:32,331 INFO org.apache.hadoop.mapred.UserLogCleaner: Deleting user log path /Users/Ray/Documents/hadoop-0.22.0/bin/../logs/userlogs/job_201202150031_0002
+2012-02-18 20:12:32,335 INFO org.apache.hadoop.mapred.UserLogCleaner: Deleting user log path /Users/Ray/Documents/hadoop-0.22.0/bin/../logs/userlogs/job_201202171739_0004

@@ -1,0 +1,682 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.9">
+<meta name="Forrest-skin-name" content="pelt">
+<title>Capacity Scheduler</title>
+<link type="text/css" href="skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="skin/print.css" rel="stylesheet">
+<link type="text/css" href="skin/profile.css" rel="stylesheet">
+<script src="skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://hadoop.apache.org/">Hadoop</a> &gt; <a href="http://hadoop.apache.org/core/">Core</a><script src="skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<!--+
+    |header
+    +-->
+<div class="header">
+<!--+
+    |start group logo
+    +-->
+<div class="grouplogo">
+<a href="http://hadoop.apache.org/"><img class="logoImage" alt="Hadoop" src="images/hadoop-logo.jpg" title="Apache Hadoop"></a>
+</div>
+<!--+
+    |end group logo
+    +-->
+<!--+
+    |start Project Logo
+    +-->
+<div class="projectlogo">
+<a href="http://hadoop.apache.org/core/"><img class="logoImage" alt="Hadoop" src="images/mapreduce-logo.jpg" title="Scalable Computing Platform"></a>
+</div>
+<!--+
+    |end Project Logo
+    +-->
+<!--+
+    |start Search
+    +-->
+<div class="searchbox">
+<form action="http://www.google.com/search" method="get" class="roundtopsmall">
+<input value="hadoop.apache.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="25" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                    <input name="Search" value="Search" type="submit">
+</form>
+</div>
+<!--+
+    |end search
+    +-->
+<!--+
+    |start Tabs
+    +-->
+<ul id="tabs">
+<li>
+<a class="unselected" href="http://hadoop.apache.org/mapreduce/">Project</a>
+</li>
+<li>
+<a class="unselected" href="http://wiki.apache.org/hadoop/MapReduce">Wiki</a>
+</li>
+<li class="current">
+<a class="selected" href="index.html">MapReduce 0.22 Documentation</a>
+</li>
+</ul>
+<!--+
+    |end Tabs
+    +-->
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<!--+
+    |start Subtabs
+    +-->
+<div id="level2tabs"></div>
+<!--+
+    |end Endtabs
+    +-->
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+
+             &nbsp;
+           </div>
+<!--+
+    |start Menu, mainarea
+    +-->
+<!--+
+    |start Menu
+    +-->
+<div id="menu">
+<div onclick="SwitchMenu('menu_1.1', 'skin/')" id="menu_1.1Title" class="menutitle">Getting Started</div>
+<div id="menu_1.1" class="menuitemgroup">
+<div class="menuitem">
+<a href="index.html">Overview</a>
+</div>
+<div class="menuitem">
+<a href="mapred_tutorial.html">MapReduce Tutorial</a>
+</div>
+<div class="menuitem">
+<a href="streaming.html">Hadoop Streaming</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_1.2', 'skin/')" id="menu_1.2Title" class="menutitle">Guides</div>
+<div id="menu_1.2" class="menuitemgroup">
+<div class="menuitem">
+<a href="distcp.html">DistCp</a>
+</div>
+<div class="menuitem">
+<a href="vaidya.html">Vaidya</a>
+</div>
+<div class="menuitem">
+<a href="hadoop_archives.html">Hadoop Archives</a>
+</div>
+<div class="menuitem">
+<a href="gridmix.html">Gridmix</a>
+</div>
+<div class="menuitem">
+<a href="rumen.html">Rumen</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_selected_1.3', 'skin/')" id="menu_selected_1.3Title" class="menutitle" style="background-image: url('skin/images/chapter_open.gif');">Schedulers</div>
+<div id="menu_selected_1.3" class="selectedmenuitemgroup" style="display: block;">
+<div class="menupage">
+<div class="menupagetitle">Capacity Scheduler</div>
+</div>
+<div class="menuitem">
+<a href="fair_scheduler.html">Fair Scheduler</a>
+</div>
+<div class="menuitem">
+<a href="dynamic_scheduler.html">Dynamic Priority Scheduler</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_1.4', 'skin/')" id="menu_1.4Title" class="menutitle">Miscellaneous</div>
+<div id="menu_1.4" class="menuitemgroup">
+<div class="menuitem">
+<a href="api/index.html">API Docs</a>
+</div>
+<div class="menuitem">
+<a href="jdiff/changes.html">API Changes</a>
+</div>
+<div class="menuitem">
+<a href="http://wiki.apache.org/hadoop/MapReduce">Wiki</a>
+</div>
+<div class="menuitem">
+<a href="http://wiki.apache.org/hadoop/MapReduce/FAQ">FAQ</a>
+</div>
+<div class="menuitem">
+<a href="releasenotes.html">Release Notes</a>
+</div>
+<div class="menuitem">
+<a href="changes.html">Change Log</a>
+</div>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<!--+
+  |alternative credits
+  +-->
+<div id="credit2"></div>
+</div>
+<!--+
+    |end Menu
+    +-->
+<!--+
+    |start content
+    +-->
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="capacity_scheduler.pdf"><img alt="PDF -icon" src="skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Capacity Scheduler</h1>
+<div id="front-matter">
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Purpose">Purpose</a>
+</li>
+<li>
+<a href="#Features">Features</a>
+</li>
+<li>
+<a href="#Picking+a+Task+to+Run">Picking a Task to Run</a>
+<ul class="minitoc">
+<li>
+<a href="#Scheduling+Tasks+Considering+Memory+Requirements">Scheduling Tasks Considering Memory Requirements</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Installation">Installation</a>
+</li>
+<li>
+<a href="#Configuration">Configuration</a>
+<ul class="minitoc">
+<li>
+<a href="#Using+the+Capacity+Scheduler">Using the Capacity Scheduler</a>
+</li>
+<li>
+<a href="#Setting+Up+Queues">Setting Up Queues</a>
+</li>
+<li>
+<a href="#Configuring+Properties+for+Queues">Configuring Properties for Queues</a>
+</li>
+<li>
+<a href="#Job+Initialization+Parameters">Job Initialization Parameters</a>
+</li>
+<li>
+<a href="#Reviewing+the+Configuration+of+the+Capacity+Scheduler">Reviewing the Configuration of the Capacity Scheduler</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+  
+    
+<a name="Purpose"></a>
+<h2 class="h3">Purpose</h2>
+<div class="section">
+<p>This document describes the Capacity Scheduler, a pluggable 
+      MapReduce scheduler for Hadoop which provides a way to share 
+      large clusters.</p>
+</div>
+    
+    
+<a name="Features"></a>
+<h2 class="h3">Features</h2>
+<div class="section">
+<p>The Capacity Scheduler supports the following features:</p>
+<ul>
+        
+<li>
+          Multiple queues, possibly hierarchical/recursive, where a job is
+          submitted to a queue.
+        </li>
+        
+<li>
+          Queues are allocated a fraction of the capacity of the grid in the 
+          sense that a certain capacity of resources will be at their 
+          disposal. All jobs submitted to a queue will have access to the 
+          capacity allocated to the queue.
+        </li>
+        
+<li>
+          Free resources can be allocated to any queue beyond it's capacity. 
+          When there is demand for these resources from queues running below 
+          capacity at a future point in time, as tasks scheduled on these 
+          resources complete, they will be assigned to jobs on queues 
+          running below the capacity.
+        </li>
+        
+<li>
+          Queues optionally support job priorities (disabled by default).
+        </li>
+        
+<li>
+          Within a queue, jobs with higher priority will have access to the 
+          queue's resources before jobs with lower priority. However, once a 
+          job is running, it will not be preempted for a higher priority job,
+          though new tasks from the higher priority job will be 
+          preferentially scheduled.
+        </li>
+        
+<li>
+          In order to prevent one or more users from monopolizing its 
+          resources, each queue enforces a limit on the percentage of 
+          resources allocated to a user at any given time, if there is 
+          competition for them.  
+        </li>
+        
+<li>
+          Queues can use idle resources of other queues. In order to prevent
+          monopolizing of resources by particular queues, each queue can be
+          set a cap on the maximum number of resources it can expand to in
+          the presence of idle resources in other queues of the cluster.
+        </li>
+        
+<li>
+          Support for memory-intensive jobs, wherein a job can optionally 
+          specify higher memory-requirements than the default, and the tasks 
+          of the job will only be run on TaskTrackers that have enough memory 
+          to spare.
+        </li>
+        
+<li>
+          Support for refreshing/reloading some of the queue-properties
+          without restarting the JobTracker, taking advantage of the
+          <a href="http://hadoop.apache.org/common/docs/current/cluster_setup.html#Refreshing+queue+configuration">
+          queue-refresh</a> feature in the framework.
+        </li>
+      
+</ul>
+</div>
+    
+    
+<a name="Picking+a+Task+to+Run"></a>
+<h2 class="h3">Picking a Task to Run</h2>
+<div class="section">
+<p>Note that many of these steps can be, and will be, enhanced over time
+      to provide better algorithms.</p>
+<p>Whenever a TaskTracker is free, the Capacity Scheduler picks 
+      a queue which has most free space (whose ratio of # of running slots to 
+      capacity is the lowest).</p>
+<p>Once a queue is selected, the Scheduler picks a job in the queue. Jobs
+      are sorted based on when they're submitted and their priorities (if the 
+      queue supports priorities). Jobs are considered in order, and a job is 
+      selected if its user is within the user-quota for the queue, i.e., the 
+      user is not already using queue resources above his/her limit. The 
+      Scheduler also makes sure that there is enough free memory in the 
+      TaskTracker to tun the job's task, in case the job has special memory
+      requirements.</p>
+<p>Once a job is selected, the Scheduler picks a task to run. This logic 
+      to pick a task remains unchanged from earlier versions.</p>
+<a name="Scheduling+Tasks+Considering+Memory+Requirements"></a>
+<h3 class="h4">Scheduling Tasks Considering Memory Requirements</h3>
+<p>
+        The Capacity Scheduler supports scheduling of tasks on a
+        TaskTracker based on a job's virtual memory requirements and 
+        the availability
+        of enough virtual memory on the TaskTracker node. By doing so, it
+        simplifies the virtual memory monitoring function on the 
+        TaskTracker node, described in the section on 
+        <a href="http://hadoop.apache.org/common/docs/current/cluster_setup.html#Configuring+Memory+Parameters+for+MapReduce+Jobs">
+        Monitoring Task Memory Usage</a> in the Cluster Setup guide. 
+        Refer to that section for more details on how memory for 
+        MapReduce tasks is handled.
+        </p>
+<p>
+        Virtual memory based task scheduling uses the same parameters as
+        the memory monitoring function of the TaskTracker, and is enabled
+        along with virtual memory monitoring. When enabled, the scheduler
+        ensures that a task is scheduled on a TaskTracker only when the
+        virtual memory required by the map or reduce task can be assured 
+        by the TaskTracker. That is, the task is scheduled only if the 
+        following constraint is satisfied:<br>
+        
+<span class="codefrag">
+        Job's mapreduce.{map|reduce}.memory.mb of the job &lt;=
+          total virtual memory for all map or reduce tasks on the TaskTracker -
+            total virtual memory required for all running map or reduce tasks 
+            on the TaskTracker
+        </span>
+<br>
+        
+</p>
+<p>
+        When a task at the front of the scheduler's queue cannot be scheduled
+        on a TaskTracker due to insufficient memory, the scheduler creates
+        a virtual <em>reservation</em> for this task. This can continue
+        for all pending tasks on a job, subject to other capacity constraints.
+        Once all tasks are either scheduled or have reservations, the 
+        scheduler will proceed to schedule other jobs's tasks that are not 
+        necessarily at the front of the queue, but meet memory constraints 
+        of the TaskTracker.
+        By following this reservation procedure of reserving just enough
+        TaskTrackers, the scheduler balances between not starving jobs with 
+        high memory requirements and under-utilizing cluster resources.
+        </p>
+<p>
+        Tasks of jobs that require more virtual memory than the
+        per slot <span class="codefrag">mapreduce.cluster.{map|reduce}memory.mb</span>
+        value, are treated as occupying more than one slot, and account
+        for a corresponding increased capacity usage for their queue.
+        The number of slots they occupy is determined as:<br>
+        
+<span class="codefrag">
+        Number of slots for a task = mapreduce.{map|reduce}.memory.mb / 
+        mapreduce.cluster.{map|reduce}memory.mb
+        </span>
+<br>
+        However, special tasks run by the framework like setup 
+        and cleanup tasks do not count for more than 1 slot, 
+        irrespective of their job's memory requirements.
+        </p>
+</div>
+    
+    
+<a name="Installation"></a>
+<h2 class="h3">Installation</h2>
+<div class="section">
+<p>The Capacity Scheduler is available as a JAR file in the Hadoop
+        tarball under the <em>contrib/capacity-scheduler</em> directory. The name of 
+        the JAR file would be on the lines of hadoop-*-capacity-scheduler.jar.</p>
+<p>You can also build the Scheduler from source by executing
+        <em>ant package</em>, in which case it would be available under
+        <em>build/contrib/capacity-scheduler</em>.</p>
+<p>To run the Capacity Scheduler in your Hadoop installation, you need 
+        to put it on the <em>CLASSPATH</em>. The easiest way is to copy the 
+        <span class="codefrag">hadoop-*-capacity-scheduler.jar</span> from 
+        to <span class="codefrag">HADOOP_HOME/lib</span>. Alternatively, you can modify 
+        <em>HADOOP_CLASSPATH</em> to include this jar, in 
+        <span class="codefrag">conf/hadoop-env.sh</span>.</p>
+</div>
+
+    
+<a name="Configuration"></a>
+<h2 class="h3">Configuration</h2>
+<div class="section">
+<a name="Using+the+Capacity+Scheduler"></a>
+<h3 class="h4">Using the Capacity Scheduler</h3>
+<p>
+          To make the Hadoop framework use the Capacity Scheduler, set up
+          the following property in the site configuration:</p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+            
+<tr>
+              
+<th colspan="1" rowspan="1">Name</th>
+              <th colspan="1" rowspan="1">Value</th>
+            
+</tr>
+            
+<tr>
+              
+<td colspan="1" rowspan="1">mapreduce.jobtracker.taskscheduler</td>
+              <td colspan="1" rowspan="1">org.apache.hadoop.mapred.CapacityTaskScheduler</td>
+            
+</tr>
+          
+</table>
+<a name="Setting+Up+Queues"></a>
+<h3 class="h4">Setting Up Queues</h3>
+<p>
+          You can define multiple, possibly hierarchical queues to which users
+          can submit jobs with the Capacity Scheduler. To define queues,
+          various properties should be set in two configuration files -
+          <a href="http://hadoop.apache.org/common/docs/current/cluster_setup.html#mapred-queues.xml">mapred-queues.xml</a>
+          and
+          <a href="http://hadoop.apache.org/mapreduce/docs/current/capacity-scheduler-conf.html">conf/capacity-scheduler.xml</a>
+          .</p>
+<p>
+<em>conf/capacity-scheduler.xml</em> can be used to configure (1)
+          job-initialization-poller related properties and (2) the
+          default values for various properties in the queues</p>
+<p>
+<em>conf/mapred-queues.xml</em> contains the actual queue
+          configuration including (1) framework specific properties like ACLs
+          for controlling which users or groups have access to the queues and
+          state of the queues and (2) the scheduler specific properties for
+          each queue. If any of these scheduler specific properties are
+          missing and not configured for a queue, then the properties in
+          <em>conf/capacity-scheduler.xml</em> are used to set default values.
+          More details about the properties that can be configured, and their
+          semantics is mentioned below. Also, a default template for 
+          mapred-queues.xml tailored for using with
+          Capacity-scheduler can be found
+          <a href="http://hadoop.apache.org/mapreduce/docs/current/mapred-queues-capacity-scheduler.xml">here</a>.</p>
+<a name="Configuring+Properties+for+Queues"></a>
+<h3 class="h4">Configuring Properties for Queues</h3>
+<p>The Capacity Scheduler can be configured with several properties
+        for each queue that control the behavior of the Scheduler. As
+        described above, this scheduler specific configuration has to be in
+        the <em>conf/mapred-queues.xml</em> along with the rest of the
+        framework specific configuration. By
+        default, the configuration is set up for one queue, named 
+        <em>default</em>.</p>
+<p>To specify a property for a specific queue that is defined in the
+        mapred-queues.xml, you should set the corresponding property in a
+        &lt;property&gt; tag explained
+        <a href="http://hadoop.apache.org/common/docs/current/cluster_setup.html#property_tag">here</a>.
+        </p>
+<p>The properties defined for queues and their descriptions are
+        listed in the table below:</p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+          
+<tr>
+          	
+<th colspan="1" rowspan="1">Name</th>
+            <th colspan="1" rowspan="1">
+            	<a href="http://hadoop.apache.org/common/docs/current/commands_default.html#RefreshQueues">
+            	Refresh-able?</a>
+           	</th>
+            <th colspan="1" rowspan="1">Applicable to?</th>
+            <th colspan="1" rowspan="1">Description</th>
+          
+</tr>
+          
+<tr>
+          	
+<td colspan="1" rowspan="1">capacity</td>
+          	<td colspan="1" rowspan="1">Yes</td>
+          	<td colspan="1" rowspan="1">Container queues as well as leaf queues</td>
+          	<td colspan="1" rowspan="1">For a root-level container queue, this is the percentage of the
+          	number of slots in the cluster that will be available for all its
+          	immediate children together. For a root-level leaf-queue, this is
+          	the percentage of the number of slots in the cluster that will be
+          	available for all its jobs.	For a non-root level container queue,
+          	this is the percentage of the number of slots in its parent queue
+          	that will be available for all its	children together. For a
+          	non-root-level leaf queue, this	is the percentage of the number of
+          	slots in its parent queue that will be available for jobs in this
+          	queue. The sum of capacities for all children of a container queue
+          	should be less than or equal 100. The sum of capacities of all the
+          	root-level queues should be less than or equal to 100.
+            </td>
+          
+</tr>
+          
+<tr>
+            
+<td colspan="1" rowspan="1">maximum-capacity</td>
+            <td colspan="1" rowspan="1">Yes</td>
+          	<td colspan="1" rowspan="1">Container queues as well as leaf queues</td>
+            <td colspan="1" rowspan="1">
+	          A limit in percentage beyond which a non-root-level queue cannot use
+	          the capacity of its parent queue; for a root-level queue, this is
+	          the limit in percentage beyond which it cannot use the
+	          cluster-capacity. This property provides a means to limit how much
+	          excess capacity a queue can use.  It can be used to prevent queues
+	          with long running jobs from occupying more than a certain percentage
+	          of the parent-queue or the cluster, which, in the absence of
+	          pre-emption, can lead to capacity guarantees of other queues getting
+	          affected.
+	
+	          The maximum-capacity of a queue can only be greater than or equal to
+	          its capacity. By default, there is no limit for a queue. For a
+	          non-root-level queue this means it can occupy till the
+	          maximum-capacity of its parent, for a root-level queue, it means that
+	          it can occupy the whole cluster. A value of 100 implies that a queue
+	          can use the complete capacity of its parent, or the complete
+	          cluster-capacity in case of root-level-queues.
+            </td>
+          
+</tr>
+          
+<tr>
+          	
+<td colspan="1" rowspan="1">supports-priority</td>
+          	<td colspan="1" rowspan="1">No</td>
+          	<td colspan="1" rowspan="1">Leaf queues only</td>
+          	<td colspan="1" rowspan="1">If true, priorities of jobs will be taken into account in scheduling 
+          	decisions.
+          	</td>
+          
+</tr>
+          
+<tr>
+          	
+<td colspan="1" rowspan="1">minimum-user-limit-percent</td>
+          	<td colspan="1" rowspan="1">Yes</td>
+          	<td colspan="1" rowspan="1">Leaf queues only</td>
+          	<td colspan="1" rowspan="1">Each queue enforces a limit on the percentage of resources 
+          	allocated to a user at any given time, if there is competition 
+          	for them. This user limit can vary between a minimum and maximum 
+          	value. The former depends on the number of users who have submitted
+          	jobs, and the latter is set to this property value. For example, 
+          	suppose the value of this property is 25. If two users have 
+          	submitted jobs to a queue, no single user can use more than 50% 
+          	of the queue resources. If a third user submits a job, no single 
+          	user can use more than 33% of the queue resources. With 4 or more 
+          	users, no user can use more than 25% of the queue's resources. A 
+          	value of 100 implies no user limits are imposed.
+	        </td>
+          
+</tr>
+          
+<tr>
+            
+<td colspan="1" rowspan="1">maximum-initialized-jobs-per-user</td>
+            <td colspan="1" rowspan="1">Yes</td>
+          	<td colspan="1" rowspan="1">Leaf queues only</td>
+            <td colspan="1" rowspan="1">
+              Maximum number of jobs which are allowed to be pre-initialized for
+              a particular user in the queue. Once a job is scheduled, i.e.
+              it starts running, then that job is not considered
+              while scheduler computes the maximum job a user is allowed to
+              initialize.
+            </td>
+          
+</tr>  
+        
+</table>
+<p>See  <a href="http://hadoop.apache.org/mapreduce/docs/current/mapred-queues-capacity-scheduler.xml">
+        this configuration file</a> for a default configuration of queues in
+        capacity-scheduler.</p>
+<a name="Job+Initialization+Parameters"></a>
+<h3 class="h4">Job Initialization Parameters</h3>
+<p>Capacity scheduler lazily initializes the jobs before they are
+        scheduled, for reducing the memory footprint on jobtracker. 
+        Following are the parameters, by which you can control the laziness
+        of the job initialization. The following parameters can be 
+        configured in capacity-scheduler.xml:
+        </p>
+<table class="ForrestTable" cellspacing="1" cellpadding="4">
+          
+<tr>
+<th colspan="1" rowspan="1">Name</th><th colspan="1" rowspan="1">Description</th>
+</tr>
+          
+<tr>
+            
+<td colspan="1" rowspan="1">
+              mapred.capacity-scheduler.init-poll-interval
+            </td>
+            <td colspan="1" rowspan="1">
+              Amount of time in miliseconds which is used to poll the scheduler
+              job queue to look for jobs to be initialized.
+            </td>
+          
+</tr>
+          
+<tr>
+            
+<td colspan="1" rowspan="1">
+              mapred.capacity-scheduler.init-worker-threads
+            </td>
+            <td colspan="1" rowspan="1">
+              Number of worker threads which would be used by Initialization
+              poller to initialize jobs in a set of queue. If number mentioned 
+              in property is equal to number of job queues then a thread is 
+              assigned jobs from one queue. If the number configured is lesser than
+              number of queues, then a thread can get jobs from more than one queue
+              which it initializes in a round robin fashion. If the number configured
+              is greater than number of queues, then number of threads spawned
+              would be equal to number of job queues.
+            </td>
+          
+</tr>
+        
+</table>
+<a name="Reviewing+the+Configuration+of+the+Capacity+Scheduler"></a>
+<h3 class="h4">Reviewing the Configuration of the Capacity Scheduler</h3>
+<p>
+          Once the installation and configuration is completed, you can review
+          it after starting the MapReduce cluster from the admin UI.
+        </p>
+<ul>
+          
+<li>Start the MapReduce cluster as usual.</li>
+          
+<li>Open the JobTracker web UI.</li>
+          
+<li>The queues you have configured should be listed under the <em>Scheduling
+              Information</em> section of the page.</li>
+          
+<li>The properties for the queues should be visible in the <em>Scheduling
+              Information</em> column against each queue.</li>
+        
+</ul>
+</div>
+  
+</div>
+<!--+
+    |end content
+    +-->
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<!--+
+    |start bottomstrip
+    +-->
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2009 <a href="http://www.apache.org/licenses/">The Apache Software Foundation.</a>
+</div>
+<!--+
+    |end bottomstrip
+    +-->
+</div>
+</body>
+</html>

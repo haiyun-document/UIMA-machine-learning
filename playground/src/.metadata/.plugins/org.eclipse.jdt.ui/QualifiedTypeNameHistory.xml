@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="iitb.CRF.Trainer"/>
+<fullyQualifiedTypeName name="iitb.CRF.FeatureGenerator"/>
+<fullyQualifiedTypeName name="iitb.CRF.Viterbi"/>
+<fullyQualifiedTypeName name="iitb.CRF.CrfParams"/>
+<fullyQualifiedTypeName name="iitb.CRF.DataIter"/>
+</qualifiedTypeNameHistroy>

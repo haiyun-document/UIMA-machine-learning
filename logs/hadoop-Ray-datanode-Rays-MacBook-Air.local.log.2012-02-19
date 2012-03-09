@@ -1,0 +1,3 @@
+2012-02-19 21:02:06,299 INFO org.apache.hadoop.hdfs.server.datanode.DirectoryScanner: Total blocks: 16, missing metadata files:0, missing block files:0, missing blocks in memory:0, mismatched blocks:0
+2012-02-19 21:02:08,460 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: DatanodeCommand action: DNA_REGISTER
+2012-02-19 21:02:10,021 INFO org.apache.hadoop.hdfs.server.datanode.DataNode: BlockReport of 16 blocks got processed in 128 msecs

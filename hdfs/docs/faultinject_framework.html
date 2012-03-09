@@ -1,0 +1,684 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta content="Apache Forrest" name="Generator">
+<meta name="Forrest-version" content="0.9">
+<meta name="Forrest-skin-name" content="pelt">
+<title>Fault Injection Framework and Development Guide</title>
+<link type="text/css" href="skin/basic.css" rel="stylesheet">
+<link media="screen" type="text/css" href="skin/screen.css" rel="stylesheet">
+<link media="print" type="text/css" href="skin/print.css" rel="stylesheet">
+<link type="text/css" href="skin/profile.css" rel="stylesheet">
+<script src="skin/getBlank.js" language="javascript" type="text/javascript"></script><script src="skin/getMenu.js" language="javascript" type="text/javascript"></script><script src="skin/fontsize.js" language="javascript" type="text/javascript"></script>
+<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body onload="init()">
+<script type="text/javascript">ndeSetTextSize();</script>
+<div id="top">
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://hadoop.apache.org/">Hadoop</a> &gt; <a href="http://hadoop.apache.org/core/">Core</a><script src="skin/breadcrumbs.js" language="JavaScript" type="text/javascript"></script>
+</div>
+<!--+
+    |header
+    +-->
+<div class="header">
+<!--+
+    |start group logo
+    +-->
+<div class="grouplogo">
+<a href="http://hadoop.apache.org/"><img class="logoImage" alt="Hadoop" src="images/hadoop-logo.jpg" title="Apache Hadoop"></a>
+</div>
+<!--+
+    |end group logo
+    +-->
+<!--+
+    |start Project Logo
+    +-->
+<div class="projectlogo">
+<a href="http://hadoop.apache.org/hdfs/"><img class="logoImage" alt="Hadoop" src="images/hdfs-logo.jpg" title="Scalable Computing Platform"></a>
+</div>
+<!--+
+    |end Project Logo
+    +-->
+<!--+
+    |start Search
+    +-->
+<div class="searchbox">
+<form action="http://www.google.com/search" method="get" class="roundtopsmall">
+<input value="hadoop.apache.org" name="sitesearch" type="hidden"><input onFocus="getBlank (this, 'Search the site with google');" size="25" name="q" id="query" type="text" value="Search the site with google">&nbsp; 
+                    <input name="Search" value="Search" type="submit">
+</form>
+</div>
+<!--+
+    |end search
+    +-->
+<!--+
+    |start Tabs
+    +-->
+<ul id="tabs">
+<li>
+<a class="unselected" href="http://hadoop.apache.org/hdfs/">Project</a>
+</li>
+<li>
+<a class="unselected" href="http://wiki.apache.org/hadoop/HDFS">Wiki</a>
+</li>
+<li class="current">
+<a class="selected" href="index.html">HDFS 0.22 Documentation</a>
+</li>
+</ul>
+<!--+
+    |end Tabs
+    +-->
+</div>
+</div>
+<div id="main">
+<div id="publishedStrip">
+<!--+
+    |start Subtabs
+    +-->
+<div id="level2tabs"></div>
+<!--+
+    |end Endtabs
+    +-->
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<!--+
+    |breadtrail
+    +-->
+<div class="breadtrail">
+
+             &nbsp;
+           </div>
+<!--+
+    |start Menu, mainarea
+    +-->
+<!--+
+    |start Menu
+    +-->
+<div id="menu">
+<div onclick="SwitchMenu('menu_1.1', 'skin/')" id="menu_1.1Title" class="menutitle">Getting Started</div>
+<div id="menu_1.1" class="menuitemgroup">
+<div class="menuitem">
+<a href="hdfs_user_guide.html">HDFS Users </a>
+</div>
+<div class="menuitem">
+<a href="hdfs_design.html">HDFS Architecture</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_selected_1.2', 'skin/')" id="menu_selected_1.2Title" class="menutitle" style="background-image: url('skin/images/chapter_open.gif');">Guides</div>
+<div id="menu_selected_1.2" class="selectedmenuitemgroup" style="display: block;">
+<div class="menuitem">
+<a href="hdfs_permissions_guide.html">Permissions</a>
+</div>
+<div class="menuitem">
+<a href="hdfs_quota_admin_guide.html">Quotas</a>
+</div>
+<div class="menuitem">
+<a href="SLG_user_guide.html">Synthetic Load Generator</a>
+</div>
+<div class="menuitem">
+<a href="hdfs_imageviewer.html">Offline Image Viewer</a>
+</div>
+<div class="menuitem">
+<a href="hdfsproxy.html">HDFS Proxy</a>
+</div>
+<div class="menuitem">
+<a href="hftp.html">HFTP</a>
+</div>
+<div class="menupage">
+<div class="menupagetitle">Fault Injection</div>
+</div>
+<div class="menuitem">
+<a href="libhdfs.html">C API libhdfs</a>
+</div>
+</div>
+<div onclick="SwitchMenu('menu_1.3', 'skin/')" id="menu_1.3Title" class="menutitle">Miscellaneous</div>
+<div id="menu_1.3" class="menuitemgroup">
+<div class="menuitem">
+<a href="api/index.html">API Docs</a>
+</div>
+<div class="menuitem">
+<a href="jdiff/changes.html">API Changes</a>
+</div>
+<div class="menuitem">
+<a href="http://wiki.apache.org/hadoop/HDFS">Wiki</a>
+</div>
+<div class="menuitem">
+<a href="http://wiki.apache.org/hadoop/HDFS/FAQ">FAQ</a>
+</div>
+<div class="menuitem">
+<a href="releasenotes.html">Release Notes</a>
+</div>
+<div class="menuitem">
+<a href="changes.html">Change Log</a>
+</div>
+</div>
+<div id="credit"></div>
+<div id="roundbottom">
+<img style="display: none" class="corner" height="15" width="15" alt="" src="skin/images/rc-b-l-15-1body-2menu-3menu.png"></div>
+<!--+
+  |alternative credits
+  +-->
+<div id="credit2"></div>
+</div>
+<!--+
+    |end Menu
+    +-->
+<!--+
+    |start content
+    +-->
+<div id="content">
+<div title="Portable Document Format" class="pdflink">
+<a class="dida" href="faultinject_framework.pdf"><img alt="PDF -icon" src="skin/images/pdfdoc.gif" class="skin"><br>
+        PDF</a>
+</div>
+<h1>Fault Injection Framework and Development Guide</h1>
+<div id="front-matter">
+<div id="minitoc-area">
+<ul class="minitoc">
+<li>
+<a href="#Introduction">Introduction</a>
+</li>
+<li>
+<a href="#Assumptions">Assumptions</a>
+</li>
+<li>
+<a href="#Architecture+of+the+Fault+Injection+Framework">Architecture of the Fault Injection Framework</a>
+<ul class="minitoc">
+<li>
+<a href="#Configuration+Management">Configuration Management</a>
+</li>
+<li>
+<a href="#Probability+Model">Probability Model</a>
+</li>
+<li>
+<a href="#Fault+Injection+Mechanism%3A+AOP+and+AspectJ">Fault Injection Mechanism: AOP and AspectJ</a>
+</li>
+<li>
+<a href="#Existing+Join+Points">Existing Join Points</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Aspect+Example">Aspect Example</a>
+</li>
+<li>
+<a href="#Fault+Naming+Convention+and+Namespaces">Fault Naming Convention and Namespaces</a>
+</li>
+<li>
+<a href="#Development+Tools">Development Tools</a>
+</li>
+<li>
+<a href="#Putting+It+All+Together">Putting It All Together</a>
+<ul class="minitoc">
+<li>
+<a href="#How+to+Use+the+Fault+Injection+Framework">How to Use the Fault Injection Framework</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#Additional+Information+and+Contacts">Additional Information and Contacts</a>
+</li>
+</ul>
+</div>
+</div>
+    
+<a name="Introduction"></a>
+<h2 class="h3">Introduction</h2>
+<div class="section">
+<p>This guide provides an overview of the Hadoop Fault Injection (FI) framework for those
+      who will be developing their own faults (aspects).
+      </p>
+<p>The idea of fault injection is fairly simple: it is an
+        infusion of errors and exceptions into an application's logic to
+        achieve a higher coverage and fault tolerance of the system.
+        Different implementations of this idea are available today.
+        Hadoop's FI framework is built on top of Aspect Oriented Paradigm
+        (AOP) implemented by AspectJ toolkit.
+      </p>
+</div>
+    
+<a name="Assumptions"></a>
+<h2 class="h3">Assumptions</h2>
+<div class="section">
+<p>The current implementation of the FI framework assumes that the faults it
+        will be emulating are of non-deterministic nature. That is,  the moment
+        of a fault's happening isn't known in advance and is a coin-flip based.
+      </p>
+</div>
+    
+    
+<a name="Architecture+of+the+Fault+Injection+Framework"></a>
+<h2 class="h3">Architecture of the Fault Injection Framework</h2>
+<div class="section">
+<div style="text-align: center;">
+<img class="figure" alt="Components layout" src="images/FI-framework.gif"></div>
+<a name="Configuration+Management"></a>
+<h3 class="h4">Configuration Management</h3>
+<p>This piece of the FI framework allows you to set expectations for faults to happen. 
+        The settings can be applied either statically (in advance) or in runtime. 
+        The desired level of faults in the framework can be configured two ways:
+        </p>
+<ul>
+          
+<li>
+            editing
+            <span class="codefrag">src/aop/fi-site.xml</span>
+            configuration file. This file is similar to other Hadoop's config
+            files
+          </li>
+          
+<li>
+            setting system properties of JVM through VM startup parameters or in
+            <span class="codefrag">build.properties</span>
+            file
+          </li>
+        
+</ul>
+<a name="Probability+Model"></a>
+<h3 class="h4">Probability Model</h3>
+<p>This is fundamentally a coin flipper. The methods of this class are
+          getting a random number between 0.0
+          and 1.0 and then checking if a new number has happened in the
+          range of 0.0 and a configured level for the fault in question. If that
+          condition is true then the fault will occur.
+        </p>
+<p>Thus, to guarantee the happening of a fault one needs to set an
+          appropriate level to 1.0.
+          To completely prevent a fault from happening its probability level
+          has to be set to 0.0.
+        </p>
+<p>
+<strong>Note</strong>: The default probability level is set to 0
+          (zero) unless the level is changed explicitly through the
+          configuration file or in the runtime. The name of the default
+          level's configuration parameter is
+          <span class="codefrag">fi.*</span>
+        
+</p>
+<a name="Fault+Injection+Mechanism%3A+AOP+and+AspectJ"></a>
+<h3 class="h4">Fault Injection Mechanism: AOP and AspectJ</h3>
+<p>The foundation of Hadoop's FI framework includes a
+          cross-cutting concept implemented by AspectJ. The following basic
+          terms are important to remember:
+        </p>
+<ul>
+          
+<li>
+            
+<strong>A cross-cutting concept</strong>
+            (aspect) is behavior, and often data, that is used across the scope
+            of a piece of software
+          </li>
+          
+<li>In AOP, the
+            <strong>aspects</strong>
+            provide a mechanism by which a cross-cutting concern can be
+            specified in a modular way
+          </li>
+          
+<li>
+            
+<strong>Advice</strong>
+            is the
+            code that is executed when an aspect is invoked
+          </li>
+          
+<li>
+            
+<strong>Join point</strong>
+            (or pointcut) is a specific
+            point within the application that may or not invoke some advice
+          </li>
+        
+</ul>
+<a name="Existing+Join+Points"></a>
+<h3 class="h4">Existing Join Points</h3>
+<p>
+          The following readily available join points are provided by AspectJ:
+        </p>
+<ul>
+          
+<li>Join when a method is called
+          </li>
+          
+<li>Join during a method's execution
+          </li>
+          
+<li>Join when a constructor is invoked
+          </li>
+          
+<li>Join during a constructor's execution
+          </li>
+          
+<li>Join during aspect advice execution
+          </li>
+          
+<li>Join before an object is initialized
+          </li>
+          
+<li>Join during object initialization
+          </li>
+          
+<li>Join during static initializer execution
+          </li>
+          
+<li>Join when a class's field is referenced
+          </li>
+          
+<li>Join when a class's field is assigned
+          </li>
+          
+<li>Join when a handler is executed
+          </li>
+        
+</ul>
+</div>
+    
+<a name="Aspect+Example"></a>
+<h2 class="h3">Aspect Example</h2>
+<div class="section">
+<pre class="code">
+package org.apache.hadoop.hdfs.server.datanode;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.apache.hadoop.fi.ProbabilityModel;
+import org.apache.hadoop.hdfs.server.datanode.DataNode;
+import org.apache.hadoop.util.DiskChecker.*;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.DataOutputStream;
+
+/**
+* This aspect takes care about faults injected into datanode.BlockReceiver
+* class
+*/
+public aspect BlockReceiverAspects {
+  public static final Log LOG = LogFactory.getLog(BlockReceiverAspects.class);
+
+  public static final String BLOCK_RECEIVER_FAULT="hdfs.datanode.BlockReceiver";
+    pointcut callReceivePacket() : call (* OutputStream.write(..))
+      &amp;&amp; withincode (* BlockReceiver.receivePacket(..))
+    // to further limit the application of this aspect a very narrow 'target' can be used as follows
+    // &amp;&amp; target(DataOutputStream)
+      &amp;&amp; !within(BlockReceiverAspects +);
+
+  before () throws IOException : callReceivePacket () {
+    if (ProbabilityModel.injectCriteria(BLOCK_RECEIVER_FAULT)) {
+      LOG.info("Before the injection point");
+      Thread.dumpStack();
+      throw new DiskOutOfSpaceException ("FI: injected fault point at " +
+      thisJoinPoint.getStaticPart( ).getSourceLocation());
+    }
+  }
+}
+</pre>
+<p>The aspect has two main parts: </p>
+<ul>
+        
+<li>The join point
+        <span class="codefrag">pointcut callReceivepacket()</span>
+        which servers as an identification mark of a specific point (in control
+        and/or data flow) in the life of an application. </li>
+        
+       
+<li> A call to the advice -
+        <span class="codefrag">before () throws IOException : callReceivepacket()</span>
+        - will be injected (see
+        <a href="#Putting+it+all+together">Putting It All Together</a>)
+        before that specific spot of the application's code.</li>
+        
+</ul>
+<p>The pointcut identifies an invocation of class'
+        <span class="codefrag">java.io.OutputStream write()</span>
+        method
+        with any number of parameters and any return type. This invoke should
+        take place within the body of method
+        <span class="codefrag">receivepacket()</span>
+        from class<span class="codefrag">BlockReceiver</span>.
+        The method can have any parameters and any return type. 
+        Possible invocations of
+        <span class="codefrag">write()</span>
+        method happening anywhere within the aspect
+        <span class="codefrag">BlockReceiverAspects</span>
+        or its heirs will be ignored.
+      </p>
+<p>
+<strong>Note 1</strong>: This short example doesn't illustrate
+        the fact that you can have more than a single injection point per
+        class. In such a case the names of the faults have to be different
+        if a developer wants to trigger them separately.
+      </p>
+<p>
+<strong>Note 2</strong>: After the injection step (see
+        <a href="#Putting+it+all+together">Putting It All Together</a>)
+        you can verify that the faults were properly injected by
+        searching for <span class="codefrag">ajc</span> keywords in a disassembled class file.
+      </p>
+</div>
+    
+    
+<a name="Fault+Naming+Convention+and+Namespaces"></a>
+<h2 class="h3">Fault Naming Convention and Namespaces</h2>
+<div class="section">
+<p>For the sake of a unified naming
+      convention the following two types of names are recommended for a
+      new aspects development:</p>
+<ul>
+        
+<li>Activity specific notation 
+          (when we don't care about a particular location of a fault's
+          happening). In this case the name of the fault is rather abstract:
+          <span class="codefrag">fi.hdfs.DiskError</span>
+        
+</li>
+        
+<li>Location specific notation.
+          Here, the fault's name is mnemonic as in:
+          <span class="codefrag">fi.hdfs.datanode.BlockReceiver[optional location details]</span>
+        
+</li>
+      
+</ul>
+</div>
+
+    
+<a name="Development+Tools"></a>
+<h2 class="h3">Development Tools</h2>
+<div class="section">
+<ul>
+        
+<li>The Eclipse
+          <a href="http://www.eclipse.org/ajdt/">AspectJ Development Toolkit</a> 
+          may help you when developing aspects
+        </li>
+        
+<li>IntelliJ IDEA provides AspectJ weaver and Spring-AOP plugins
+        </li>
+      
+</ul>
+</div>
+
+    
+<a name="Putting+It+All+Together"></a>
+<h2 class="h3">Putting It All Together</h2>
+<div class="section">
+<p>Faults (aspects) have to injected (or woven) together before
+        they can be used. Follow these instructions:</p>
+<ul>
+      
+<li>To weave aspects in place use:
+<pre class="code">
+% ant injectfaults
+</pre>
+      
+</li>
+      
+      
+<li>If you
+        misidentified the join point of your aspect you will see a
+        warning (similar to the one shown here) when 'injectfaults' target is
+        completed:
+<pre class="code">
+[iajc] warning at
+src/test/aop/org/apache/hadoop/hdfs/server/datanode/ \
+          BlockReceiverAspects.aj:44::0
+advice defined in org.apache.hadoop.hdfs.server.datanode.BlockReceiverAspects
+has not been applied [Xlint:adviceDidNotMatch]
+</pre>
+        
+</li>
+        
+      
+<li>It isn't an error, so the build will report the successful result. <br>
+     To prepare dev.jar file with all your faults weaved in place (HDFS-475 pending) use:
+<pre class="code">
+% ant jar-fault-inject
+</pre>
+        
+</li>
+
+     
+<li>To create test jars use:
+<pre class="code">
+% ant jar-test-fault-inject
+</pre>
+      
+</li>
+
+     
+<li>To run HDFS tests with faults injected use:
+<pre class="code">
+% ant run-test-hdfs-fault-inject
+</pre>
+      
+</li>
+    
+</ul>
+<a name="How+to+Use+the+Fault+Injection+Framework"></a>
+<h3 class="h4">How to Use the Fault Injection Framework</h3>
+<p>Faults can be triggered as follows:
+        </p>
+<ul>
+          
+<li>During runtime:
+<pre class="code">
+% ant run-test-hdfs -Dfi.hdfs.datanode.BlockReceiver=0.12
+</pre>
+            To set a certain level, for example 25%, of all injected faults use:
+            <br>
+
+<pre class="code">
+% ant run-test-hdfs-fault-inject -Dfi.*=0.25
+</pre>
+          
+</li>
+          
+<li>From a program:
+  
+        <pre class="code">
+package org.apache.hadoop.fs;
+
+import org.junit.Test;
+import org.junit.Before;
+import junit.framework.TestCase;
+
+public class DemoFiTest extends TestCase {
+  public static final String BLOCK_RECEIVER_FAULT="hdfs.datanode.BlockReceiver";
+  @Override
+  @Before
+  public void setUp(){
+    //Setting up the test's environment as required
+  }
+
+  @Test
+  public void testFI() {
+    // It triggers the fault, assuming that there's one called 'hdfs.datanode.BlockReceiver'
+    System.setProperty("fi." + BLOCK_RECEIVER_FAULT, "0.12");
+    //
+    // The main logic of your tests goes here
+    //
+    // Now set the level back to 0 (zero) to prevent this fault from happening again
+    System.setProperty("fi." + BLOCK_RECEIVER_FAULT, "0.0");
+    // or delete its trigger completely
+    System.getProperties().remove("fi." + BLOCK_RECEIVER_FAULT);
+  }
+
+  @Override
+  @After
+  public void tearDown() {
+    //Cleaning up test test environment
+  }
+}
+</pre>
+        
+</li>
+        
+</ul>
+<p>
+          As you can see above these two methods do the same thing. They are
+          setting the probability level of <span class="codefrag">hdfs.datanode.BlockReceiver</span>
+          at 12%. The difference, however, is that the program provides more
+          flexibility and allows you to turn a fault off when a test no longer needs it.
+        </p>
+</div>
+
+    
+<a name="Additional+Information+and+Contacts"></a>
+<h2 class="h3">Additional Information and Contacts</h2>
+<div class="section">
+<p>These two sources of information are particularly
+        interesting and worth reading:
+      </p>
+<ul>
+        
+<li>
+          
+<a href="http://www.eclipse.org/aspectj/doc/next/devguide/">
+            http://www.eclipse.org/aspectj/doc/next/devguide/
+          </a>
+        
+</li>
+        
+<li>AspectJ Cookbook (ISBN-13: 978-0-596-00654-9)
+        </li>
+      
+</ul>
+<p>If you have additional comments or questions for the author check
+        <a href="http://issues.apache.org/jira/browse/HDFS-435">HDFS-435</a>.
+      </p>
+</div>
+  
+</div>
+<!--+
+    |end content
+    +-->
+<div class="clearboth">&nbsp;</div>
+</div>
+<div id="footer">
+<!--+
+    |start bottomstrip
+    +-->
+<div class="lastmodified">
+<script type="text/javascript"><!--
+document.write("Last Published: " + document.lastModified);
+//  --></script>
+</div>
+<div class="copyright">
+        Copyright &copy;
+         2010 <a href="http://www.apache.org/licenses/">The Apache Software Foundation.</a>
+</div>
+<!--+
+    |end bottomstrip
+    +-->
+</div>
+</body>
+</html>
